@@ -1,0 +1,93 @@
+=== IMPORT DEBUG 2026-08-15 13:42:32 ===
+
+=== RAW HEADERS ===
+Col 0: [rank_paralel]
+Col 1: [nama]
+Col 2: [nisn]
+Col 3: [bind_smt1]
+Col 4: [bind_smt2]
+Col 5: [bind_smt3]
+Col 6: [bind_smt4]
+Col 7: [bind_smt5]
+Col 8: [bing_smt1]
+Col 9: [bing_smt2]
+Col 10: [bing_smt3]
+Col 11: [bing_smt4]
+Col 12: [bing_smt5]
+Col 13: [mtk_wajib_smt1]
+Col 14: [mtk_wajib_smt2]
+Col 15: [mtk_wajib_smt3]
+Col 16: [mtk_wajib_smt4]
+Col 17: [mtk_wajib_smt5]
+Col 18: [mtk_lanjut_smt3]
+Col 19: [mtk_lanjut_smt4]
+Col 20: [mtk_lanjut_smt5]
+Col 21: [fisika_smt3]
+Col 22: [fisika_smt4]
+Col 23: [fisika_smt5]
+Col 24: [kimia_smt3]
+Col 25: [kimia_smt4]
+Col 26: [kimia_smt5]
+Col 27: [biologi_smt3]
+Col 28: [biologi_smt4]
+Col 29: [biologi_smt5]
+Col 30: [rata_rata_keseluruhan]
+Col 31: [pil1_universitas]
+Col 32: [pil1_prodi]
+Col 33: [pil1_keketatan]
+Col 34: [pil2_universitas]
+Col 35: [pil2_jurusan]
+Col 36: [pil2_keketatan]
+Col 37: [status_akhir]
+Col 38: [prestasi_tertinggi]
+
+=== COLUMN MAPPING ===
+Col 0 (rank_paralel) → rank_paralel
+Col 1 (nama) → nama_siswa
+Col 2 (nisn) → nisn
+Col 3 (bind_smt1) → bind_smt1
+Col 4 (bind_smt2) → bind_smt2
+Col 5 (bind_smt3) → bind_smt3
+Col 6 (bind_smt4) → bind_smt4
+Col 7 (bind_smt5) → bind_smt5
+Col 8 (bing_smt1) → bing_smt1
+Col 9 (bing_smt2) → bing_smt2
+Col 10 (bing_smt3) → bing_smt3
+Col 11 (bing_smt4) → bing_smt4
+Col 12 (bing_smt5) → bing_smt5
+Col 13 (mtk_wajib_smt1) → mtk_wajib_smt1
+Col 14 (mtk_wajib_smt2) → mtk_wajib_smt2
+Col 15 (mtk_wajib_smt3) → mtk_wajib_smt3
+Col 16 (mtk_wajib_smt4) → mtk_wajib_smt4
+Col 17 (mtk_wajib_smt5) → mtk_wajib_smt5
+Col 18 (mtk_lanjut_smt3) → mtk_lanjut_smt3
+Col 19 (mtk_lanjut_smt4) → mtk_lanjut_smt4
+Col 20 (mtk_lanjut_smt5) → mtk_lanjut_smt5
+Col 21 (fisika_smt3) → fisika_smt3
+Col 22 (fisika_smt4) → fisika_smt4
+Col 23 (fisika_smt5) → fisika_smt5
+Col 24 (kimia_smt3) → kimia_smt3
+Col 25 (kimia_smt4) → kimia_smt4
+Col 26 (kimia_smt5) → kimia_smt5
+Col 27 (biologi_smt3) → biologi_smt3
+Col 28 (biologi_smt4) → biologi_smt4
+Col 29 (biologi_smt5) → biologi_smt5
+Col 30 (rata_rata_keseluruhan) → rata_keseluruhan
+Col 31 (pil1_universitas) → pilihan_1_univ
+Col 32 (pil1_prodi) → pilihan_1_prodi
+Col 33 (pil1_keketatan) → pil1_keketatan
+Col 34 (pil2_universitas) → pilihan_2_univ
+Col 35 (pil2_jurusan) → pilihan_2_prodi
+Col 36 (pil2_keketatan) → pil2_keketatan
+Col 37 (status_akhir) → status
+Col 38 (prestasi_tertinggi) → prestasi_tertinggi
+
+=== SAMPLE DATA (5 baris pertama) ===
+Row 1: nama=CHRISTINE CASSANOVA, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Universitas Airlangga
+Row 2: nama=NATHANAEL OLIVER SINATHYRA SANTOSO, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Universitas Jenderal Soedirman
+Row 3: nama=DWI ATIKA AYU, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Institut Pertanian Bogor
+Row 4: nama=ANGGITA BEAUTY SIMANGUNSONG, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=Universitas Indonesia
+Row 5: nama=MISCHA RASYA HARUN, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=Universitas Diponegoro
+
+=== SUMMARY ===
+Imported: 96, Skipped: 0

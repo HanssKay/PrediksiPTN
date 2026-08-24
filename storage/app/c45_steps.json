@@ -1,0 +1,8122 @@
+[
+  {
+    "node": "Root",
+    "level": 0,
+    "total_entropy": 1.0,
+    "total_samples": 352,
+    "class_distribution": {
+      "LOLOS": 176,
+      "TIDAK LOLOS": 176
+    },
+    "attributes": [
+      {
+        "name": "mtk_wajib",
+        "gain": 0.054347,
+        "split_info": 1.160195,
+        "gain_ratio": 0.046843,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 249,
+            "lolos": 105,
+            "tidak_lolos": 144,
+            "entropy": 0.982231
+          },
+          {
+            "value": "Cukup",
+            "count": 44,
+            "lolos": 25,
+            "tidak_lolos": 19,
+            "entropy": 0.986545
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 59,
+            "lolos": 46,
+            "tidak_lolos": 13,
+            "entropy": 0.760786
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.054327,
+        "split_info": 1.453707,
+        "gain_ratio": 0.037372,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 64,
+            "lolos": 40,
+            "tidak_lolos": 24,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Sedang",
+            "count": 185,
+            "lolos": 106,
+            "tidak_lolos": 79,
+            "entropy": 0.98458
+          },
+          {
+            "value": "Tinggi",
+            "count": 103,
+            "lolos": 30,
+            "tidak_lolos": 73,
+            "entropy": 0.870346
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.054478,
+        "split_info": 1.995496,
+        "gain_ratio": 0.0273,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 98,
+            "lolos": 70,
+            "tidak_lolos": 28,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sedang",
+            "count": 85,
+            "lolos": 35,
+            "tidak_lolos": 50,
+            "entropy": 0.977418
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 90,
+            "lolos": 41,
+            "tidak_lolos": 49,
+            "entropy": 0.994293
+          },
+          {
+            "value": "Tinggi",
+            "count": 79,
+            "lolos": 30,
+            "tidak_lolos": 49,
+            "entropy": 0.957863
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.039874,
+        "split_info": 1.751791,
+        "gain_ratio": 0.022762,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 44,
+            "lolos": 31,
+            "tidak_lolos": 13,
+            "entropy": 0.875663
+          },
+          {
+            "value": "Nasional",
+            "count": 47,
+            "lolos": 25,
+            "tidak_lolos": 22,
+            "entropy": 0.997059
+          },
+          {
+            "value": "Provinsi",
+            "count": 83,
+            "lolos": 50,
+            "tidak_lolos": 33,
+            "entropy": 0.969524
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 178,
+            "lolos": 70,
+            "tidak_lolos": 108,
+            "entropy": 0.96687
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.030511,
+        "split_info": 1.571889,
+        "gain_ratio": 0.019411,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 95,
+            "lolos": 40,
+            "tidak_lolos": 55,
+            "entropy": 0.981941
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 155,
+            "lolos": 70,
+            "tidak_lolos": 85,
+            "entropy": 0.993234
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 101,
+            "lolos": 66,
+            "tidak_lolos": 35,
+            "entropy": 0.930935
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.013847,
+        "split_info": 0.751005,
+        "gain_ratio": 0.018437,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 283,
+            "lolos": 135,
+            "tidak_lolos": 148,
+            "entropy": 0.998477
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 67,
+            "lolos": 41,
+            "tidak_lolos": 26,
+            "entropy": 0.963536
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0126,
+        "split_info": 0.782039,
+        "gain_ratio": 0.016112,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 280,
+            "lolos": 136,
+            "tidak_lolos": 144,
+            "entropy": 0.999411
+          },
+          {
+            "value": "Cukup",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 69,
+            "lolos": 40,
+            "tidak_lolos": 29,
+            "entropy": 0.981589
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.012839,
+        "split_info": 1.291299,
+        "gain_ratio": 0.009943,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 55,
+            "lolos": 35,
+            "tidak_lolos": 20,
+            "entropy": 0.94566
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 231,
+            "lolos": 111,
+            "tidak_lolos": 120,
+            "entropy": 0.998905
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 65,
+            "lolos": 30,
+            "tidak_lolos": 35,
+            "entropy": 0.995727
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.009858,
+        "split_info": 1.488523,
+        "gain_ratio": 0.006623,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 90,
+            "lolos": 40,
+            "tidak_lolos": 50,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Cukup",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 200,
+            "lolos": 105,
+            "tidak_lolos": 95,
+            "entropy": 0.998196
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 56,
+            "lolos": 26,
+            "tidak_lolos": 30,
+            "entropy": 0.996317
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.006069,
+        "split_info": 1.484198,
+        "gain_ratio": 0.004089,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 102,
+            "lolos": 50,
+            "tidak_lolos": 52,
+            "entropy": 0.999723
+          },
+          {
+            "value": "Cukup",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Kurang",
+            "count": 199,
+            "lolos": 95,
+            "tidak_lolos": 104,
+            "entropy": 0.998524
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 42,
+            "lolos": 26,
+            "tidak_lolos": 16,
+            "entropy": 0.958712
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_wajib",
+    "best_gain_ratio": 0.046843
+  },
+  {
+    "node": "mtk_wajib = Baik",
+    "level": 1,
+    "total_entropy": 0.982231,
+    "total_samples": 249,
+    "class_distribution": {
+      "LOLOS": 105,
+      "TIDAK LOLOS": 144
+    },
+    "attributes": [
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.143241,
+        "split_info": 1.973838,
+        "gain_ratio": 0.07257,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 78,
+            "lolos": 55,
+            "tidak_lolos": 23,
+            "entropy": 0.874932
+          },
+          {
+            "value": "Sedang",
+            "count": 62,
+            "lolos": 20,
+            "tidak_lolos": 42,
+            "entropy": 0.907166
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 64,
+            "lolos": 25,
+            "tidak_lolos": 39,
+            "entropy": 0.965202
+          },
+          {
+            "value": "Tinggi",
+            "count": 45,
+            "lolos": 5,
+            "tidak_lolos": 40,
+            "entropy": 0.503258
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.101256,
+        "split_info": 1.529259,
+        "gain_ratio": 0.066212,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 58,
+            "lolos": 40,
+            "tidak_lolos": 18,
+            "entropy": 0.893571
+          },
+          {
+            "value": "Sedang",
+            "count": 114,
+            "lolos": 50,
+            "tidak_lolos": 64,
+            "entropy": 0.989093
+          },
+          {
+            "value": "Tinggi",
+            "count": 77,
+            "lolos": 15,
+            "tidak_lolos": 62,
+            "entropy": 0.711416
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.036629,
+        "split_info": 1.532624,
+        "gain_ratio": 0.023899,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 12,
+            "lolos": 5,
+            "tidak_lolos": 7,
+            "entropy": 0.979869
+          },
+          {
+            "value": "Nasional",
+            "count": 28,
+            "lolos": 10,
+            "tidak_lolos": 18,
+            "entropy": 0.940286
+          },
+          {
+            "value": "Provinsi",
+            "count": 66,
+            "lolos": 40,
+            "tidak_lolos": 26,
+            "entropy": 0.967295
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 143,
+            "lolos": 50,
+            "tidak_lolos": 93,
+            "entropy": 0.933755
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.011441,
+        "split_info": 0.599259,
+        "gain_ratio": 0.019092,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 218,
+            "lolos": 95,
+            "tidak_lolos": 123,
+            "entropy": 0.988067
+          },
+          {
+            "value": "Cukup",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 28,
+            "lolos": 10,
+            "tidak_lolos": 18,
+            "entropy": 0.940286
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.023698,
+        "split_info": 1.415198,
+        "gain_ratio": 0.016745,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 62,
+            "lolos": 20,
+            "tidak_lolos": 42,
+            "entropy": 0.907166
+          },
+          {
+            "value": "Cukup",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 153,
+            "lolos": 70,
+            "tidak_lolos": 83,
+            "entropy": 0.994786
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 28,
+            "lolos": 10,
+            "tidak_lolos": 18,
+            "entropy": 0.940286
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.023629,
+        "split_info": 1.489751,
+        "gain_ratio": 0.015861,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 62,
+            "lolos": 20,
+            "tidak_lolos": 42,
+            "entropy": 0.907166
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 133,
+            "lolos": 55,
+            "tidak_lolos": 78,
+            "entropy": 0.978319
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 53,
+            "lolos": 30,
+            "tidak_lolos": 23,
+            "entropy": 0.98738
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.019555,
+        "split_info": 1.249738,
+        "gain_ratio": 0.015647,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 45,
+            "lolos": 25,
+            "tidak_lolos": 20,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 169,
+            "lolos": 70,
+            "tidak_lolos": 99,
+            "entropy": 0.978654
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 34,
+            "lolos": 10,
+            "tidak_lolos": 24,
+            "entropy": 0.873981
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.00695,
+        "split_info": 0.549006,
+        "gain_ratio": 0.012658,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 221,
+            "lolos": 95,
+            "tidak_lolos": 126,
+            "entropy": 0.98576
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 26,
+            "lolos": 10,
+            "tidak_lolos": 16,
+            "entropy": 0.961237
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.012867,
+        "split_info": 1.388963,
+        "gain_ratio": 0.009264,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 91,
+            "lolos": 45,
+            "tidak_lolos": 46,
+            "entropy": 0.999913
+          },
+          {
+            "value": "Cukup",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Kurang",
+            "count": 137,
+            "lolos": 50,
+            "tidak_lolos": 87,
+            "entropy": 0.946726
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 12,
+            "lolos": 5,
+            "tidak_lolos": 7,
+            "entropy": 0.979869
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil2_keketatan",
+    "best_gain_ratio": 0.07257
+  },
+  {
+    "node": "pil2_keketatan = Rendah",
+    "level": 2,
+    "total_entropy": 0.874932,
+    "total_samples": 78,
+    "class_distribution": {
+      "LOLOS": 55,
+      "TIDAK LOLOS": 23
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.070469,
+        "split_info": 0.235193,
+        "gain_ratio": 0.299623,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 75,
+            "lolos": 55,
+            "tidak_lolos": 20,
+            "entropy": 0.836641
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.070469,
+        "split_info": 0.270512,
+        "gain_ratio": 0.260503,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 75,
+            "lolos": 55,
+            "tidak_lolos": 20,
+            "entropy": 0.836641
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.138892,
+        "split_info": 1.307896,
+        "gain_ratio": 0.106195,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 52,
+            "lolos": 35,
+            "tidak_lolos": 17,
+            "entropy": 0.911752
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.136847,
+        "split_info": 1.429115,
+        "gain_ratio": 0.095756,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Provinsi",
+            "count": 28,
+            "lolos": 25,
+            "tidak_lolos": 3,
+            "entropy": 0.491237
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 39,
+            "lolos": 20,
+            "tidak_lolos": 19,
+            "entropy": 0.999526
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.082481,
+        "split_info": 0.999655,
+        "gain_ratio": 0.082509,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 57,
+            "lolos": 40,
+            "tidak_lolos": 17,
+            "entropy": 0.879136
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.071509,
+        "split_info": 1.456546,
+        "gain_ratio": 0.049095,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sedang",
+            "count": 37,
+            "lolos": 30,
+            "tidak_lolos": 7,
+            "entropy": 0.699772
+          },
+          {
+            "value": "Tinggi",
+            "count": 29,
+            "lolos": 15,
+            "tidak_lolos": 14,
+            "entropy": 0.999142
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.061208,
+        "split_info": 1.32015,
+        "gain_ratio": 0.046364,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 55,
+            "lolos": 40,
+            "tidak_lolos": 15,
+            "entropy": 0.845351
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.05531,
+        "split_info": 1.338986,
+        "gain_ratio": 0.041307,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 29,
+            "lolos": 20,
+            "tidak_lolos": 9,
+            "entropy": 0.893571
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 43,
+            "lolos": 30,
+            "tidak_lolos": 13,
+            "entropy": 0.884115
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0.299623
+  },
+  {
+    "node": "bind = Baik",
+    "level": 3,
+    "total_entropy": 0.836641,
+    "total_samples": 75,
+    "class_distribution": {
+      "LOLOS": 55,
+      "TIDAK LOLOS": 20
+    },
+    "attributes": [
+      {
+        "name": "bing",
+        "gain": 0.052324,
+        "split_info": 0.204056,
+        "gain_ratio": 0.256419,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 73,
+            "lolos": 55,
+            "tidak_lolos": 18,
+            "entropy": 0.805805
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.130184,
+        "split_info": 1.304479,
+        "gain_ratio": 0.099798,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 50,
+            "lolos": 35,
+            "tidak_lolos": 15,
+            "entropy": 0.881291
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.113069,
+        "split_info": 1.445126,
+        "gain_ratio": 0.078242,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Provinsi",
+            "count": 28,
+            "lolos": 25,
+            "tidak_lolos": 3,
+            "entropy": 0.491237
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 36,
+            "lolos": 20,
+            "tidak_lolos": 16,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.060711,
+        "split_info": 0.961706,
+        "gain_ratio": 0.063129,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 55,
+            "lolos": 40,
+            "tidak_lolos": 15,
+            "entropy": 0.845351
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.063839,
+        "split_info": 1.461901,
+        "gain_ratio": 0.043668,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sedang",
+            "count": 36,
+            "lolos": 30,
+            "tidak_lolos": 6,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tinggi",
+            "count": 27,
+            "lolos": 15,
+            "tidak_lolos": 12,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.05479,
+        "split_info": 1.321349,
+        "gain_ratio": 0.041465,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 53,
+            "lolos": 40,
+            "tidak_lolos": 13,
+            "entropy": 0.803716
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.031062,
+        "split_info": 1.25958,
+        "gain_ratio": 0.02466,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 28,
+            "lolos": 20,
+            "tidak_lolos": 8,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 42,
+            "lolos": 30,
+            "tidak_lolos": 12,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bing",
+    "best_gain_ratio": 0.256419
+  },
+  {
+    "node": "bing = Baik",
+    "level": 4,
+    "total_entropy": 0.805805,
+    "total_samples": 73,
+    "class_distribution": {
+      "LOLOS": 55,
+      "TIDAK LOLOS": 18
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.121855,
+        "split_info": 1.289494,
+        "gain_ratio": 0.094498,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 49,
+            "lolos": 35,
+            "tidak_lolos": 14,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.095924,
+        "split_info": 1.45512,
+        "gain_ratio": 0.065922,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Provinsi",
+            "count": 28,
+            "lolos": 25,
+            "tidak_lolos": 3,
+            "entropy": 0.491237
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 34,
+            "lolos": 20,
+            "tidak_lolos": 14,
+            "entropy": 0.977418
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.060239,
+        "split_info": 1.30268,
+        "gain_ratio": 0.046242,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 52,
+            "lolos": 40,
+            "tidak_lolos": 12,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.065214,
+        "split_info": 1.467141,
+        "gain_ratio": 0.04445,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sedang",
+            "count": 35,
+            "lolos": 30,
+            "tidak_lolos": 5,
+            "entropy": 0.591673
+          },
+          {
+            "value": "Tinggi",
+            "count": 26,
+            "lolos": 15,
+            "tidak_lolos": 11,
+            "entropy": 0.982859
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.034788,
+        "split_info": 0.904584,
+        "gain_ratio": 0.038457,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 54,
+            "lolos": 40,
+            "tidak_lolos": 14,
+            "entropy": 0.825627
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.031638,
+        "split_info": 1.25423,
+        "gain_ratio": 0.025225,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 26,
+            "lolos": 20,
+            "tidak_lolos": 6,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 42,
+            "lolos": 30,
+            "tidak_lolos": 12,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.094498
+  },
+  {
+    "node": "fisika = Baik",
+    "level": 5,
+    "total_entropy": 0.954434,
+    "total_samples": 8,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 3
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.954434,
+        "split_info": 0.954434,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.954434,
+        "split_info": 1.298795,
+        "gain_ratio": 0.734861,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.954434,
+        "split_info": 1.298795,
+        "gain_ratio": 0.734861,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.466917,
+        "split_info": 0.811278,
+        "gain_ratio": 0.575533,
+        "values": [
+          {
+            "value": "Provinsi",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.466917,
+        "split_info": 1.061278,
+        "gain_ratio": 0.439957,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tinggi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "fisika = Kurang",
+    "level": 5,
+    "total_entropy": 0.863121,
+    "total_samples": 49,
+    "class_distribution": {
+      "LOLOS": 35,
+      "TIDAK LOLOS": 14
+    },
+    "attributes": [
+      {
+        "name": "kimia",
+        "gain": 0.242822,
+        "split_info": 0.934098,
+        "gain_ratio": 0.259953,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 39,
+            "lolos": 30,
+            "tidak_lolos": 9,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.127287,
+        "split_info": 1.372021,
+        "gain_ratio": 0.092774,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Provinsi",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 27,
+            "lolos": 15,
+            "tidak_lolos": 12,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.05569,
+        "split_info": 1.372052,
+        "gain_ratio": 0.040589,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 15,
+            "tidak_lolos": 6,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 23,
+            "lolos": 15,
+            "tidak_lolos": 8,
+            "entropy": 0.932112
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.028145,
+        "split_info": 1.405332,
+        "gain_ratio": 0.020027,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sedang",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          },
+          {
+            "value": "Tinggi",
+            "count": 24,
+            "lolos": 15,
+            "tidak_lolos": 9,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.003964,
+        "split_info": 0.834648,
+        "gain_ratio": 0.004749,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Kurang",
+            "count": 36,
+            "lolos": 25,
+            "tidak_lolos": 11,
+            "entropy": 0.887976
+          }
+        ]
+      }
+    ],
+    "best_attribute": "kimia",
+    "best_gain_ratio": 0.259953
+  },
+  {
+    "node": "kimia = Kurang",
+    "level": 6,
+    "total_entropy": 0.77935,
+    "total_samples": 39,
+    "class_distribution": {
+      "LOLOS": 30,
+      "TIDAK LOLOS": 9
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.114917,
+        "split_info": 1.464975,
+        "gain_ratio": 0.078443,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Provinsi",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 17,
+            "lolos": 10,
+            "tidak_lolos": 7,
+            "entropy": 0.977418
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.054809,
+        "split_info": 1.389145,
+        "gain_ratio": 0.039455,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 15,
+            "tidak_lolos": 6,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.026145,
+        "split_info": 1.460485,
+        "gain_ratio": 0.017902,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sedang",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tinggi",
+            "count": 15,
+            "lolos": 10,
+            "tidak_lolos": 5,
+            "entropy": 0.918296
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.918296,
+        "gain_ratio": 0.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Kurang",
+            "count": 26,
+            "lolos": 20,
+            "tidak_lolos": 6,
+            "entropy": 0.77935
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.078443
+  },
+  {
+    "node": "prestasi_tertinggi = Nasional",
+    "level": 7,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "prestasi_tertinggi = Provinsi",
+    "level": 7,
+    "total_entropy": 0.33729,
+    "total_samples": 16,
+    "class_distribution": {
+      "LOLOS": 15,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.093532,
+        "split_info": 1.579434,
+        "gain_ratio": 0.059218,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.035136,
+        "split_info": 0.896038,
+        "gain_ratio": 0.039212,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.059218
+  },
+  {
+    "node": "pil1_keketatan = Tinggi",
+    "level": 8,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Cukup",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "prestasi_tertinggi = Tidak Ada",
+    "level": 7,
+    "total_entropy": 0.977418,
+    "total_samples": 17,
+    "class_distribution": {
+      "LOLOS": 10,
+      "TIDAK LOLOS": 7
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.381444,
+        "split_info": 0.978016,
+        "gain_ratio": 0.390019,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Tinggi",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.003585,
+        "split_info": 0.997503,
+        "gain_ratio": 0.003594,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.003585,
+        "split_info": 0.997503,
+        "gain_ratio": 0.003594,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Kurang",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.390019
+  },
+  {
+    "node": "pil1_keketatan = Sedang",
+    "level": 8,
+    "total_entropy": 0.77935,
+    "total_samples": 13,
+    "class_distribution": {
+      "LOLOS": 10,
+      "TIDAK LOLOS": 3
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.014582,
+        "split_info": 0.995727,
+        "gain_ratio": 0.014645,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.014582,
+        "split_info": 0.995727,
+        "gain_ratio": 0.014645,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 0.014645
+  },
+  {
+    "node": "mtk_lanjut = Baik",
+    "level": 9,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "biologi",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "mtk_lanjut = Kurang",
+    "level": 9,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "biologi",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "pil2_keketatan = Sedang",
+    "level": 2,
+    "total_entropy": 0.907166,
+    "total_samples": 62,
+    "class_distribution": {
+      "LOLOS": 20,
+      "TIDAK LOLOS": 42
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.399409,
+        "split_info": 1.580146,
+        "gain_ratio": 0.252767,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          },
+          {
+            "value": "Sedang",
+            "count": 23,
+            "lolos": 5,
+            "tidak_lolos": 18,
+            "entropy": 0.755375
+          },
+          {
+            "value": "Tinggi",
+            "count": 20,
+            "lolos": 0,
+            "tidak_lolos": 20,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.136186,
+        "split_info": 1.047096,
+        "gain_ratio": 0.13006,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 49,
+            "lolos": 20,
+            "tidak_lolos": 29,
+            "entropy": 0.975526
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.057875,
+        "split_info": 0.458686,
+        "gain_ratio": 0.126176,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 56,
+            "lolos": 20,
+            "tidak_lolos": 36,
+            "entropy": 0.940286
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.068274,
+        "split_info": 0.60606,
+        "gain_ratio": 0.112651,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 55,
+            "lolos": 20,
+            "tidak_lolos": 35,
+            "entropy": 0.94566
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.093838,
+        "split_info": 1.300469,
+        "gain_ratio": 0.072157,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 42,
+            "lolos": 15,
+            "tidak_lolos": 27,
+            "entropy": 0.940286
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 8,
+            "lolos": 0,
+            "tidak_lolos": 8,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.062877,
+        "split_info": 1.258594,
+        "gain_ratio": 0.049958,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 17,
+            "lolos": 5,
+            "tidak_lolos": 12,
+            "entropy": 0.873981
+          },
+          {
+            "value": "Kurang",
+            "count": 39,
+            "lolos": 15,
+            "tidak_lolos": 24,
+            "entropy": 0.961237
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.024152,
+        "split_info": 0.951412,
+        "gain_ratio": 0.025385,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 23,
+            "lolos": 10,
+            "tidak_lolos": 13,
+            "entropy": 0.987693
+          },
+          {
+            "value": "Kurang",
+            "count": 39,
+            "lolos": 10,
+            "tidak_lolos": 29,
+            "entropy": 0.821281
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.021732,
+        "split_info": 1.485766,
+        "gain_ratio": 0.014627,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 22,
+            "lolos": 5,
+            "tidak_lolos": 17,
+            "entropy": 0.773227
+          },
+          {
+            "value": "Kurang",
+            "count": 29,
+            "lolos": 10,
+            "tidak_lolos": 19,
+            "entropy": 0.929364
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.252767
+  },
+  {
+    "node": "pil1_keketatan = Rendah",
+    "level": 3,
+    "total_entropy": 0.742488,
+    "total_samples": 19,
+    "class_distribution": {
+      "LOLOS": 15,
+      "TIDAK LOLOS": 4
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.458454,
+        "split_info": 0.774243,
+        "gain_ratio": 0.592131,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.126677,
+        "split_info": 1.167437,
+        "gain_ratio": 0.108509,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.126677,
+        "split_info": 1.167437,
+        "gain_ratio": 0.108509,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.086175,
+        "split_info": 0.981941,
+        "gain_ratio": 0.08776,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.013955,
+        "split_info": 0.949452,
+        "gain_ratio": 0.014698,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Kurang",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.592131
+  },
+  {
+    "node": "prestasi_tertinggi = Tidak Ada",
+    "level": 4,
+    "total_entropy": 0.33729,
+    "total_samples": 16,
+    "class_distribution": {
+      "LOLOS": 15,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.093532,
+        "split_info": 0.954434,
+        "gain_ratio": 0.097997,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 10,
+            "lolos": 10,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.035136,
+        "split_info": 0.896038,
+        "gain_ratio": 0.039212,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.035136,
+        "split_info": 0.896038,
+        "gain_ratio": 0.039212,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.035136,
+        "split_info": 0.896038,
+        "gain_ratio": 0.039212,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.097997
+  },
+  {
+    "node": "fisika = Baik",
+    "level": 5,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "pil1_keketatan = Sedang",
+    "level": 3,
+    "total_entropy": 0.755375,
+    "total_samples": 23,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 18
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.367563,
+        "split_info": 0.965636,
+        "gain_ratio": 0.380643,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Kurang",
+            "count": 14,
+            "lolos": 0,
+            "tidak_lolos": 14,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.367563,
+        "split_info": 1.56534,
+        "gain_ratio": 0.234814,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 0,
+            "tidak_lolos": 8,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.183027,
+        "split_info": 1.353449,
+        "gain_ratio": 0.13523,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 14,
+            "lolos": 5,
+            "tidak_lolos": 9,
+            "entropy": 0.940286
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 4,
+            "lolos": 0,
+            "tidak_lolos": 4,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.156487,
+        "split_info": 1.214295,
+        "gain_ratio": 0.12887,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 15,
+            "lolos": 5,
+            "tidak_lolos": 10,
+            "entropy": 0.918296
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.068505,
+        "split_info": 0.666578,
+        "gain_ratio": 0.102772,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 19,
+            "lolos": 5,
+            "tidak_lolos": 14,
+            "entropy": 0.831474
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 4,
+            "lolos": 0,
+            "tidak_lolos": 4,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.049916,
+        "split_info": 0.558629,
+        "gain_ratio": 0.089355,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 20,
+            "lolos": 5,
+            "tidak_lolos": 15,
+            "entropy": 0.811278
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.049916,
+        "split_info": 0.765364,
+        "gain_ratio": 0.065219,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 20,
+            "lolos": 5,
+            "tidak_lolos": 15,
+            "entropy": 0.811278
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 0.380643
+  },
+  {
+    "node": "mtk_lanjut = Baik",
+    "level": 4,
+    "total_entropy": 0.991076,
+    "total_samples": 9,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 4
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.557728,
+        "split_info": 0.918296,
+        "gain_ratio": 0.607351,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.557728,
+        "split_info": 0.918296,
+        "gain_ratio": 0.607351,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.557728,
+        "split_info": 1.224394,
+        "gain_ratio": 0.455513,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.31976,
+        "split_info": 0.764205,
+        "gain_ratio": 0.418422,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.31976,
+        "split_info": 0.986427,
+        "gain_ratio": 0.32416,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.14269,
+        "split_info": 0.503258,
+        "gain_ratio": 0.283533,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0.607351
+  },
+  {
+    "node": "bind = Baik",
+    "level": 5,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tidak Ada",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "pil2_keketatan = Tidak Memilih",
+    "level": 2,
+    "total_entropy": 0.965202,
+    "total_samples": 64,
+    "class_distribution": {
+      "LOLOS": 25,
+      "TIDAK LOLOS": 39
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.260872,
+        "split_info": 1.524639,
+        "gain_ratio": 0.171104,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 21,
+            "lolos": 15,
+            "tidak_lolos": 6,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sedang",
+            "count": 29,
+            "lolos": 10,
+            "tidak_lolos": 19,
+            "entropy": 0.929364
+          },
+          {
+            "value": "Tinggi",
+            "count": 14,
+            "lolos": 0,
+            "tidak_lolos": 14,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.180995,
+        "split_info": 1.743914,
+        "gain_ratio": 0.103787,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Nasional",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 24,
+            "lolos": 15,
+            "tidak_lolos": 9,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 26,
+            "lolos": 5,
+            "tidak_lolos": 21,
+            "entropy": 0.706274
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.108838,
+        "split_info": 1.629724,
+        "gain_ratio": 0.066783,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 27,
+            "lolos": 15,
+            "tidak_lolos": 12,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 25,
+            "lolos": 5,
+            "tidak_lolos": 20,
+            "entropy": 0.721928
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.050052,
+        "split_info": 1.042599,
+        "gain_ratio": 0.048007,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 44,
+            "lolos": 15,
+            "tidak_lolos": 29,
+            "entropy": 0.925686
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 18,
+            "lolos": 10,
+            "tidak_lolos": 8,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.015817,
+        "split_info": 1.427542,
+        "gain_ratio": 0.01108,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 18,
+            "lolos": 5,
+            "tidak_lolos": 13,
+            "entropy": 0.852405
+          },
+          {
+            "value": "Kurang",
+            "count": 35,
+            "lolos": 15,
+            "tidak_lolos": 20,
+            "entropy": 0.985228
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.013518,
+        "split_info": 1.263869,
+        "gain_ratio": 0.010696,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Kurang",
+            "count": 42,
+            "lolos": 15,
+            "tidak_lolos": 27,
+            "entropy": 0.940286
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 13,
+            "lolos": 5,
+            "tidak_lolos": 8,
+            "entropy": 0.961237
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.011911,
+        "split_info": 1.507014,
+        "gain_ratio": 0.007904,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 13,
+            "lolos": 5,
+            "tidak_lolos": 8,
+            "entropy": 0.961237
+          },
+          {
+            "value": "Kurang",
+            "count": 30,
+            "lolos": 10,
+            "tidak_lolos": 20,
+            "entropy": 0.918296
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 21,
+            "lolos": 10,
+            "tidak_lolos": 11,
+            "entropy": 0.998364
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.002537,
+        "split_info": 0.661976,
+        "gain_ratio": 0.003832,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 53,
+            "lolos": 20,
+            "tidak_lolos": 33,
+            "entropy": 0.956155
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.171104
+  },
+  {
+    "node": "pil1_keketatan = Rendah",
+    "level": 3,
+    "total_entropy": 0.863121,
+    "total_samples": 21,
+    "class_distribution": {
+      "LOLOS": 15,
+      "TIDAK LOLOS": 6
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.313806,
+        "split_info": 1.862821,
+        "gain_ratio": 0.168457,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Nasional",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.194945,
+        "split_info": 1.26777,
+        "gain_ratio": 0.15377,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.128085,
+        "split_info": 1.20091,
+        "gain_ratio": 0.106657,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.128085,
+        "split_info": 1.20091,
+        "gain_ratio": 0.106657,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Kurang",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.026099,
+        "split_info": 1.575115,
+        "gain_ratio": 0.01657,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 15,
+            "tidak_lolos": 6,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.918296,
+        "gain_ratio": 0.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 14,
+            "lolos": 10,
+            "tidak_lolos": 4,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.168457
+  },
+  {
+    "node": "prestasi_tertinggi = Internasional",
+    "level": 4,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "prestasi_tertinggi = Tidak Ada",
+    "level": 4,
+    "total_entropy": 0.954434,
+    "total_samples": 8,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 3
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.954434,
+        "split_info": 1.298795,
+        "gain_ratio": 0.734861,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.466917,
+        "split_info": 0.811278,
+        "gain_ratio": 0.575533,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.199204,
+        "split_info": 0.543564,
+        "gain_ratio": 0.366476,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.734861
+  },
+  {
+    "node": "pil1_keketatan = Sedang",
+    "level": 3,
+    "total_entropy": 0.929364,
+    "total_samples": 29,
+    "class_distribution": {
+      "LOLOS": 10,
+      "TIDAK LOLOS": 19
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.454383,
+        "split_info": 1.456012,
+        "gain_ratio": 0.312074,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 15,
+            "lolos": 10,
+            "tidak_lolos": 5,
+            "entropy": 0.918296
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 11,
+            "lolos": 0,
+            "tidak_lolos": 11,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.363977,
+        "split_info": 1.518851,
+        "gain_ratio": 0.23964,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 13,
+            "lolos": 5,
+            "tidak_lolos": 8,
+            "entropy": 0.961237
+          },
+          {
+            "value": "Kurang",
+            "count": 10,
+            "lolos": 0,
+            "tidak_lolos": 10,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.191091,
+        "split_info": 1.474769,
+        "gain_ratio": 0.129573,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 15,
+            "lolos": 5,
+            "tidak_lolos": 10,
+            "entropy": 0.918296
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.092657,
+        "split_info": 0.849751,
+        "gain_ratio": 0.10904,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 5,
+            "tidak_lolos": 16,
+            "entropy": 0.791858
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.092709,
+        "split_info": 1.217016,
+        "gain_ratio": 0.076177,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 18,
+            "lolos": 5,
+            "tidak_lolos": 13,
+            "entropy": 0.852405
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.077029,
+        "split_info": 1.091086,
+        "gain_ratio": 0.070599,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 19,
+            "lolos": 5,
+            "tidak_lolos": 14,
+            "entropy": 0.831474
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.093002,
+        "split_info": 1.439868,
+        "gain_ratio": 0.06459,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 4,
+            "lolos": 0,
+            "tidak_lolos": 4,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 5,
+            "tidak_lolos": 8,
+            "entropy": 0.961237
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 12,
+            "lolos": 5,
+            "tidak_lolos": 7,
+            "entropy": 0.979869
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.312074
+  },
+  {
+    "node": "prestasi_tertinggi = Provinsi",
+    "level": 4,
+    "total_entropy": 0.918296,
+    "total_samples": 15,
+    "class_distribution": {
+      "LOLOS": 10,
+      "TIDAK LOLOS": 5
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.515506,
+        "split_info": 1.505823,
+        "gain_ratio": 0.342342,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Kurang",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.251629,
+        "split_info": 0.918296,
+        "gain_ratio": 0.274018,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.251629,
+        "split_info": 0.918296,
+        "gain_ratio": 0.274018,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.32365,
+        "split_info": 1.23096,
+        "gain_ratio": 0.262925,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.32365,
+        "split_info": 1.23096,
+        "gain_ratio": 0.262925,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.063641,
+        "split_info": 0.970951,
+        "gain_ratio": 0.065545,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 0.342342
+  },
+  {
+    "node": "mtk_lanjut = Baik",
+    "level": 5,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "bind = Baik",
+    "level": 6,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "bing",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bing",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "bing = Baik",
+    "level": 7,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "fisika = Kurang",
+    "level": 8,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "kimia",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "kimia = Kurang",
+    "level": 9,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "biologi",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "pil2_keketatan = Tinggi",
+    "level": 2,
+    "total_entropy": 0.503258,
+    "total_samples": 45,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 40
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.368995,
+        "split_info": 0.62357,
+        "gain_ratio": 0.591746,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 38,
+            "lolos": 0,
+            "tidak_lolos": 38,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.281036,
+        "split_info": 1.325704,
+        "gain_ratio": 0.21199,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 0,
+            "tidak_lolos": 7,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 28,
+            "lolos": 0,
+            "tidak_lolos": 28,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.184667,
+        "split_info": 1.44654,
+        "gain_ratio": 0.127661,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 16,
+            "lolos": 5,
+            "tidak_lolos": 11,
+            "entropy": 0.896038
+          },
+          {
+            "value": "Cukup",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 24,
+            "lolos": 0,
+            "tidak_lolos": 24,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 4,
+            "lolos": 0,
+            "tidak_lolos": 4,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.173088,
+        "split_info": 1.422872,
+        "gain_ratio": 0.121647,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 17,
+            "lolos": 5,
+            "tidak_lolos": 12,
+            "entropy": 0.873981
+          },
+          {
+            "value": "Kurang",
+            "count": 22,
+            "lolos": 0,
+            "tidak_lolos": 22,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.102187,
+        "split_info": 1.382761,
+        "gain_ratio": 0.073901,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 25,
+            "lolos": 5,
+            "tidak_lolos": 20,
+            "entropy": 0.721928
+          },
+          {
+            "value": "Tinggi",
+            "count": 14,
+            "lolos": 0,
+            "tidak_lolos": 14,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.06991,
+        "split_info": 1.220158,
+        "gain_ratio": 0.057296,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 12,
+            "lolos": 0,
+            "tidak_lolos": 12,
+            "entropy": 0.0
+          },
+          {
+            "value": "Cukup",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 30,
+            "lolos": 5,
+            "tidak_lolos": 25,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.075865,
+        "split_info": 1.382508,
+        "gain_ratio": 0.054875,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 9,
+            "lolos": 0,
+            "tidak_lolos": 9,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 29,
+            "lolos": 5,
+            "tidak_lolos": 24,
+            "entropy": 0.663197
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.007736,
+        "split_info": 0.262311,
+        "gain_ratio": 0.029492,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 43,
+            "lolos": 5,
+            "tidak_lolos": 38,
+            "entropy": 0.51857
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0.591746
+  },
+  {
+    "node": "bind = Sangat Baik",
+    "level": 3,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.863121,
+        "split_info": 1.148835,
+        "gain_ratio": 0.751301,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.863121,
+        "split_info": 1.148835,
+        "gain_ratio": 0.751301,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.863121,
+        "split_info": 1.148835,
+        "gain_ratio": 0.751301,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.305958,
+        "split_info": 0.591673,
+        "gain_ratio": 0.517108,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.305958,
+        "split_info": 0.591673,
+        "gain_ratio": 0.517108,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.305958,
+        "split_info": 0.591673,
+        "gain_ratio": 0.517108,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.305958,
+        "split_info": 0.591673,
+        "gain_ratio": 0.517108,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tinggi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.751301
+  },
+  {
+    "node": "mtk_wajib = Cukup",
+    "level": 1,
+    "total_entropy": 0.986545,
+    "total_samples": 44,
+    "class_distribution": {
+      "LOLOS": 25,
+      "TIDAK LOLOS": 19
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.299971,
+        "split_info": 0.91876,
+        "gain_ratio": 0.326496,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 6,
+            "lolos": 0,
+            "tidak_lolos": 6,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 35,
+            "lolos": 25,
+            "tidak_lolos": 10,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Tinggi",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.057134,
+        "split_info": 0.266765,
+        "gain_ratio": 0.214174,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 42,
+            "lolos": 25,
+            "tidak_lolos": 17,
+            "entropy": 0.973668
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.028037,
+        "split_info": 0.156491,
+        "gain_ratio": 0.179161,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 43,
+            "lolos": 25,
+            "tidak_lolos": 18,
+            "entropy": 0.980798
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.195908,
+        "split_info": 1.26653,
+        "gain_ratio": 0.154681,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 27,
+            "lolos": 20,
+            "tidak_lolos": 7,
+            "entropy": 0.825627
+          },
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 5,
+            "tidak_lolos": 8,
+            "entropy": 0.961237
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 4,
+            "lolos": 0,
+            "tidak_lolos": 4,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.139015,
+        "split_info": 1.362793,
+        "gain_ratio": 0.102008,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 24,
+            "lolos": 10,
+            "tidak_lolos": 14,
+            "entropy": 0.979869
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 15,
+            "lolos": 10,
+            "tidak_lolos": 5,
+            "entropy": 0.918296
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.169161,
+        "split_info": 1.802455,
+        "gain_ratio": 0.09385,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 5,
+            "lolos": 0,
+            "tidak_lolos": 5,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Tinggi",
+            "count": 21,
+            "lolos": 15,
+            "tidak_lolos": 6,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.089691,
+        "split_info": 1.066609,
+        "gain_ratio": 0.08409,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 32,
+            "lolos": 20,
+            "tidak_lolos": 12,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Kurang",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.029511,
+        "split_info": 1.488051,
+        "gain_ratio": 0.019832,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Provinsi",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 26,
+            "lolos": 15,
+            "tidak_lolos": 11,
+            "entropy": 0.982859
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.003994,
+        "split_info": 0.773227,
+        "gain_ratio": 0.005166,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 5,
+            "tidak_lolos": 5,
+            "entropy": 1.0
+          },
+          {
+            "value": "Kurang",
+            "count": 34,
+            "lolos": 20,
+            "tidak_lolos": 14,
+            "entropy": 0.977418
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.326496
+  },
+  {
+    "node": "pil1_keketatan = Sedang",
+    "level": 2,
+    "total_entropy": 0.863121,
+    "total_samples": 35,
+    "class_distribution": {
+      "LOLOS": 25,
+      "TIDAK LOLOS": 10
+    },
+    "attributes": [
+      {
+        "name": "bing",
+        "gain": 0.109732,
+        "split_info": 0.315997,
+        "gain_ratio": 0.347256,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 33,
+            "lolos": 25,
+            "tidak_lolos": 8,
+            "entropy": 0.799049
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.053178,
+        "split_info": 0.187176,
+        "gain_ratio": 0.284104,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 34,
+            "lolos": 25,
+            "tidak_lolos": 9,
+            "entropy": 0.833765
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.199235,
+        "split_info": 1.163741,
+        "gain_ratio": 0.171202,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 24,
+            "lolos": 20,
+            "tidak_lolos": 4,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.199235,
+        "split_info": 1.163741,
+        "gain_ratio": 0.171202,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 24,
+            "lolos": 20,
+            "tidak_lolos": 4,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.130467,
+        "split_info": 1.637272,
+        "gain_ratio": 0.079686,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Tinggi",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.098902,
+        "split_info": 1.437791,
+        "gain_ratio": 0.068787,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 17,
+            "lolos": 10,
+            "tidak_lolos": 7,
+            "entropy": 0.977418
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.073037,
+        "split_info": 1.439939,
+        "gain_ratio": 0.050722,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Provinsi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 22,
+            "lolos": 15,
+            "tidak_lolos": 7,
+            "entropy": 0.902393
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.011301,
+        "split_info": 0.660962,
+        "gain_ratio": 0.017097,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Kurang",
+            "count": 29,
+            "lolos": 20,
+            "tidak_lolos": 9,
+            "entropy": 0.893571
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bing",
+    "best_gain_ratio": 0.347256
+  },
+  {
+    "node": "bing = Baik",
+    "level": 3,
+    "total_entropy": 0.799049,
+    "total_samples": 33,
+    "class_distribution": {
+      "LOLOS": 25,
+      "TIDAK LOLOS": 8
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.226615,
+        "split_info": 1.152021,
+        "gain_ratio": 0.19671,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 23,
+            "lolos": 20,
+            "tidak_lolos": 3,
+            "entropy": 0.558629
+          },
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.226615,
+        "split_info": 1.152021,
+        "gain_ratio": 0.19671,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 23,
+            "lolos": 20,
+            "tidak_lolos": 3,
+            "entropy": 0.558629
+          },
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.066704,
+        "split_info": 0.613619,
+        "gain_ratio": 0.108706,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 28,
+            "lolos": 20,
+            "tidak_lolos": 8,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.099921,
+        "split_info": 1.44957,
+        "gain_ratio": 0.068931,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 16,
+            "lolos": 10,
+            "tidak_lolos": 6,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.070993,
+        "split_info": 1.485057,
+        "gain_ratio": 0.047805,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Provinsi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 20,
+            "lolos": 15,
+            "tidak_lolos": 5,
+            "entropy": 0.811278
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.070284,
+        "split_info": 1.533125,
+        "gain_ratio": 0.045843,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Tinggi",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 33,
+            "lolos": 25,
+            "tidak_lolos": 8,
+            "entropy": 0.799049
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.19671
+  },
+  {
+    "node": "fisika = Baik",
+    "level": 4,
+    "total_entropy": 0.558629,
+    "total_samples": 23,
+    "class_distribution": {
+      "LOLOS": 20,
+      "TIDAK LOLOS": 3
+    },
+    "attributes": [
+      {
+        "name": "kimia",
+        "gain": 0.306451,
+        "split_info": 0.426229,
+        "gain_ratio": 0.718982,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 20,
+            "tidak_lolos": 1,
+            "entropy": 0.276195
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.118127,
+        "split_info": 1.422475,
+        "gain_ratio": 0.083043,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.049916,
+        "split_info": 0.755375,
+        "gain_ratio": 0.066081,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.049916,
+        "split_info": 1.474042,
+        "gain_ratio": 0.033863,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.049916,
+        "split_info": 1.474042,
+        "gain_ratio": 0.033863,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tinggi",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 23,
+            "lolos": 20,
+            "tidak_lolos": 3,
+            "entropy": 0.558629
+          }
+        ]
+      }
+    ],
+    "best_attribute": "kimia",
+    "best_gain_ratio": 0.718982
+  },
+  {
+    "node": "kimia = Baik",
+    "level": 5,
+    "total_entropy": 0.276195,
+    "total_samples": 21,
+    "class_distribution": {
+      "LOLOS": 20,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "biologi",
+        "gain": 0.090475,
+        "split_info": 1.519046,
+        "gain_ratio": 0.05956,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 10,
+            "lolos": 10,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.045983,
+        "split_info": 1.474554,
+        "gain_ratio": 0.031184,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.045983,
+        "split_info": 1.474554,
+        "gain_ratio": 0.031184,
+        "values": [
+          {
+            "value": "Nasional",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.019213,
+        "split_info": 0.791858,
+        "gain_ratio": 0.024263,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 21,
+            "lolos": 20,
+            "tidak_lolos": 1,
+            "entropy": 0.276195
+          }
+        ]
+      }
+    ],
+    "best_attribute": "biologi",
+    "best_gain_ratio": 0.05956
+  },
+  {
+    "node": "biologi = Kurang",
+    "level": 6,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Provinsi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "fisika = Kurang",
+    "level": 4,
+    "total_entropy": 0.863121,
+    "total_samples": 7,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.305958,
+        "split_info": 0.591673,
+        "gain_ratio": 0.517108,
+        "values": [
+          {
+            "value": "Provinsi",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.517108
+  },
+  {
+    "node": "prestasi_tertinggi = Tidak Ada",
+    "level": 5,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "bind = Baik",
+    "level": 6,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "mtk_lanjut = Kurang",
+    "level": 7,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "kimia",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "kimia",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "kimia = Kurang",
+    "level": 8,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "biologi",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "biologi = Kurang",
+    "level": 9,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil2_keketatan",
+    "best_gain_ratio": 0
+  },
+  {
+    "node": "mtk_wajib = Sangat Baik",
+    "level": 1,
+    "total_entropy": 0.760786,
+    "total_samples": 59,
+    "class_distribution": {
+      "LOLOS": 46,
+      "TIDAK LOLOS": 13
+    },
+    "attributes": [
+      {
+        "name": "kimia",
+        "gain": 0.086106,
+        "split_info": 1.085815,
+        "gain_ratio": 0.079301,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 34,
+            "lolos": 30,
+            "tidak_lolos": 4,
+            "entropy": 0.522559
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 24,
+            "lolos": 16,
+            "tidak_lolos": 8,
+            "entropy": 0.918296
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.079542,
+        "split_info": 1.106157,
+        "gain_ratio": 0.071909,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 28,
+            "lolos": 25,
+            "tidak_lolos": 3,
+            "entropy": 0.491237
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 30,
+            "lolos": 21,
+            "tidak_lolos": 9,
+            "entropy": 0.881291
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.114369,
+        "split_info": 1.992831,
+        "gain_ratio": 0.05739,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 14,
+            "lolos": 10,
+            "tidak_lolos": 4,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 17,
+            "lolos": 11,
+            "tidak_lolos": 6,
+            "entropy": 0.936667
+          },
+          {
+            "value": "Tinggi",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.058064,
+        "split_info": 1.221103,
+        "gain_ratio": 0.04755,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 38,
+            "lolos": 31,
+            "tidak_lolos": 7,
+            "entropy": 0.689202
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 16,
+            "lolos": 10,
+            "tidak_lolos": 6,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.042716,
+        "split_info": 0.96469,
+        "gain_ratio": 0.044279,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 36,
+            "lolos": 31,
+            "tidak_lolos": 5,
+            "entropy": 0.581321
+          },
+          {
+            "value": "Tinggi",
+            "count": 23,
+            "lolos": 15,
+            "tidak_lolos": 8,
+            "entropy": 0.932112
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.038442,
+        "split_info": 0.87859,
+        "gain_ratio": 0.043754,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 45,
+            "lolos": 36,
+            "tidak_lolos": 9,
+            "entropy": 0.721928
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.063351,
+        "split_info": 1.744284,
+        "gain_ratio": 0.036319,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 31,
+            "lolos": 26,
+            "tidak_lolos": 5,
+            "entropy": 0.637387
+          },
+          {
+            "value": "Nasional",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Provinsi",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 9,
+            "lolos": 5,
+            "tidak_lolos": 4,
+            "entropy": 0.991076
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.000901,
+        "split_info": 0.923842,
+        "gain_ratio": 0.000975,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 20,
+            "lolos": 16,
+            "tidak_lolos": 4,
+            "entropy": 0.721928
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 39,
+            "lolos": 30,
+            "tidak_lolos": 9,
+            "entropy": 0.77935
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.000193,
+        "split_info": 0.90658,
+        "gain_ratio": 0.000213,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 19,
+            "lolos": 15,
+            "tidak_lolos": 4,
+            "entropy": 0.742488
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 40,
+            "lolos": 31,
+            "tidak_lolos": 9,
+            "entropy": 0.769193
+          }
+        ]
+      }
+    ],
+    "best_attribute": "kimia",
+    "best_gain_ratio": 0.079301
+  },
+  {
+    "node": "kimia = Kurang",
+    "level": 2,
+    "total_entropy": 0.522559,
+    "total_samples": 34,
+    "class_distribution": {
+      "LOLOS": 30,
+      "TIDAK LOLOS": 4
+    },
+    "attributes": [
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.118133,
+        "split_info": 0.787127,
+        "gain_ratio": 0.150081,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 26,
+            "lolos": 25,
+            "tidak_lolos": 1,
+            "entropy": 0.235193
+          },
+          {
+            "value": "Tinggi",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.202668,
+        "split_info": 1.666622,
+        "gain_ratio": 0.121604,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.109863,
+        "split_info": 1.897921,
+        "gain_ratio": 0.057886,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Nasional",
+            "count": 10,
+            "lolos": 10,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.053981,
+        "split_info": 0.959687,
+        "gain_ratio": 0.056249,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 10,
+            "tidak_lolos": 3,
+            "entropy": 0.77935
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 21,
+            "lolos": 20,
+            "tidak_lolos": 1,
+            "entropy": 0.276195
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.06372,
+        "split_info": 1.168099,
+        "gain_ratio": 0.05455,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 24,
+            "lolos": 20,
+            "tidak_lolos": 4,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.019705,
+        "split_info": 0.997503,
+        "gain_ratio": 0.019754,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 18,
+            "lolos": 15,
+            "tidak_lolos": 3,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.003301,
+        "split_info": 0.672295,
+        "gain_ratio": 0.00491,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 28,
+            "lolos": 25,
+            "tidak_lolos": 3,
+            "entropy": 0.491237
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.002473,
+        "split_info": 0.908178,
+        "gain_ratio": 0.002723,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 23,
+            "lolos": 20,
+            "tidak_lolos": 3,
+            "entropy": 0.558629
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil1_keketatan",
+    "best_gain_ratio": 0.150081
+  },
+  {
+    "node": "pil1_keketatan = Sedang",
+    "level": 3,
+    "total_entropy": 0.235193,
+    "total_samples": 26,
+    "class_distribution": {
+      "LOLOS": 25,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.235193,
+        "split_info": 1.553415,
+        "gain_ratio": 0.151404,
+        "values": [
+          {
+            "value": "Rendah",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.049252,
+        "split_info": 0.982859,
+        "gain_ratio": 0.050111,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.049252,
+        "split_info": 0.982859,
+        "gain_ratio": 0.050111,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 15,
+            "lolos": 15,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.085188,
+        "split_info": 1.933196,
+        "gain_ratio": 0.044066,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Nasional",
+            "count": 10,
+            "lolos": 10,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.02763,
+        "split_info": 0.961237,
+        "gain_ratio": 0.028744,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 10,
+            "lolos": 10,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.02763,
+        "split_info": 1.345852,
+        "gain_ratio": 0.02053,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Kurang",
+            "count": 16,
+            "lolos": 15,
+            "tidak_lolos": 1,
+            "entropy": 0.33729
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.012112,
+        "split_info": 0.706274,
+        "gain_ratio": 0.01715,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 21,
+            "lolos": 20,
+            "tidak_lolos": 1,
+            "entropy": 0.276195
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      }
+    ],
+    "best_attribute": "pil2_keketatan",
+    "best_gain_ratio": 0.151404
+  },
+  {
+    "node": "pil1_keketatan = Tinggi",
+    "level": 3,
+    "total_entropy": 0.954434,
+    "total_samples": 8,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 3
+    },
+    "attributes": [
+      {
+        "name": "fisika",
+        "gain": 0.466917,
+        "split_info": 0.811278,
+        "gain_ratio": 0.575533,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.466917,
+        "split_info": 0.811278,
+        "gain_ratio": 0.575533,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.199204,
+        "split_info": 0.543564,
+        "gain_ratio": 0.366476,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.199204,
+        "split_info": 0.543564,
+        "gain_ratio": 0.366476,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.199204,
+        "split_info": 0.543564,
+        "gain_ratio": 0.366476,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 8,
+            "lolos": 5,
+            "tidak_lolos": 3,
+            "entropy": 0.954434
+          }
+        ]
+      }
+    ],
+    "best_attribute": "fisika",
+    "best_gain_ratio": 0.575533
+  },
+  {
+    "node": "fisika = Sangat Baik",
+    "level": 4,
+    "total_entropy": 0.650022,
+    "total_samples": 6,
+    "class_distribution": {
+      "LOLOS": 5,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.650022,
+        "split_info": 0.650022,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 1.0
+  },
+  {
+    "node": "kimia = Sangat Baik",
+    "level": 2,
+    "total_entropy": 0.918296,
+    "total_samples": 24,
+    "class_distribution": {
+      "LOLOS": 16,
+      "TIDAK LOLOS": 8
+    },
+    "attributes": [
+      {
+        "name": "prestasi_tertinggi",
+        "gain": 0.540852,
+        "split_info": 1.176065,
+        "gain_ratio": 0.459883,
+        "values": [
+          {
+            "value": "Internasional",
+            "count": 18,
+            "lolos": 16,
+            "tidak_lolos": 2,
+            "entropy": 0.503258
+          },
+          {
+            "value": "Nasional",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Provinsi",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Ada",
+            "count": 3,
+            "lolos": 0,
+            "tidak_lolos": 3,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bind",
+        "gain": 0.143391,
+        "split_info": 0.413817,
+        "gain_ratio": 0.346508,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 22,
+            "lolos": 16,
+            "tidak_lolos": 6,
+            "entropy": 0.845351
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.068694,
+        "split_info": 0.249882,
+        "gain_ratio": 0.274906,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 23,
+            "lolos": 16,
+            "tidak_lolos": 7,
+            "entropy": 0.886541
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.1272,
+        "split_info": 0.994985,
+        "gain_ratio": 0.127841,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 13,
+            "lolos": 11,
+            "tidak_lolos": 2,
+            "entropy": 0.619382
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 5,
+            "tidak_lolos": 6,
+            "entropy": 0.99403
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.143652,
+        "split_info": 1.241011,
+        "gain_ratio": 0.115754,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 15,
+            "lolos": 11,
+            "tidak_lolos": 4,
+            "entropy": 0.836641
+          },
+          {
+            "value": "Tinggi",
+            "count": 2,
+            "lolos": 0,
+            "tidak_lolos": 2,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.01158,
+        "split_info": 0.918296,
+        "gain_ratio": 0.012611,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 8,
+            "lolos": 6,
+            "tidak_lolos": 2,
+            "entropy": 0.811278
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 16,
+            "lolos": 10,
+            "tidak_lolos": 6,
+            "entropy": 0.954434
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.010246,
+        "split_info": 0.979869,
+        "gain_ratio": 0.010457,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 10,
+            "lolos": 6,
+            "tidak_lolos": 4,
+            "entropy": 0.970951
+          },
+          {
+            "value": "Tinggi",
+            "count": 14,
+            "lolos": 10,
+            "tidak_lolos": 4,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Sangat Baik",
+            "count": 24,
+            "lolos": 16,
+            "tidak_lolos": 8,
+            "entropy": 0.918296
+          }
+        ]
+      }
+    ],
+    "best_attribute": "prestasi_tertinggi",
+    "best_gain_ratio": 0.459883
+  },
+  {
+    "node": "prestasi_tertinggi = Internasional",
+    "level": 3,
+    "total_entropy": 0.503258,
+    "total_samples": 18,
+    "class_distribution": {
+      "LOLOS": 16,
+      "TIDAK LOLOS": 2
+    },
+    "attributes": [
+      {
+        "name": "bind",
+        "gain": 0.198432,
+        "split_info": 0.309543,
+        "gain_ratio": 0.641048,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 17,
+            "lolos": 16,
+            "tidak_lolos": 1,
+            "entropy": 0.322757
+          }
+        ]
+      },
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.198432,
+        "split_info": 0.309543,
+        "gain_ratio": 0.641048,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 17,
+            "lolos": 16,
+            "tidak_lolos": 1,
+            "entropy": 0.322757
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.1676,
+        "split_info": 0.964079,
+        "gain_ratio": 0.173845,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 11,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 7,
+            "lolos": 5,
+            "tidak_lolos": 2,
+            "entropy": 0.863121
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.06991,
+        "split_info": 0.918296,
+        "gain_ratio": 0.07613,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 6,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 12,
+            "lolos": 10,
+            "tidak_lolos": 2,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.055927,
+        "split_info": 0.852405,
+        "gain_ratio": 0.065611,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 13,
+            "lolos": 11,
+            "tidak_lolos": 2,
+            "entropy": 0.619382
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.004582,
+        "split_info": 0.964079,
+        "gain_ratio": 0.004753,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 7,
+            "lolos": 6,
+            "tidak_lolos": 1,
+            "entropy": 0.591673
+          },
+          {
+            "value": "Tinggi",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Sangat Baik",
+            "count": 18,
+            "lolos": 16,
+            "tidak_lolos": 2,
+            "entropy": 0.503258
+          }
+        ]
+      }
+    ],
+    "best_attribute": "bind",
+    "best_gain_ratio": 0.641048
+  },
+  {
+    "node": "bind = Sangat Baik",
+    "level": 4,
+    "total_entropy": 0.322757,
+    "total_samples": 17,
+    "class_distribution": {
+      "LOLOS": 16,
+      "TIDAK LOLOS": 1
+    },
+    "attributes": [
+      {
+        "name": "mtk_lanjut",
+        "gain": 0.322757,
+        "split_info": 0.322757,
+        "gain_ratio": 1.0,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 1,
+            "lolos": 0,
+            "tidak_lolos": 1,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 16,
+            "lolos": 16,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          }
+        ]
+      },
+      {
+        "name": "biologi",
+        "gain": 0.093337,
+        "split_info": 0.936667,
+        "gain_ratio": 0.099648,
+        "values": [
+          {
+            "value": "Kurang",
+            "count": 11,
+            "lolos": 11,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 6,
+            "lolos": 5,
+            "tidak_lolos": 1,
+            "entropy": 0.650022
+          }
+        ]
+      },
+      {
+        "name": "bing",
+        "gain": 0.038377,
+        "split_info": 0.936667,
+        "gain_ratio": 0.040971,
+        "values": [
+          {
+            "value": "Baik",
+            "count": 6,
+            "lolos": 6,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Sangat Baik",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "pil1_keketatan",
+        "gain": 0.038377,
+        "split_info": 0.936667,
+        "gain_ratio": 0.040971,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 6,
+            "lolos": 6,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tinggi",
+            "count": 11,
+            "lolos": 10,
+            "tidak_lolos": 1,
+            "entropy": 0.439497
+          }
+        ]
+      },
+      {
+        "name": "pil2_keketatan",
+        "gain": 0.030651,
+        "split_info": 0.873981,
+        "gain_ratio": 0.03507,
+        "values": [
+          {
+            "value": "Sedang",
+            "count": 5,
+            "lolos": 5,
+            "tidak_lolos": 0,
+            "entropy": 0.0
+          },
+          {
+            "value": "Tidak Memilih",
+            "count": 12,
+            "lolos": 11,
+            "tidak_lolos": 1,
+            "entropy": 0.413817
+          }
+        ]
+      },
+      {
+        "name": "fisika",
+        "gain": 0.0,
+        "split_info": 0.0,
+        "gain_ratio": 0,
+        "values": [
+          {
+            "value": "Sangat Baik",
+            "count": 17,
+            "lolos": 16,
+            "tidak_lolos": 1,
+            "entropy": 0.322757
+          }
+        ]
+      }
+    ],
+    "best_attribute": "mtk_lanjut",
+    "best_gain_ratio": 1.0
+  }
+]

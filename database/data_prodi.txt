@@ -1,0 +1,74 @@
+Data UI
+Prodi : 
+1. Pendidikan Dokter : tinggi 
+2. Ilmu Komputer : tinggi
+3. Teknik Industri : sedang
+4. Teknik Metalurgi dan Material : sedang
+5. Ilmu Hukum : sedang
+6. Manajemen : tinggi
+7. Akuntansi : sedang
+8. Ilmu Hubungan Internasional : tinggi
+9. Ilmu Komunikasi : tinggi 
+10.Ilmu Psikologi : tinggi 
+11.Farmasi : tinggi
+12.Arsitektur : tinggi 
+13.Ilmu Keperawatan : sedang
+14.Pendidikan Dokter Gigi : tinggi 
+15.Teknik Sipil : sedang 
+16.Ilmu Kesehatan Masyarakat : sedang
+17.Aktuaria : tinggi
+18.Statistika : tinggi 
+19.Arkeologi Indonesia : sedang
+20.Ilmu Administrasi Negara : sedang
+21.Sosiologi : sedang 
+22.Ilmu Politik : sedang
+23.Antropologi Sosial : sedang
+24.Fisioterapi : sedang
+25.Manajemen Rekod dan Arsip : sedang
+
+Data ITB
+Prodi :
+1. Fakultas Senirupa dan Desain (FSRD) : sedang
+2. Sekolah Farmasi (SF) : sedang
+3. Fakultas Ilmu dan Teknologi Kebumian(FITB) : rendah
+4. Fakultas Teknik Perkembangan dan Permminyakan (FTTM) :sedang
+5. Sekolah Ilmu dan Teknologi Hayati - Sains (SITH-S) : rendah
+6. Fakultas Teknik Mesin dan Dirgantara (FTMD) : sedang
+7. Sekolah Ilmu dan Teknologi Hayati - Rekayasa (SITH-R) : rendah
+8. Fakultas Matematika dan Ilmu Pengetahuan Alam - Matematika (FMIPA-M) : sedang
+9. Fakultas Matematika dan Ilmu Pengetahuan Alam - Ipa (FMIPA-I) :rendah 
+10.Sekolah Teknik Elektro dan Informatika-Komputasi (STEI-K) : tinggi
+11.Sekolah Teknik Elektro dan Informatika-Rekayasa (STEI-R): sedang 
+12.Sekolah Bisnis dan Manajemen (SBM) :sedang
+13.Fakultas Teknik Sipil dan Lingkungan - Infrastruktur Sipil, Lingkungan, dan Kelautan : sedang
+14.FAKULTAS TEKNIK SIPIL DAN LINGKUNGAN - INFRASTRUKTUR SUMBER DAYA AIR DAN SANITASI LINGKUNGAN :sedang
+15.FAKULTAS TEKNOLOGI INDUSTRI - SISTEM DAN PROSES (FTI-SP) :sedang
+
+Data UGM 
+Prodi:
+1. Kedokteran : tinggi 
+2. Farmasi : tinggi 
+3. Ilmu Keperawatan : tinggi 
+4. Gizi : tinggi
+5. Kedokteran Gigi : sedang
+6. Kedokteran Hewan : rendah
+7. Ilmu Komputer : tinggi 
+8. Statistika : tinggi 
+9. Agronomi : rendah 
+10.PROTEKSI TANAMAN (ILMU HAMA DAN PENYAKIT TUMBUHAN) : rendah
+11.MIKROBIOLOGI PERTANIAN : rendah
+12.Arsitektur : tinggi
+13.Teknik Kimia : rendah
+14.Teknik Sipil : sedang
+15.Teknik Industri : sedang
+16.Kehutanan : rendah
+17.Ilmu Ekonomi : sedang
+18.Manajemen : tinggi
+19.Ilmu Hubungan Internasional : tinggi
+20.Psikologi : tinggi
+21.Ilmu Komunikasi : tinggi
+22.Teknik Elektro :sedang
+23.Akuntansi: tinggi
+24.Sosiologi: sedang
+25.Hukum : sedang
+

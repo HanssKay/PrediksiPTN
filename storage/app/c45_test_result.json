@@ -1,0 +1,322 @@
+{
+  "success": true,
+  "method": "random",
+  "split_ratio": 80,
+  "train_count": 276,
+  "test_count": 43,
+  "confusion_matrix": {
+    "tp": 1,
+    "tn": 34,
+    "fp": 4,
+    "fn": 4
+  },
+  "metrics": {
+    "accuracy": 81.4,
+    "precision": 20.0,
+    "recall": 20.0,
+    "f1_score": 20.0
+  },
+  "details": [
+    {
+      "nama": "NIDYA ABIGAIL SILAEN",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "RAISYA PUTRI KHUMAIRA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "Jeehan Rizqillah",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "Natasya Maulida Selvina",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "FATHYA PUTRI WINARNO",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "DWI ATIKA AYU",
+      "tahun": "2026",
+      "actual": "LOLOS",
+      "predicted": "LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "AULIA RAMADHANI GINTING",
+      "tahun": "2024",
+      "actual": "LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "RAMADHIANU MUHAMMAD RIZKY",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "KEYSHA ASLAMIAH",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "RABIATUL ADAWIYAH",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "DHAFIN RAZAQA RASHIF",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "KHALISHA FAYZA ACHMAD",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "Gian Tristan Aqilla Putra",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "ALEA KAMILA PASA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "KORIE AIYSAH PUTRI KOSTELANI",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "HUMAIRA YAZHA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "MOHAMMAD FATHURRAMADHAN",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "NATASYA PUTRI FAISAL",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "AZALIA NAOMI BASUKI",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "NUR RIZKI AMALIA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "KHOIRUNISA",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "NAILAH NURUL AZMI SUPARDI",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "ALYA JAWHARAH",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "Saskya Sagita Ramadhani",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "HAIKAL ADITYA FACHRIZA",
+      "tahun": "2026",
+      "actual": "LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "CHRISTINE CASSANOVA",
+      "tahun": "2026",
+      "actual": "LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "OKTAVIA ANDIN FITRIANI",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "FAIRUZ KHAIRIAH SHARFINA",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "RADHITYA NOOR YALA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "FAIDZ ARKHA ARRISYAD HERYANA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "RANGGA MUFLIAN FADLY",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "SYAFRINA NUR AISYAH",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "HASYA SADIRA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "AYUDHIA RAHMADINA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "AUDI FAZZAKIA",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "KANAYA PUTRA RIAWAN",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "SAFIRA CHAIRANI",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "MUHAMMAD AKHIDAN NOVRUA",
+      "tahun": "2026",
+      "actual": "LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "FAELOSOFI HAKIM",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "LOLOS",
+      "correct": false
+    },
+    {
+      "nama": "PANDU MIKO PRATAMA",
+      "tahun": "2026",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "DAVIN MAHADIKA",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "MAYLAFAIZA NADHIRA PRAMITA SEPTIANA",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "TIDAK LOLOS",
+      "correct": true
+    },
+    {
+      "nama": "MOHAMMAD PASHA RADITYA ARIFANY",
+      "tahun": "2024",
+      "actual": "TIDAK LOLOS",
+      "predicted": "LOLOS",
+      "correct": false
+    }
+  ]
+}
