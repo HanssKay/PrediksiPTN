@@ -11,51 +11,53 @@ use Illuminate\Support\Facades\Process;
 class C45Controller extends Controller
 {
     /**
-     * Menjalankan script Python dan mengembalikan hasil JSON
+     * Memanggil API Python (Flask)
      */
-    private function runPython($script, $args = '')
+    private function callPythonApi($endpoint, $data = [])
     {
-        // Mengambil path python dari .env, default ke 'python'
-        // Jika di Windows error, user bisa ubah di .env menjadi PYTHON_PATH=py
-        $pythonPath = env('PYTHON_PATH', 'python');
-        $scriptPath = base_path("python/{$script}");
-        
-        // Fix Error Windows: Jangan beri tanda kutip pada "python" jika bukan absolute path berspasi
-        if (strpos($pythonPath, ' ') !== false) {
-            $command = "\"{$pythonPath}\" \"{$scriptPath}\" {$args}";
-        } else {
-            $command = "{$pythonPath} \"{$scriptPath}\" {$args}";
-        }
+        $apiUrl = env('PYTHON_API_URL', 'http://127.0.0.1:5000');
+        $url = rtrim($apiUrl, '/') . $endpoint;
 
-        $result = Process::env([
-            'SystemRoot' => getenv('SystemRoot') ?: 'C:\Windows',
-            'PATH' => getenv('PATH')
-        ])->timeout(120)->run($command);
-
-        if ($result->successful()) {
-            $output = $result->output();
-            $decoded = json_decode($output, true);
-            if ($decoded !== null) {
-                return $decoded;
+        try {
+            $response = \Illuminate\Support\Facades\Http::timeout(120)->post($url, $data);
+            if ($response->successful()) {
+                return $response->json();
             }
-            return ['success' => false, 'message' => 'Output Python tidak valid: ' . substr($output, 0, 500)];
+            return ['success' => false, 'message' => 'API Error: ' . $response->status() . ' - ' . $response->body()];
+        } catch (\Exception $e) {
+            return ['success' => false, 'message' => 'Gagal menghubungi API Python: ' . $e->getMessage()];
         }
+    }
 
-        return ['success' => false, 'message' => 'Error Python: ' . $result->errorOutput()];
+    private function getRawData()
+    {
+        return DatasetPrediksi::all()->toArray();
+    }
+
+    private function getPreprocessedData()
+    {
+        $path = storage_path('app/c45_preprocessed.json');
+        if (file_exists($path)) {
+            $json = json_decode(file_get_contents($path), true);
+            return $json['data'] ?? [];
+        }
+        return [];
     }
 
     /**
      * Menjalankan seluruh pipeline C4.5 secara otomatis:
      * Preprocessing → Training → Testing
-     * Dipanggil setelah import dataset berhasil.
      */
     private function runFullPipeline()
     {
         $pipelineLog = [];
 
         // Step 1: Preprocessing
-        $prepResult = $this->runPython('preprocessing.py');
+        $rawData = $this->getRawData();
+        $prepResult = $this->callPythonApi('/api/preprocess', $rawData);
+        
         if ($prepResult && ($prepResult['success'] ?? false)) {
+            file_put_contents(storage_path('app/c45_preprocessed.json'), json_encode($prepResult, JSON_PRETTY_PRINT));
             $pipelineLog[] = '✅ Preprocessing berhasil (' . ($prepResult['total'] ?? 0) . ' data diproses)';
         } else {
             $pipelineLog[] = '❌ Preprocessing gagal: ' . ($prepResult['message'] ?? 'Unknown error');
@@ -63,8 +65,15 @@ class C45Controller extends Controller
         }
 
         // Step 2: Training C4.5
-        $trainResult = $this->runPython('training.py');
+        $trainResult = $this->callPythonApi('/api/train', $prepResult['data']);
         if ($trainResult && ($trainResult['success'] ?? false)) {
+            // Simpan model & steps
+            file_put_contents(storage_path('app/c45_model.json'), json_encode($trainResult['model_data'], JSON_PRETTY_PRINT));
+            file_put_contents(storage_path('app/c45_steps.json'), json_encode($trainResult['steps'], JSON_PRETTY_PRINT));
+            if (!empty($trainResult['csv_content'])) {
+                file_put_contents(storage_path('app/oversampled_dataset.csv'), $trainResult['csv_content']);
+            }
+
             // Simpan rules ke database
             C45Rule::truncate();
             $batch = time();
@@ -82,8 +91,14 @@ class C45Controller extends Controller
         }
 
         // Step 3: Testing (dengan split ratio default 80%)
-        $testResult = $this->runPython('testing.py', '80');
+        $testPayload = [
+            'data' => $prepResult['data'],
+            'method' => 'random',
+            'arg1' => 80
+        ];
+        $testResult = $this->callPythonApi('/api/test', $testPayload);
         if ($testResult && ($testResult['success'] ?? false)) {
+            file_put_contents(storage_path('app/c45_test_result.json'), json_encode($testResult, JSON_PRETTY_PRINT));
             $accuracy = $testResult['metrics']['accuracy'] ?? 0;
             $pipelineLog[] = '✅ Pengujian berhasil (Akurasi: ' . $accuracy . '%)';
         } else {
@@ -432,7 +447,11 @@ class C45Controller extends Controller
             // Jika file belum ada, coba jalankan preprocessing
             $totalData = DatasetPrediksi::count();
             if ($totalData > 0) {
-                $result = $this->runPython('preprocessing.py');
+                $rawData = $this->getRawData();
+                $result = $this->callPythonApi('/api/preprocess', $rawData);
+                if ($result && ($result['success'] ?? false)) {
+                    file_put_contents($preprocessedPath, json_encode($result, JSON_PRETTY_PRINT));
+                }
             }
         }
 
@@ -450,9 +469,11 @@ class C45Controller extends Controller
                 ->with('error', 'Tidak ada data dataset. Silakan import data terlebih dahulu.');
         }
 
-        $result = $this->runPython('preprocessing.py');
+        $rawData = $this->getRawData();
+        $result = $this->callPythonApi('/api/preprocess', $rawData);
         
         if ($result && ($result['success'] ?? false)) {
+            file_put_contents(storage_path('app/c45_preprocessed.json'), json_encode($result, JSON_PRETTY_PRINT));
             return redirect()->route('admin.c45.preprocessing')
                 ->with('success', 'Preprocessing berhasil dijalankan ulang! ' . ($result['total'] ?? 0) . ' data diproses.');
         }
@@ -491,9 +512,22 @@ class C45Controller extends Controller
      */
     public function process()
     {
-        $result = $this->runPython('training.py');
+        $prepData = $this->getPreprocessedData();
+        if (empty($prepData)) {
+            return redirect()->route('admin.c45.perhitungan')
+                ->with('error', 'Data preprocessing tidak ditemukan. Harap jalankan preprocessing terlebih dahulu.');
+        }
+
+        $result = $this->callPythonApi('/api/train', $prepData);
 
         if ($result && ($result['success'] ?? false)) {
+            // Simpan model & steps
+            file_put_contents(storage_path('app/c45_model.json'), json_encode($result['model_data'], JSON_PRETTY_PRINT));
+            file_put_contents(storage_path('app/c45_steps.json'), json_encode($result['steps'], JSON_PRETTY_PRINT));
+            if (!empty($result['csv_content'])) {
+                file_put_contents(storage_path('app/oversampled_dataset.csv'), $result['csv_content']);
+            }
+
             // Simpan rules ke database
             C45Rule::truncate();
             $batch = time();
@@ -567,23 +601,38 @@ class C45Controller extends Controller
      */
     public function runTest(Request $request)
     {
+        $prepData = $this->getPreprocessedData();
+        if (empty($prepData)) {
+            return back()->with('error', 'Data preprocessing tidak ditemukan. Harap jalankan preprocessing terlebih dahulu.');
+        }
+
         $method = $request->input('split_method', 'random');
         
+        $testPayload = [
+            'data' => $prepData,
+            'method' => $method
+        ];
+
         if ($method == 'random') {
-            $split = $request->input('split_ratio', 80);
-            $result = $this->runPython('testing.py', "random {$split}");
+            $testPayload['arg1'] = $request->input('split_ratio', 80);
         } else {
             $trainYears = $request->input('train_years', []);
             $testYears = $request->input('test_years', []);
             
-            $trainStr = implode(',', $trainYears);
-            $testStr = implode(',', $testYears);
-            
-            if(empty($trainStr) || empty($testStr)) {
+            if(empty($trainYears) || empty($testYears)) {
                 return back()->with('error', 'Pilih minimal 1 tahun untuk training dan 1 tahun untuk testing.');
             }
             
-            $result = $this->runPython('testing.py', "year \"{$trainStr}\" \"{$testStr}\"");
+            $testPayload['arg1'] = $trainYears;
+            $testPayload['arg2'] = $testYears;
+        }
+        
+        $result = $this->callPythonApi('/api/test', $testPayload);
+
+        if ($result && ($result['success'] ?? false)) {
+            file_put_contents(storage_path('app/c45_test_result.json'), json_encode($result, JSON_PRETTY_PRINT));
+        } else {
+            return back()->with('error', 'Gagal pengujian: ' . ($result['message'] ?? 'Unknown error'));
         }
         
         $totalData = DatasetPrediksi::count();
