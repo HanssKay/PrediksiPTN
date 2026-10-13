@@ -43,7 +43,7 @@
                 <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-sky-600 text-white shadow-xl shadow-indigo-500/25 mb-3 border border-white/20">
                     <img src="{{ asset('images/Logo60.png') }}" alt="Logo" class="w-full h-full object-contain">
                 </div>
-                <h1 class="text-2xl font-black text-white tracking-tight">SNBP Decision Predictor</h1>
+                <h1 class="text-2xl font-black text-white tracking-tight">SNBP Predictor</h1>
                 <p class="text-xs text-white mt-1">Sistem Prediksi SNBP SMAN 60 Jakarta</p>
             </div>
 
@@ -54,7 +54,7 @@
 
             {{-- Footer Notes --}}
             <div class="text-center mt-6 text-xs text-slate-500">
-                &copy; {{ date('Y') }} Tim Pengembang &bull; Model C4.5 Decision Tree
+                &copy; {{ date('Y') }} Hanss &bull; Algoritma C4.5 Decision Tree
             </div>
         </div>
 
