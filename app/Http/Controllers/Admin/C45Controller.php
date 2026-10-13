@@ -11,11 +11,58 @@ use Illuminate\Support\Facades\Process;
 class C45Controller extends Controller
 {
     /**
+     * Memastikan server Python Flask aktif jika menggunakan alamat lokal (127.0.0.1 / localhost)
+     */
+    private function ensureFlaskApiRunning($apiUrl)
+    {
+        $parsed = parse_url($apiUrl);
+        $host = $parsed['host'] ?? '127.0.0.1';
+        $port = $parsed['port'] ?? 5000;
+
+        // Hanya jalankan auto-start jika target adalah host lokal
+        if (!in_array($host, ['127.0.0.1', 'localhost', '::1'])) {
+            return;
+        }
+
+        // Cek apakah port sudah aktif
+        $fp = @fsockopen($host, $port, $errno, $errstr, 0.3);
+        if ($fp) {
+            fclose($fp);
+            return; // Server sudah aktif
+        }
+
+        // Jika belum aktif, jalankan di background
+        $pythonPath = env('PYTHON_PATH', 'python');
+        $scriptPath = base_path('python_api/flask_app.py');
+        $logPath = storage_path('logs/flask.log');
+
+        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+            // Windows: Jalankan di background tanpa memblokir request PHP, output diarahkan ke flask.log
+            pclose(popen("start /B \"\" \"{$pythonPath}\" \"{$scriptPath}\" > \"{$logPath}\" 2>&1", "r"));
+        } else {
+            // Linux/macOS
+            exec("{$pythonPath} \"{$scriptPath}\" > \"{$logPath}\" 2>&1 &");
+        }
+
+        // Beri jeda hingga server siap (maksimal 3 detik)
+        for ($i = 0; $i < 15; $i++) {
+            usleep(200000); // 200 ms
+            $fp = @fsockopen($host, $port, $errno, $errstr, 0.3);
+            if ($fp) {
+                fclose($fp);
+                break;
+            }
+        }
+    }
+
+    /**
      * Memanggil API Python (Flask)
      */
     private function callPythonApi($endpoint, $data = [])
     {
         $apiUrl = env('PYTHON_API_URL', 'http://127.0.0.1:5000');
+        $this->ensureFlaskApiRunning($apiUrl);
+
         $url = rtrim($apiUrl, '/') . $endpoint;
 
         try {

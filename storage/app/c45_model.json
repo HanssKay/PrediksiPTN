@@ -14,260 +14,634 @@
     "rules": [
         {
             "conditions": [
-                "pil1_keketatan = Rendah",
                 "mtk_wajib = Baik",
-                "biologi = Baik",
-                "prestasi_tertinggi = Internasional"
-            ],
-            "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Baik DAN prestasi_tertinggi = Internasional MAKA LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Baik",
-                "prestasi_tertinggi = Nasional"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Baik DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Kurang",
-                "prestasi_tertinggi = Nasional"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Kurang DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Kurang",
-                "prestasi_tertinggi = Provinsi"
-            ],
-            "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Kurang DAN prestasi_tertinggi = Provinsi MAKA LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Kurang",
-                "prestasi_tertinggi = Tidak Ada",
-                "fisika = Baik"
-            ],
-            "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Kurang DAN prestasi_tertinggi = Tidak Ada DAN fisika = Baik MAKA LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Kurang",
-                "prestasi_tertinggi = Tidak Ada",
-                "fisika = Kurang"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Kurang DAN prestasi_tertinggi = Tidak Ada DAN fisika = Kurang MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Kurang",
-                "prestasi_tertinggi = Tidak Ada",
-                "fisika = Sangat Baik"
-            ],
-            "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Kurang DAN prestasi_tertinggi = Tidak Ada DAN fisika = Sangat Baik MAKA LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Baik",
-                "biologi = Sangat Baik"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Baik DAN biologi = Sangat Baik MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Rendah",
-                "mtk_wajib = Cukup"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Rendah DAN mtk_wajib = Cukup MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
                 "bing = Baik",
-                "mtk_wajib = Baik",
-                "pil2_keketatan = Rendah"
+                "fisika = Baik",
+                "mtk_lanjut = Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Rendah MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Baik DAN mtk_lanjut = Baik MAKA LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
                 "mtk_wajib = Baik",
-                "pil2_keketatan = Sedang",
-                "mtk_lanjut = Baik",
-                "fisika = Baik"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN mtk_lanjut = Baik DAN fisika = Baik MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
                 "bing = Baik",
-                "mtk_wajib = Baik",
-                "pil2_keketatan = Sedang",
-                "mtk_lanjut = Baik",
-                "fisika = Kurang"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN mtk_lanjut = Baik DAN fisika = Kurang MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
-                "mtk_wajib = Baik",
-                "pil2_keketatan = Sedang",
-                "mtk_lanjut = Baik",
-                "fisika = Sangat Baik"
-            ],
-            "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN mtk_lanjut = Baik DAN fisika = Sangat Baik MAKA LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
-                "mtk_wajib = Baik",
-                "pil2_keketatan = Sedang",
+                "fisika = Baik",
                 "mtk_lanjut = Kurang"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Baik DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
                 "mtk_wajib = Baik",
-                "pil2_keketatan = Tidak Memilih"
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Cukup"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Cukup MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
                 "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Cukup"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Cukup MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Nasional",
+                "mtk_lanjut = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Nasional DAN mtk_lanjut = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Nasional",
+                "mtk_lanjut = Kurang"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Nasional DAN mtk_lanjut = Kurang MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Provinsi",
+                "pil1_keketatan = Rendah"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Provinsi DAN pil1_keketatan = Rendah MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Provinsi",
+                "pil1_keketatan = Sedang"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Provinsi DAN pil1_keketatan = Sedang MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Provinsi",
+                "pil1_keketatan = Tinggi",
+                "mtk_lanjut = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Provinsi DAN pil1_keketatan = Tinggi DAN mtk_lanjut = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Provinsi",
+                "pil1_keketatan = Tinggi",
+                "mtk_lanjut = Cukup"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Provinsi DAN pil1_keketatan = Tinggi DAN mtk_lanjut = Cukup MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Tidak Ada",
+                "pil1_keketatan = Rendah"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Tidak Ada DAN pil1_keketatan = Rendah MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Tidak Ada",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Baik",
+                "biologi = Kurang"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Tidak Ada DAN pil1_keketatan = Sedang DAN mtk_lanjut = Baik DAN biologi = Kurang MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Tidak Ada",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Kurang",
+                "biologi = Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Tidak Ada DAN pil1_keketatan = Sedang DAN mtk_lanjut = Kurang DAN biologi = Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "prestasi_tertinggi = Tidak Ada",
+                "pil1_keketatan = Tinggi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN prestasi_tertinggi = Tidak Ada DAN pil1_keketatan = Tinggi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Sangat Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Baik DAN fisika = Sangat Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Cukup"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Cukup MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Baik",
+                "bing = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Baik DAN bing = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Rendah",
+                "bind = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Rendah DAN bind = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Nasional"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Provinsi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Provinsi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Baik",
+                "mtk_lanjut = Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Baik DAN mtk_lanjut = Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Baik",
+                "mtk_lanjut = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Baik DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Kurang"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Kurang MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Baik",
+                "bind = Baik",
+                "fisika = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Sedang DAN mtk_lanjut = Baik DAN bind = Baik DAN fisika = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Baik",
+                "bind = Baik",
+                "fisika = Sangat Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Sedang DAN mtk_lanjut = Baik DAN bind = Baik DAN fisika = Sangat Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Baik",
+                "bind = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Sedang DAN mtk_lanjut = Baik DAN bind = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Sedang",
+                "mtk_lanjut = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Sedang DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Sedang",
+                "pil1_keketatan = Tinggi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Sedang DAN pil1_keketatan = Tinggi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Internasional",
+                "fisika = Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Internasional DAN fisika = Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Internasional",
+                "fisika = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Internasional DAN fisika = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Nasional"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Provinsi"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Provinsi MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Rendah",
+                "prestasi_tertinggi = Tidak Ada",
+                "fisika = Sangat Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Rendah DAN prestasi_tertinggi = Tidak Ada DAN fisika = Sangat Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Internasional"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Internasional MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Nasional"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Provinsi",
+                "mtk_lanjut = Baik",
+                "bind = Baik",
+                "bing = Baik",
+                "fisika = Kurang",
+                "kimia = Kurang",
+                "biologi = Kurang"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Provinsi DAN mtk_lanjut = Baik DAN bind = Baik DAN bing = Baik DAN fisika = Kurang DAN kimia = Kurang DAN biologi = Kurang MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Provinsi",
+                "mtk_lanjut = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Provinsi DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Provinsi",
+                "mtk_lanjut = Sangat Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Provinsi DAN mtk_lanjut = Sangat Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Sedang",
+                "prestasi_tertinggi = Tidak Ada"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Sedang DAN prestasi_tertinggi = Tidak Ada MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tidak Memilih",
+                "pil1_keketatan = Tinggi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tidak Memilih DAN pil1_keketatan = Tinggi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
                 "mtk_wajib = Baik",
                 "pil2_keketatan = Tinggi",
                 "bind = Baik"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Baik MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Baik MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
                 "mtk_wajib = Baik",
                 "pil2_keketatan = Tinggi",
-                "bind = Sangat Baik"
+                "bind = Sangat Baik",
+                "fisika = Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Sangat Baik MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Sangat Baik DAN fisika = Baik MAKA LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tinggi",
+                "bind = Sangat Baik",
+                "fisika = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Sangat Baik DAN fisika = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Baik",
+                "pil2_keketatan = Tinggi",
+                "bind = Sangat Baik",
+                "fisika = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Baik DAN pil2_keketatan = Tinggi DAN bind = Sangat Baik DAN fisika = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Cukup",
+                "pil1_keketatan = Rendah"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Rendah MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Baik",
                 "kimia = Baik",
                 "biologi = Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Baik DAN kimia = Baik DAN biologi = Baik MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Baik DAN kimia = Baik DAN biologi = Baik MAKA LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Baik",
                 "kimia = Baik",
                 "biologi = Kurang",
                 "mtk_lanjut = Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Baik DAN kimia = Baik DAN biologi = Kurang DAN mtk_lanjut = Baik MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Baik DAN kimia = Baik DAN biologi = Kurang DAN mtk_lanjut = Baik MAKA LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Baik",
                 "kimia = Baik",
                 "biologi = Kurang",
                 "mtk_lanjut = Kurang"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Baik DAN kimia = Baik DAN biologi = Kurang DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Baik DAN kimia = Baik DAN biologi = Kurang DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Baik",
                 "kimia = Baik",
                 "biologi = Sangat Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Baik DAN kimia = Baik DAN biologi = Sangat Baik MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Baik DAN kimia = Baik DAN biologi = Sangat Baik MAKA LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Baik",
                 "kimia = Sangat Baik"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Baik DAN kimia = Sangat Baik MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Baik DAN kimia = Sangat Baik MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Kurang",
                 "prestasi_tertinggi = Provinsi"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Kurang DAN prestasi_tertinggi = Provinsi MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Kurang DAN prestasi_tertinggi = Provinsi MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Kurang",
                 "prestasi_tertinggi = Tidak Ada",
                 "bind = Baik",
@@ -277,210 +651,476 @@
                 "pil2_keketatan = Tinggi"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Kurang DAN prestasi_tertinggi = Tidak Ada DAN bind = Baik DAN mtk_lanjut = Kurang DAN kimia = Kurang DAN biologi = Kurang DAN pil2_keketatan = Tinggi MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Kurang DAN prestasi_tertinggi = Tidak Ada DAN bind = Baik DAN mtk_lanjut = Kurang DAN kimia = Kurang DAN biologi = Kurang DAN pil2_keketatan = Tinggi MAKA LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
                 "bing = Baik",
-                "mtk_wajib = Cukup",
                 "fisika = Sangat Baik"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Cukup DAN fisika = Sangat Baik MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Baik DAN fisika = Sangat Baik MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Cukup",
                 "pil1_keketatan = Sedang",
-                "bing = Baik",
+                "bing = Sangat Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Sedang DAN bing = Sangat Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Cukup",
+                "pil1_keketatan = Tinggi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Cukup DAN pil1_keketatan = Tinggi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
                 "mtk_wajib = Sangat Baik",
-                "prestasi_tertinggi = Internasional"
+                "kimia = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Kurang",
+                "pil1_keketatan = Sedang",
+                "pil2_keketatan = Rendah"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Sangat Baik DAN prestasi_tertinggi = Internasional MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Sedang DAN pil2_keketatan = Rendah MAKA LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
                 "mtk_wajib = Sangat Baik",
-                "prestasi_tertinggi = Nasional"
+                "kimia = Kurang",
+                "pil1_keketatan = Sedang",
+                "pil2_keketatan = Sedang"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Sangat Baik DAN prestasi_tertinggi = Nasional MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Sedang DAN pil2_keketatan = Sedang MAKA LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Baik",
                 "mtk_wajib = Sangat Baik",
-                "prestasi_tertinggi = Provinsi"
+                "kimia = Kurang",
+                "pil1_keketatan = Sedang",
+                "pil2_keketatan = Tidak Memilih"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Baik DAN mtk_wajib = Sangat Baik DAN prestasi_tertinggi = Provinsi MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Sedang DAN pil2_keketatan = Tidak Memilih MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Kurang",
                 "pil1_keketatan = Sedang",
-                "bing = Sangat Baik",
-                "prestasi_tertinggi = Internasional"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Sangat Baik DAN prestasi_tertinggi = Internasional MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Sangat Baik",
-                "prestasi_tertinggi = Nasional"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Sangat Baik DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Sangat Baik",
-                "prestasi_tertinggi = Provinsi",
-                "mtk_lanjut = Kurang"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Sangat Baik DAN prestasi_tertinggi = Provinsi DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Sangat Baik",
-                "prestasi_tertinggi = Provinsi",
-                "mtk_lanjut = Sangat Baik"
+                "pil2_keketatan = Tinggi"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Sangat Baik DAN prestasi_tertinggi = Provinsi DAN mtk_lanjut = Sangat Baik MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Sedang DAN pil2_keketatan = Tinggi MAKA LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Sedang",
-                "bing = Sangat Baik",
-                "prestasi_tertinggi = Tidak Ada"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Sedang DAN bing = Sangat Baik DAN prestasi_tertinggi = Tidak Ada MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Tinggi",
-                "mtk_wajib = Baik"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Baik MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Tinggi",
-                "mtk_wajib = Cukup"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Cukup MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Tinggi",
                 "mtk_wajib = Sangat Baik",
+                "kimia = Kurang",
+                "pil1_keketatan = Tinggi",
+                "fisika = Kurang"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Tinggi DAN fisika = Kurang MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Kurang",
+                "pil1_keketatan = Tinggi",
+                "fisika = Sangat Baik",
                 "bind = Baik"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Baik MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Tinggi DAN fisika = Sangat Baik DAN bind = Baik MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Tinggi",
                 "mtk_wajib = Sangat Baik",
+                "kimia = Kurang",
+                "pil1_keketatan = Tinggi",
+                "fisika = Sangat Baik",
+                "bind = Sangat Baik"
+            ],
+            "result": "LOLOS",
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Kurang DAN pil1_keketatan = Tinggi DAN fisika = Sangat Baik DAN bind = Sangat Baik MAKA LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Sangat Baik",
+                "prestasi_tertinggi = Internasional",
+                "bind = Baik"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Internasional DAN bind = Baik MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Sangat Baik",
+                "prestasi_tertinggi = Internasional",
                 "bind = Sangat Baik",
                 "mtk_lanjut = Baik"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Sangat Baik DAN mtk_lanjut = Baik MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Internasional DAN bind = Sangat Baik DAN mtk_lanjut = Baik MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Tinggi",
                 "mtk_wajib = Sangat Baik",
+                "kimia = Sangat Baik",
+                "prestasi_tertinggi = Internasional",
                 "bind = Sangat Baik",
-                "mtk_lanjut = Kurang"
-            ],
-            "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Sangat Baik DAN mtk_lanjut = Kurang MAKA TIDAK LOLOS"
-        },
-        {
-            "conditions": [
-                "pil1_keketatan = Tinggi",
-                "mtk_wajib = Sangat Baik",
-                "bind = Sangat Baik",
-                "mtk_lanjut = Sangat Baik",
-                "prestasi_tertinggi = Internasional"
+                "mtk_lanjut = Sangat Baik"
             ],
             "result": "LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Sangat Baik DAN mtk_lanjut = Sangat Baik DAN prestasi_tertinggi = Internasional MAKA LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Internasional DAN bind = Sangat Baik DAN mtk_lanjut = Sangat Baik MAKA LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Tinggi",
                 "mtk_wajib = Sangat Baik",
-                "bind = Sangat Baik",
-                "mtk_lanjut = Sangat Baik",
+                "kimia = Sangat Baik",
                 "prestasi_tertinggi = Nasional"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Sangat Baik DAN mtk_lanjut = Sangat Baik DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Nasional MAKA TIDAK LOLOS"
         },
         {
             "conditions": [
-                "pil1_keketatan = Tinggi",
                 "mtk_wajib = Sangat Baik",
-                "bind = Sangat Baik",
-                "mtk_lanjut = Sangat Baik",
+                "kimia = Sangat Baik",
+                "prestasi_tertinggi = Provinsi"
+            ],
+            "result": "TIDAK LOLOS",
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Provinsi MAKA TIDAK LOLOS"
+        },
+        {
+            "conditions": [
+                "mtk_wajib = Sangat Baik",
+                "kimia = Sangat Baik",
                 "prestasi_tertinggi = Tidak Ada"
             ],
             "result": "TIDAK LOLOS",
-            "rule_string": "JIKA pil1_keketatan = Tinggi DAN mtk_wajib = Sangat Baik DAN bind = Sangat Baik DAN mtk_lanjut = Sangat Baik DAN prestasi_tertinggi = Tidak Ada MAKA TIDAK LOLOS"
+            "rule_string": "JIKA mtk_wajib = Sangat Baik DAN kimia = Sangat Baik DAN prestasi_tertinggi = Tidak Ada MAKA TIDAK LOLOS"
         }
     ],
-    "total_training_data": 194,
+    "total_training_data": 352,
     "tree": {
-        "attribute": "pil1_keketatan",
+        "attribute": "mtk_wajib",
         "children": {
-            "Rendah": {
-                "attribute": "mtk_wajib",
+            "Baik": {
+                "attribute": "pil2_keketatan",
                 "children": {
-                    "Baik": {
-                        "attribute": "biologi",
+                    "Rendah": {
+                        "attribute": "bind",
                         "children": {
                             "Baik": {
-                                "attribute": "prestasi_tertinggi",
+                                "attribute": "bing",
                                 "children": {
-                                    "Internasional": {
-                                        "count": 5,
-                                        "label": "LOLOS",
+                                    "Baik": {
+                                        "attribute": "fisika",
+                                        "children": {
+                                            "Baik": {
+                                                "attribute": "mtk_lanjut",
+                                                "children": {
+                                                    "Baik": {
+                                                        "count": 5,
+                                                        "label": "LOLOS",
+                                                        "type": "leaf"
+                                                    },
+                                                    "Kurang": {
+                                                        "count": 3,
+                                                        "label": "TIDAK LOLOS",
+                                                        "type": "leaf"
+                                                    }
+                                                },
+                                                "type": "node"
+                                            },
+                                            "Cukup": {
+                                                "count": 1,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            },
+                                            "Kurang": {
+                                                "attribute": "kimia",
+                                                "children": {
+                                                    "Baik": {
+                                                        "count": 5,
+                                                        "label": "TIDAK LOLOS",
+                                                        "type": "leaf"
+                                                    },
+                                                    "Cukup": {
+                                                        "count": 5,
+                                                        "label": "LOLOS",
+                                                        "type": "leaf"
+                                                    },
+                                                    "Kurang": {
+                                                        "attribute": "prestasi_tertinggi",
+                                                        "children": {
+                                                            "Nasional": {
+                                                                "attribute": "mtk_lanjut",
+                                                                "children": {
+                                                                    "Baik": {
+                                                                        "count": 1,
+                                                                        "label": "TIDAK LOLOS",
+                                                                        "type": "leaf"
+                                                                    },
+                                                                    "Kurang": {
+                                                                        "count": 5,
+                                                                        "label": "LOLOS",
+                                                                        "type": "leaf"
+                                                                    }
+                                                                },
+                                                                "type": "node"
+                                                            },
+                                                            "Provinsi": {
+                                                                "attribute": "pil1_keketatan",
+                                                                "children": {
+                                                                    "Rendah": {
+                                                                        "count": 5,
+                                                                        "label": "LOLOS",
+                                                                        "type": "leaf"
+                                                                    },
+                                                                    "Sedang": {
+                                                                        "count": 5,
+                                                                        "label": "LOLOS",
+                                                                        "type": "leaf"
+                                                                    },
+                                                                    "Tinggi": {
+                                                                        "attribute": "mtk_lanjut",
+                                                                        "children": {
+                                                                            "Baik": {
+                                                                                "count": 1,
+                                                                                "label": "TIDAK LOLOS",
+                                                                                "type": "leaf"
+                                                                            },
+                                                                            "Cukup": {
+                                                                                "count": 5,
+                                                                                "label": "LOLOS",
+                                                                                "type": "leaf"
+                                                                            }
+                                                                        },
+                                                                        "type": "node"
+                                                                    }
+                                                                },
+                                                                "type": "node"
+                                                            },
+                                                            "Tidak Ada": {
+                                                                "attribute": "pil1_keketatan",
+                                                                "children": {
+                                                                    "Rendah": {
+                                                                        "count": 1,
+                                                                        "label": "TIDAK LOLOS",
+                                                                        "type": "leaf"
+                                                                    },
+                                                                    "Sedang": {
+                                                                        "attribute": "mtk_lanjut",
+                                                                        "children": {
+                                                                            "Baik": {
+                                                                                "attribute": "biologi",
+                                                                                "children": {
+                                                                                    "Kurang": {
+                                                                                        "count": 7,
+                                                                                        "label": "LOLOS",
+                                                                                        "type": "leaf"
+                                                                                    }
+                                                                                },
+                                                                                "type": "node"
+                                                                            },
+                                                                            "Kurang": {
+                                                                                "attribute": "biologi",
+                                                                                "children": {
+                                                                                    "Baik": {
+                                                                                        "count": 6,
+                                                                                        "label": "LOLOS",
+                                                                                        "type": "leaf"
+                                                                                    }
+                                                                                },
+                                                                                "type": "node"
+                                                                            }
+                                                                        },
+                                                                        "type": "node"
+                                                                    },
+                                                                    "Tinggi": {
+                                                                        "count": 3,
+                                                                        "label": "TIDAK LOLOS",
+                                                                        "type": "leaf"
+                                                                    }
+                                                                },
+                                                                "type": "node"
+                                                            }
+                                                        },
+                                                        "type": "node"
+                                                    }
+                                                },
+                                                "type": "node"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 15,
+                                                "label": "LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
+                                    },
+                                    "Cukup": {
+                                        "count": 1,
+                                        "label": "TIDAK LOLOS",
                                         "type": "leaf"
                                     },
-                                    "Nasional": {
-                                        "count": 2,
+                                    "Sangat Baik": {
+                                        "count": 1,
                                         "label": "TIDAK LOLOS",
                                         "type": "leaf"
                                     }
                                 },
                                 "type": "node"
                             },
-                            "Kurang": {
+                            "Sangat Baik": {
+                                "count": 3,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            }
+                        },
+                        "type": "node"
+                    },
+                    "Sedang": {
+                        "attribute": "pil1_keketatan",
+                        "children": {
+                            "Rendah": {
                                 "attribute": "prestasi_tertinggi",
                                 "children": {
                                     "Nasional": {
-                                        "count": 1,
+                                        "count": 2,
                                         "label": "TIDAK LOLOS",
                                         "type": "leaf"
                                     },
                                     "Provinsi": {
-                                        "count": 11,
+                                        "count": 1,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Tidak Ada": {
+                                        "attribute": "fisika",
+                                        "children": {
+                                            "Baik": {
+                                                "attribute": "mtk_lanjut",
+                                                "children": {
+                                                    "Baik": {
+                                                        "count": 5,
+                                                        "label": "LOLOS",
+                                                        "type": "leaf"
+                                                    },
+                                                    "Kurang": {
+                                                        "count": 1,
+                                                        "label": "TIDAK LOLOS",
+                                                        "type": "leaf"
+                                                    }
+                                                },
+                                                "type": "node"
+                                            },
+                                            "Kurang": {
+                                                "count": 10,
+                                                "label": "LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
+                                    }
+                                },
+                                "type": "node"
+                            },
+                            "Sedang": {
+                                "attribute": "mtk_lanjut",
+                                "children": {
+                                    "Baik": {
+                                        "attribute": "bind",
+                                        "children": {
+                                            "Baik": {
+                                                "attribute": "fisika",
+                                                "children": {
+                                                    "Kurang": {
+                                                        "count": 1,
+                                                        "label": "TIDAK LOLOS",
+                                                        "type": "leaf"
+                                                    },
+                                                    "Sangat Baik": {
+                                                        "count": 5,
+                                                        "label": "LOLOS",
+                                                        "type": "leaf"
+                                                    }
+                                                },
+                                                "type": "node"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 3,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
+                                    },
+                                    "Kurang": {
+                                        "count": 14,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    }
+                                },
+                                "type": "node"
+                            },
+                            "Tinggi": {
+                                "count": 20,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            }
+                        },
+                        "type": "node"
+                    },
+                    "Tidak Memilih": {
+                        "attribute": "pil1_keketatan",
+                        "children": {
+                            "Rendah": {
+                                "attribute": "prestasi_tertinggi",
+                                "children": {
+                                    "Internasional": {
+                                        "attribute": "fisika",
+                                        "children": {
+                                            "Baik": {
+                                                "count": 5,
+                                                "label": "LOLOS",
+                                                "type": "leaf"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 1,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
+                                    },
+                                    "Nasional": {
+                                        "count": 2,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Provinsi": {
+                                        "count": 5,
                                         "label": "LOLOS",
                                         "type": "leaf"
                                     },
@@ -488,8 +1128,8 @@
                                         "attribute": "fisika",
                                         "children": {
                                             "Baik": {
-                                                "count": 5,
-                                                "label": "LOLOS",
+                                                "count": 2,
+                                                "label": "TIDAK LOLOS",
                                                 "type": "leaf"
                                             },
                                             "Kurang": {
@@ -498,92 +1138,6 @@
                                                 "type": "leaf"
                                             },
                                             "Sangat Baik": {
-                                                "count": 6,
-                                                "label": "LOLOS",
-                                                "type": "leaf"
-                                            }
-                                        },
-                                        "type": "node"
-                                    }
-                                },
-                                "type": "node"
-                            },
-                            "Sangat Baik": {
-                                "count": 5,
-                                "label": "TIDAK LOLOS",
-                                "type": "leaf"
-                            }
-                        },
-                        "type": "node"
-                    },
-                    "Cukup": {
-                        "count": 6,
-                        "label": "TIDAK LOLOS",
-                        "type": "leaf"
-                    }
-                },
-                "type": "node"
-            },
-            "Sedang": {
-                "attribute": "bing",
-                "children": {
-                    "Baik": {
-                        "attribute": "mtk_wajib",
-                        "children": {
-                            "Baik": {
-                                "attribute": "pil2_keketatan",
-                                "children": {
-                                    "Rendah": {
-                                        "count": 5,
-                                        "label": "LOLOS",
-                                        "type": "leaf"
-                                    },
-                                    "Sedang": {
-                                        "attribute": "mtk_lanjut",
-                                        "children": {
-                                            "Baik": {
-                                                "attribute": "fisika",
-                                                "children": {
-                                                    "Baik": {
-                                                        "count": 1,
-                                                        "label": "TIDAK LOLOS",
-                                                        "type": "leaf"
-                                                    },
-                                                    "Kurang": {
-                                                        "count": 1,
-                                                        "label": "TIDAK LOLOS",
-                                                        "type": "leaf"
-                                                    },
-                                                    "Sangat Baik": {
-                                                        "count": 6,
-                                                        "label": "LOLOS",
-                                                        "type": "leaf"
-                                                    }
-                                                },
-                                                "type": "node"
-                                            },
-                                            "Kurang": {
-                                                "count": 8,
-                                                "label": "TIDAK LOLOS",
-                                                "type": "leaf"
-                                            }
-                                        },
-                                        "type": "node"
-                                    },
-                                    "Tidak Memilih": {
-                                        "count": 8,
-                                        "label": "TIDAK LOLOS",
-                                        "type": "leaf"
-                                    },
-                                    "Tinggi": {
-                                        "attribute": "bind",
-                                        "children": {
-                                            "Baik": {
-                                                "count": 6,
-                                                "label": "TIDAK LOLOS",
-                                                "type": "leaf"
-                                            },
-                                            "Sangat Baik": {
                                                 "count": 5,
                                                 "label": "LOLOS",
                                                 "type": "leaf"
@@ -594,7 +1148,133 @@
                                 },
                                 "type": "node"
                             },
-                            "Cukup": {
+                            "Sedang": {
+                                "attribute": "prestasi_tertinggi",
+                                "children": {
+                                    "Internasional": {
+                                        "count": 2,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Nasional": {
+                                        "count": 1,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Provinsi": {
+                                        "attribute": "mtk_lanjut",
+                                        "children": {
+                                            "Baik": {
+                                                "attribute": "bind",
+                                                "children": {
+                                                    "Baik": {
+                                                        "attribute": "bing",
+                                                        "children": {
+                                                            "Baik": {
+                                                                "attribute": "fisika",
+                                                                "children": {
+                                                                    "Kurang": {
+                                                                        "attribute": "kimia",
+                                                                        "children": {
+                                                                            "Kurang": {
+                                                                                "attribute": "biologi",
+                                                                                "children": {
+                                                                                    "Kurang": {
+                                                                                        "count": 7,
+                                                                                        "label": "LOLOS",
+                                                                                        "type": "leaf"
+                                                                                    }
+                                                                                },
+                                                                                "type": "node"
+                                                                            }
+                                                                        },
+                                                                        "type": "node"
+                                                                    }
+                                                                },
+                                                                "type": "node"
+                                                            }
+                                                        },
+                                                        "type": "node"
+                                                    }
+                                                },
+                                                "type": "node"
+                                            },
+                                            "Kurang": {
+                                                "count": 3,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 5,
+                                                "label": "LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
+                                    },
+                                    "Tidak Ada": {
+                                        "count": 11,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    }
+                                },
+                                "type": "node"
+                            },
+                            "Tinggi": {
+                                "count": 14,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            }
+                        },
+                        "type": "node"
+                    },
+                    "Tinggi": {
+                        "attribute": "bind",
+                        "children": {
+                            "Baik": {
+                                "count": 38,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            },
+                            "Sangat Baik": {
+                                "attribute": "fisika",
+                                "children": {
+                                    "Baik": {
+                                        "count": 5,
+                                        "label": "LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Kurang": {
+                                        "count": 1,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Sangat Baik": {
+                                        "count": 1,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    }
+                                },
+                                "type": "node"
+                            }
+                        },
+                        "type": "node"
+                    }
+                },
+                "type": "node"
+            },
+            "Cukup": {
+                "attribute": "pil1_keketatan",
+                "children": {
+                    "Rendah": {
+                        "count": 6,
+                        "label": "TIDAK LOLOS",
+                        "type": "leaf"
+                    },
+                    "Sedang": {
+                        "attribute": "bing",
+                        "children": {
+                            "Baik": {
                                 "attribute": "fisika",
                                 "children": {
                                     "Baik": {
@@ -695,22 +1375,81 @@
                                 "type": "node"
                             },
                             "Sangat Baik": {
-                                "attribute": "prestasi_tertinggi",
+                                "count": 2,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            }
+                        },
+                        "type": "node"
+                    },
+                    "Tinggi": {
+                        "count": 3,
+                        "label": "TIDAK LOLOS",
+                        "type": "leaf"
+                    }
+                },
+                "type": "node"
+            },
+            "Sangat Baik": {
+                "attribute": "kimia",
+                "children": {
+                    "Baik": {
+                        "count": 1,
+                        "label": "TIDAK LOLOS",
+                        "type": "leaf"
+                    },
+                    "Kurang": {
+                        "attribute": "pil1_keketatan",
+                        "children": {
+                            "Sedang": {
+                                "attribute": "pil2_keketatan",
                                 "children": {
-                                    "Internasional": {
-                                        "count": 6,
+                                    "Rendah": {
+                                        "count": 15,
                                         "label": "LOLOS",
                                         "type": "leaf"
                                     },
-                                    "Nasional": {
+                                    "Sedang": {
                                         "count": 5,
                                         "label": "LOLOS",
                                         "type": "leaf"
                                     },
-                                    "Provinsi": {
+                                    "Tidak Memilih": {
                                         "count": 1,
                                         "label": "TIDAK LOLOS",
                                         "type": "leaf"
+                                    },
+                                    "Tinggi": {
+                                        "count": 5,
+                                        "label": "LOLOS",
+                                        "type": "leaf"
+                                    }
+                                },
+                                "type": "node"
+                            },
+                            "Tinggi": {
+                                "attribute": "fisika",
+                                "children": {
+                                    "Kurang": {
+                                        "count": 2,
+                                        "label": "TIDAK LOLOS",
+                                        "type": "leaf"
+                                    },
+                                    "Sangat Baik": {
+                                        "attribute": "bind",
+                                        "children": {
+                                            "Baik": {
+                                                "count": 1,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 5,
+                                                "label": "LOLOS",
+                                                "type": "leaf"
+                                            }
+                                        },
+                                        "type": "node"
                                     }
                                 },
                                 "type": "node"
@@ -722,92 +1461,24 @@
                         "attribute": "prestasi_tertinggi",
                         "children": {
                             "Internasional": {
-                                "count": 2,
-                                "label": "TIDAK LOLOS",
-                                "type": "leaf"
-                            },
-                            "Nasional": {
-                                "count": 3,
-                                "label": "TIDAK LOLOS",
-                                "type": "leaf"
-                            },
-                            "Provinsi": {
-                                "attribute": "mtk_lanjut",
-                                "children": {
-                                    "Kurang": {
-                                        "count": 2,
-                                        "label": "TIDAK LOLOS",
-                                        "type": "leaf"
-                                    },
-                                    "Sangat Baik": {
-                                        "count": 6,
-                                        "label": "LOLOS",
-                                        "type": "leaf"
-                                    }
-                                },
-                                "type": "node"
-                            },
-                            "Tidak Ada": {
-                                "count": 9,
-                                "label": "TIDAK LOLOS",
-                                "type": "leaf"
-                            }
-                        },
-                        "type": "node"
-                    }
-                },
-                "type": "node"
-            },
-            "Tinggi": {
-                "attribute": "mtk_wajib",
-                "children": {
-                    "Baik": {
-                        "count": 23,
-                        "label": "TIDAK LOLOS",
-                        "type": "leaf"
-                    },
-                    "Cukup": {
-                        "count": 2,
-                        "label": "TIDAK LOLOS",
-                        "type": "leaf"
-                    },
-                    "Sangat Baik": {
-                        "attribute": "bind",
-                        "children": {
-                            "Baik": {
-                                "count": 3,
-                                "label": "TIDAK LOLOS",
-                                "type": "leaf"
-                            },
-                            "Sangat Baik": {
-                                "attribute": "mtk_lanjut",
+                                "attribute": "bind",
                                 "children": {
                                     "Baik": {
                                         "count": 1,
                                         "label": "TIDAK LOLOS",
                                         "type": "leaf"
                                     },
-                                    "Kurang": {
-                                        "count": 2,
-                                        "label": "TIDAK LOLOS",
-                                        "type": "leaf"
-                                    },
                                     "Sangat Baik": {
-                                        "attribute": "prestasi_tertinggi",
+                                        "attribute": "mtk_lanjut",
                                         "children": {
-                                            "Internasional": {
-                                                "count": 12,
+                                            "Baik": {
+                                                "count": 1,
+                                                "label": "TIDAK LOLOS",
+                                                "type": "leaf"
+                                            },
+                                            "Sangat Baik": {
+                                                "count": 16,
                                                 "label": "LOLOS",
-                                                "type": "leaf"
-                                            },
-                                            "Nasional": {
-                                                "count": 1,
-                                                "label": "TIDAK LOLOS",
-                                                "type": "leaf"
-                                            },
-                                            "Tidak Ada": {
-                                                "count": 1,
-                                                "label": "TIDAK LOLOS",
                                                 "type": "leaf"
                                             }
                                         },
@@ -815,6 +1486,21 @@
                                     }
                                 },
                                 "type": "node"
+                            },
+                            "Nasional": {
+                                "count": 1,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            },
+                            "Provinsi": {
+                                "count": 2,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
+                            },
+                            "Tidak Ada": {
+                                "count": 3,
+                                "label": "TIDAK LOLOS",
+                                "type": "leaf"
                             }
                         },
                         "type": "node"

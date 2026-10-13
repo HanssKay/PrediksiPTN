@@ -1,87 +1,112 @@
 <x-app-layout>
-    <x-slot name="header">
-        <div class="flex items-center space-x-2">
-            <span class="text-blue-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-            </span>
-            <h2 class="font-bold text-xl text-gray-800 leading-tight">Preprocessing Data</h2>
-        </div>
-    </x-slot>
+    <div class="space-y-6 max-w-7xl mx-auto pb-12">
 
-    <div class="space-y-6">
         {{-- Alerts --}}
         @if(session('success'))
-            <div class="p-4 text-sm text-emerald-700 bg-emerald-50 rounded-xl border border-emerald-200 font-medium flex items-center">
-                <svg class="w-5 h-5 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <div class="p-4 text-xs font-bold text-emerald-800 bg-emerald-50 rounded-2xl border border-emerald-200 flex items-center shadow-xs">
+                <svg class="w-4 h-4 mr-2 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 {{ session('success') }}
             </div>
         @endif
         @if(session('error'))
-            <div class="p-4 text-sm text-red-700 bg-red-50 rounded-xl border border-red-200 font-medium flex items-center">
-                <svg class="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <div class="p-4 text-xs font-bold text-rose-800 bg-rose-50 rounded-2xl border border-rose-200 flex items-center shadow-xs">
+                <svg class="w-4 h-4 mr-2 text-rose-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 {{ session('error') }}
             </div>
         @endif
 
-        {{-- Info + Refresh Button --}}
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-start flex-1">
-                <svg class="w-5 h-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <div>
-                    <p class="text-sm font-medium text-blue-800">Proses Preprocessing</p>
-                    <p class="text-sm text-blue-600 mt-0.5">Nilai rata-rata per mata pelajaran (dari 5 semester) dikategorikan menjadi: <strong>Sangat Baik</strong> (≥90), <strong>Baik</strong> (80-89), <strong>Cukup</strong> (70-79), <strong>Kurang</strong> (<70)</p>
+        {{-- Header & Transformation Config Card --}}
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-[10px] font-black uppercase tracking-wider text-indigo-700 mb-2">
+                    Tahap 2 Pipeline C4.5
+                </div>
+                <h1 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Preprocessing & Diskritisasi Atribut</h1>
+                <p class="text-xs text-slate-500 mt-1 max-w-2xl leading-relaxed">
+                    Mentransformasi nilai kontinu rapor semester 1-5 menjadi kategori kualitatif diskrit untuk perhitungan entropi pada pohon keputusan.
+                </p>
+
+                {{-- Bins Definition Pills --}}
+                <div class="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-slate-100">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mr-1">Rentang Kategori:</span>
+                    <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                        Sangat Baik (&ge; 90)
+                    </span>
+                    <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                        Baik (80 - 89)
+                    </span>
+                    <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">
+                        Cukup (70 - 79)
+                    </span>
+                    <span class="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-rose-50 text-rose-700 border border-rose-200">
+                        Kurang (&lt; 70)
+                    </span>
                 </div>
             </div>
-            <form action="{{ route('admin.c45.preprocessing.refresh') }}" method="POST">
-                @csrf
-                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center transition shadow-sm cursor-pointer whitespace-nowrap">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                    Refresh Data
-                </button>
-            </form>
+
+            <div class="flex items-center gap-2 self-start md:self-center flex-shrink-0">
+                <form action="{{ route('admin.c45.preprocessing.refresh') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="inline-flex items-center px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition shadow-md shadow-indigo-200 cursor-pointer">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Refresh Preprocessing
+                    </button>
+                </form>
+                <a href="{{ route('admin.c45.perhitungan') }}" class="inline-flex items-center px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition shadow-sm">
+                    Lanjut ke C4.5 &rarr;
+                </a>
+            </div>
         </div>
 
         @if(isset($result) && ($result['success'] ?? false))
-            {{-- Data Terkategorisasi --}}
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100">
-                <div class="p-6 border-b border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-800">Data Terkategorisasi</h3>
-                    <p class="text-sm text-gray-500">Total: {{ $result['total'] }} data | 18 atribut mata pelajaran</p>
+            {{-- Data Terkategorisasi Table Card --}}
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="p-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div>
+                        <h3 class="text-base font-black text-slate-900">Data Hasil Diskritisasi</h3>
+                        <p class="text-xs text-slate-500 mt-0.5">Total: <span class="font-bold text-slate-800">{{ $result['total'] }}</span> baris dataset terproses</p>
+                    </div>
+                    <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                        Diskritisasi Berhasil
+                    </span>
                 </div>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full divide-y divide-gray-200 text-sm">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase sticky left-0 bg-gray-50 z-10">No</th>
-                                <th class="px-3 py-3 text-left text-xs font-semibold text-gray-500 uppercase sticky left-8 bg-gray-50 z-10">Nama</th>
+
+                <div class="overflow-x-auto max-h-[500px]">
+                    <table class="min-w-full divide-y divide-slate-100 text-xs text-left">
+                        <thead class="bg-slate-50 sticky top-0 z-20 shadow-xs">
+                            <tr class="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                                <th class="px-4 py-3 sticky left-0 bg-slate-50 z-30 w-12 text-center">#</th>
+                                <th class="px-4 py-3 sticky left-12 bg-slate-50 z-30 whitespace-nowrap min-w-[160px]">Nama Siswa</th>
                                 @foreach($result['subjects'] as $subj)
-                                    <th class="px-3 py-3 text-center text-xs font-semibold text-gray-500 uppercase whitespace-nowrap">{{ strtoupper(str_replace('_', ' ', $subj)) }}</th>
+                                    <th class="px-3 py-3 text-center whitespace-nowrap">{{ strtoupper(str_replace('_', ' ', $subj)) }}</th>
                                 @endforeach
-                                <th class="px-3 py-3 text-center text-xs font-semibold text-gray-800 uppercase">Status</th>
+                                <th class="px-4 py-3 text-center whitespace-nowrap bg-slate-100/80">Status Kelulusan</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-gray-100">
+                        <tbody class="divide-y divide-slate-100 bg-white">
                             @foreach($result['data'] as $idx => $item)
-                            <tr class="hover:bg-gray-50/50">
-                                <td class="px-3 py-2 text-gray-500 sticky left-0 bg-white z-10">{{ $idx + 1 }}</td>
-                                <td class="px-3 py-2 font-medium text-gray-900 sticky left-8 bg-white z-10 whitespace-nowrap">{{ $item['nama_siswa'] ?? '-' }}</td>
+                            <tr class="hover:bg-slate-50/80 transition-colors">
+                                <td class="px-4 py-2.5 text-slate-400 font-bold sticky left-0 bg-white z-10 text-center">{{ $idx + 1 }}</td>
+                                <td class="px-4 py-2.5 font-bold text-slate-800 sticky left-12 bg-white z-10 whitespace-nowrap">{{ $item['nama_siswa'] ?? '-' }}</td>
                                 @foreach($result['subjects'] as $subj)
                                     @php
                                         $cat = $item[$subj] ?? '-';
-                                        $colorClass = match($cat) {
-                                            'Sangat Baik' => 'bg-emerald-100 text-emerald-700',
-                                            'Baik' => 'bg-blue-100 text-blue-700',
-                                            'Cukup' => 'bg-amber-100 text-amber-700',
-                                            'Kurang' => 'bg-red-100 text-red-700',
-                                            default => 'bg-gray-100 text-gray-500'
+                                        $badgeClass = match($cat) {
+                                            'Sangat Baik' => 'bg-emerald-50 text-emerald-700 border-emerald-200',
+                                            'Baik' => 'bg-indigo-50 text-indigo-700 border-indigo-200',
+                                            'Cukup' => 'bg-amber-50 text-amber-700 border-amber-200',
+                                            'Kurang' => 'bg-rose-50 text-rose-700 border-rose-200',
+                                            default => 'bg-slate-50 text-slate-500 border-slate-200'
                                         };
                                     @endphp
-                                    <td class="px-3 py-2 text-center">
-                                        <span class="px-2 py-0.5 text-xs font-medium rounded-full {{ $colorClass }}">{{ $cat }}</span>
+                                    <td class="px-3 py-2.5 text-center whitespace-nowrap">
+                                        <span class="px-2 py-0.5 text-[10px] font-bold rounded-md border {{ $badgeClass }}">{{ $cat }}</span>
                                     </td>
                                 @endforeach
-                                <td class="px-3 py-2 text-center">
-                                    <span class="px-2.5 py-1 text-xs font-semibold rounded-full {{ $item['status'] == 'LOLOS' ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700' }}">
+                                <td class="px-4 py-2.5 text-center whitespace-nowrap bg-slate-50/50">
+                                    <span class="px-2.5 py-1 text-[10px] font-black rounded-full border {{ $item['status'] == 'LOLOS' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-rose-50 text-rose-700 border-rose-200' }}">
                                         {{ $item['status'] }}
                                     </span>
                                 </td>
@@ -92,49 +117,59 @@
                 </div>
             </div>
 
-            {{-- Tabel Frekuensi --}}
+            {{-- Tabel Frekuensi per Atribut --}}
             @if(isset($result['frequency']))
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100">
-                <div class="p-6 border-b border-gray-100">
-                    <h3 class="text-lg font-bold text-gray-800">Tabel Frekuensi per Atribut</h3>
-                    <p class="text-sm text-gray-500">Distribusi kategori dan kelas per mata pelajaran</p>
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="p-6 border-b border-slate-100">
+                    <h3 class="text-base font-black text-slate-900">Tabel Frekuensi Kontingensi Atribut</h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Distribusi jumlah record per kategori terhadap kelas target (LOLOS vs TIDAK LOLOS)</p>
                 </div>
                 <div class="overflow-x-auto">
-                    <table class="min-w-full divide-y divide-gray-200 text-sm">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th class="px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Atribut</th>
-                                <th class="px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase">Kategori</th>
-                                <th class="px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase">Total</th>
-                                <th class="px-4 py-3 text-center text-xs font-semibold text-emerald-600 uppercase">LOLOS</th>
-                                <th class="px-4 py-3 text-center text-xs font-semibold text-red-600 uppercase">TIDAK LOLOS</th>
+                    <table class="min-w-full divide-y divide-slate-100 text-xs text-left">
+                        <thead class="bg-slate-50">
+                            <tr class="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                                <th class="px-5 py-3.5">Atribut Mata Pelajaran</th>
+                                <th class="px-5 py-3.5 text-center">Kategori Nilai</th>
+                                <th class="px-5 py-3.5 text-center font-mono">Total Frekuensi</th>
+                                <th class="px-5 py-3.5 text-center text-emerald-700 font-bold">Lolos</th>
+                                <th class="px-5 py-3.5 text-center text-rose-700 font-bold">Tidak Lolos</th>
+                                <th class="px-5 py-3.5">Rasio Kelulusan</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-gray-100">
+                        <tbody class="divide-y divide-slate-100">
                             @foreach($result['frequency'] as $subj => $categories)
                                 @foreach($categories as $cat => $counts)
                                     @if($counts['total'] > 0)
-                                    <tr class="hover:bg-gray-50/50">
+                                    @php
+                                        $pctLolos = $counts['total'] > 0 ? round(($counts['LOLOS'] / $counts['total']) * 100) : 0;
+                                        $catColor = match($cat) {
+                                            'Sangat Baik' => 'bg-emerald-50 text-emerald-700 border-emerald-200',
+                                            'Baik' => 'bg-indigo-50 text-indigo-700 border-indigo-200',
+                                            'Cukup' => 'bg-amber-50 text-amber-700 border-amber-200',
+                                            'Kurang' => 'bg-rose-50 text-rose-700 border-rose-200',
+                                            default => 'bg-slate-50 text-slate-500 border-slate-200'
+                                        };
+                                    @endphp
+                                    <tr class="hover:bg-slate-50/60 transition-colors">
                                         @if($loop->first)
-                                            <td class="px-4 py-2 font-medium text-gray-900 uppercase" rowspan="{{ collect($categories)->filter(fn($c) => $c['total'] > 0)->count() }}">
+                                            <td class="px-5 py-3 font-bold text-slate-900 uppercase bg-slate-50/40" rowspan="{{ collect($categories)->filter(fn($c) => $c['total'] > 0)->count() }}">
                                                 {{ str_replace('_', ' ', $subj) }}
                                             </td>
                                         @endif
-                                        <td class="px-4 py-2 text-center">
-                                            @php
-                                                $catColor = match($cat) {
-                                                    'Sangat Baik' => 'bg-emerald-100 text-emerald-700',
-                                                    'Baik' => 'bg-blue-100 text-blue-700',
-                                                    'Cukup' => 'bg-amber-100 text-amber-700',
-                                                    'Kurang' => 'bg-red-100 text-red-700',
-                                                    default => 'bg-gray-100 text-gray-500'
-                                                };
-                                            @endphp
-                                            <span class="px-2 py-0.5 text-xs font-medium rounded-full {{ $catColor }}">{{ $cat }}</span>
+                                        <td class="px-5 py-3 text-center">
+                                            <span class="px-2.5 py-0.5 text-[10px] font-bold rounded-md border {{ $catColor }}">{{ $cat }}</span>
                                         </td>
-                                        <td class="px-4 py-2 text-center font-semibold text-gray-700">{{ $counts['total'] }}</td>
-                                        <td class="px-4 py-2 text-center text-emerald-600 font-medium">{{ $counts['LOLOS'] }}</td>
-                                        <td class="px-4 py-2 text-center text-red-600 font-medium">{{ $counts['TIDAK LOLOS'] }}</td>
+                                        <td class="px-5 py-3 text-center font-black text-slate-800 font-mono">{{ $counts['total'] }}</td>
+                                        <td class="px-5 py-3 text-center font-bold text-emerald-600 font-mono">{{ $counts['LOLOS'] }}</td>
+                                        <td class="px-5 py-3 text-center font-bold text-rose-600 font-mono">{{ $counts['TIDAK LOLOS'] }}</td>
+                                        <td class="px-5 py-3">
+                                            <div class="flex items-center gap-2">
+                                                <div class="w-24 bg-slate-100 rounded-full h-2 overflow-hidden">
+                                                    <div class="bg-emerald-500 h-2 rounded-full" style="width: {{ $pctLolos }}%"></div>
+                                                </div>
+                                                <span class="text-[10px] font-bold text-slate-600 font-mono">{{ $pctLolos }}%</span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     @endif
                                 @endforeach
@@ -146,17 +181,27 @@
             @endif
 
         @elseif(isset($result) && !($result['success'] ?? false))
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center">
-                <svg class="w-16 h-16 text-red-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg>
-                <p class="text-gray-500 font-medium">{{ $result['message'] ?? 'Gagal memproses data' }}</p>
-                <p class="text-gray-400 text-sm mt-1">Pastikan data sudah di-import dan koneksi database benar.</p>
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/80 p-12 text-center">
+                <div class="w-16 h-16 rounded-3xl bg-rose-50 text-rose-500 flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path></svg>
+                </div>
+                <h4 class="text-base font-bold text-slate-800">{{ $result['message'] ?? 'Gagal memproses preprocessing data' }}</h4>
+                <p class="text-xs text-slate-400 mt-1">Pastikan dataset sudah diimpor dan struktur kolom sesuai format template.</p>
             </div>
         @else
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center">
-                <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-                <p class="text-gray-500 font-medium">Belum ada data preprocessing</p>
-                <p class="text-gray-400 text-sm mt-1">Silakan <a href="{{ route('admin.c45.dataset') }}" class="text-blue-600 hover:underline font-medium">import dataset</a> terlebih dahulu, atau klik tombol "Refresh Data" di atas.</p>
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/80 p-12 text-center">
+                <div class="w-16 h-16 rounded-3xl bg-indigo-50 text-indigo-500 flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </div>
+                <h4 class="text-base font-bold text-slate-800">Belum Ada Data Preprocessing</h4>
+                <p class="text-xs text-slate-500 mt-1 mb-5">Silakan import dataset latih terlebih dahulu atau klik tombol Refresh Data.</p>
+                <div class="flex items-center justify-center gap-3">
+                    <a href="{{ route('admin.c45.dataset') }}" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-slate-800 transition shadow-sm">
+                        Kelola Dataset &rarr;
+                    </a>
+                </div>
             </div>
         @endif
+
     </div>
 </x-app-layout>
