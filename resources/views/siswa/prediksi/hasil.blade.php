@@ -44,29 +44,19 @@
             <div class="absolute -left-12 -bottom-12 w-56 h-56 rounded-full bg-emerald-400/20 blur-xl pointer-events-none"></div>
 
             <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="flex items-center gap-5 sm:gap-6 text-center sm:text-left">
-                    <div class="relative flex-shrink-0">
-                        <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-inner">
-                            <span class="text-4xl sm:text-5xl">🎉</span>
-                        </div>
-                        <div class="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-emerald-300 border-2 border-emerald-600 flex items-center justify-center text-xs">
-                            ✓
-                        </div>
+                <div class="text-center sm:text-left flex-1">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-xs font-bold text-emerald-100 uppercase tracking-widest mb-2">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span>
+                        Peluang Tinggi Diterima
                     </div>
-                    <div>
-                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-xs font-bold text-emerald-100 uppercase tracking-widest mb-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span>
-                            Peluang Tinggi Diterima
-                        </div>
-                        <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                            Selamat! Kamu Diprediksi <span class="text-amber-300 underline decoration-wavy decoration-amber-400">
-                                @if($isLolosPil1) LOLOS PILIHAN 1 @elseif($isLolosPil2) LOLOS PILIHAN 2 @else LOLOS @endif
-                            </span>
-                        </h2>
-                        <p class="text-xs sm:text-sm text-emerald-100/90 mt-1.5 max-w-xl leading-relaxed">
-                            Berdasarkan pencocokan pola data latih dan struktur pohon keputusan Algoritma C4.5, portofolio nilai rapormu memenuhi kualifikasi keketatan prodi target!
-                        </p>
-                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
+                        Selamat! Kamu Diprediksi <span class="inline-block whitespace-nowrap text-amber-300">
+                            @if($isLolosPil1) LOLOS PILIHAN 1 @elseif($isLolosPil2) LOLOS PILIHAN 2 @else LOLOS @endif
+                        </span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-emerald-100/90 mt-1.5 max-w-xl leading-relaxed">
+                        Berdasarkan pencocokan pola data latih, portofolio nilai rapormu memenuhi kualifikasi keketatan prodi target!
+                    </p>
                 </div>
 
                 <div class="flex-shrink-0 bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl p-4 text-center min-w-[170px]">
@@ -85,23 +75,16 @@
             <div class="absolute -left-12 -bottom-12 w-56 h-56 rounded-full bg-rose-400/20 blur-xl pointer-events-none"></div>
 
             <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="flex items-center gap-5 sm:gap-6 text-center sm:text-left">
-                    <div class="relative flex-shrink-0">
-                        <!-- <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-inner">
-                            <span class="text-4xl sm:text-5xl">💡</span>
-                        </div> -->
+                <div class="text-center sm:text-left flex-1">
+                    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-xs font-bold text-rose-100 uppercase tracking-widest mb-2">
+                        Peluang Masih Rendah
                     </div>
-                    <div>
-                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-xs font-bold text-rose-100 uppercase tracking-widest mb-2">
-                            Peluang Masih Rendah
-                        </div>
-                        <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                            Diprediksi <span class="text-amber-200">TIDAK LOLOS</span>
-                        </h2>
-                        <p class="text-xs sm:text-sm text-rose-100/90 mt-1.5 max-w-xl leading-relaxed">
-                            Tingkat keketatan pada program studi pilihanmu saat ini sangat tinggi dibandingkan nilai rapor atau prestasimu. Jangan berkecil hati, pertimbangkan rekomendasi prodi di bawah atau persiapkan jalur UTBK-SNBT!
-                        </p>
-                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
+                        Diprediksi <span class="inline-block whitespace-nowrap text-amber-200">TIDAK LOLOS</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-rose-100/90 mt-1.5 max-w-xl leading-relaxed">
+                        Tingkat keketatan pada program studi pilihanmu saat ini sangat tinggi dibandingkan nilai rapor atau prestasimu. Jangan berkecil hati, pertimbangkan rekomendasi prodi di bawah atau persiapkan jalur UTBK-SNBT!
+                    </p>
                 </div>
 
                 <div class="flex-shrink-0 bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl p-4 text-center min-w-[170px]">

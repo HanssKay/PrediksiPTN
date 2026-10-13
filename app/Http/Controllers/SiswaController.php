@@ -39,16 +39,17 @@ class SiswaController extends Controller
         // Ambil nilai atribut dari data siswa
         $value = $data[$attribute] ?? null;
 
-        // Normalize: lowercase untuk pencocokan
-        $valueLower = strtolower((string) $value);
-
-        // Cari child yang cocok
+        // 1. Cari child yang cocok langsung (exact match)
         if (isset($tree['children'][$value])) {
             return $this->predict($tree['children'][$value], $data);
         }
-        // Coba lowercase
-        if (isset($tree['children'][$valueLower])) {
-            return $this->predict($tree['children'][$valueLower], $data);
+
+        // 2. Pencocokan case-insensitive (menghindari perbedaan huruf kapital/kecil)
+        $valueLower = strtolower(trim((string) $value));
+        foreach ($tree['children'] as $childKey => $childNode) {
+            if (strtolower(trim((string) $childKey)) === $valueLower) {
+                return $this->predict($childNode, $data);
+            }
         }
 
         // Jika tidak ada cabang yang cocok, ambil cabang dengan count terbanyak
@@ -127,7 +128,7 @@ class SiswaController extends Controller
             'fisika' => $this->categorize($request->fisika_avg),
             'kimia' => $this->categorize($request->kimia_avg),
             'biologi' => $this->categorize($request->biologi_avg),
-            'prestasi_tertinggi' => strtolower($request->prestasi_tertinggi),
+            'prestasi_tertinggi' => $request->prestasi_tertinggi ?: 'Tidak Ada',
         ];
 
         // Baca model C4.5
@@ -143,10 +144,10 @@ class SiswaController extends Controller
             return back()->with('error', 'Pohon Keputusan C4.5 kosong. Hubungi Admin.');
         }
 
-        // TAHAP 1: Uji Pilihan 1 (Anggap Pilihan 2 Kosong)
+        // TAHAP 1: Uji Pilihan 1
         $kategorisasi1 = $baseKategorisasi;
-        $kategorisasi1['pil1_keketatan'] = strtolower($request->keketatan_pil1);
-        $kategorisasi1['pil2_keketatan'] = 'kosong';
+        $kategorisasi1['pil1_keketatan'] = $request->keketatan_pil1;
+        $kategorisasi1['pil2_keketatan'] = !empty($request->keketatan_pil2) ? $request->keketatan_pil2 : 'Tidak Memilih';
         
         $hasil1 = $this->predict($tree, $kategorisasi1);
         $hasilPrediksi = 'TIDAK LOLOS';
@@ -154,14 +155,13 @@ class SiswaController extends Controller
         if (strtoupper($hasil1) === 'LOLOS') {
             $hasilPrediksi = 'LOLOS PILIHAN 1';
         } else {
-            // Jika gagal di Pilihan 1, uji Pilihan 2 (jika ada)
-            if ($request->keketatan_pil2) {
-                // TAHAP 2: Uji Pilihan 2 
-                // Catatan: Karena model mungkin sensitif pada kolom pil1_keketatan vs pil2_keketatan, 
-                // kita menguji sesuai fitur yang ada di tree. Jika Pilihan 1 kita set kosong dan pilihan 2 diisi.
+            // Jika gagal di Pilihan 1, uji Pilihan 2 (jika siswa memilih Pilihan 2)
+            if (!empty($request->keketatan_pil2) && strtolower($request->keketatan_pil2) !== 'tidak memilih') {
+                // TAHAP 2: Uji Pilihan 2
+                // Menguji kualifikasi siswa terhadap prodi Pilihan 2
                 $kategorisasi2 = $baseKategorisasi;
-                $kategorisasi2['pil1_keketatan'] = 'kosong';
-                $kategorisasi2['pil2_keketatan'] = strtolower($request->keketatan_pil2);
+                $kategorisasi2['pil1_keketatan'] = $request->keketatan_pil2;
+                $kategorisasi2['pil2_keketatan'] = 'Tidak Memilih';
                 
                 $hasil2 = $this->predict($tree, $kategorisasi2);
                 
