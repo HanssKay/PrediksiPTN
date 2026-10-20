@@ -92,12 +92,90 @@ class SiswaController extends Controller
     }
 
     /**
-     * Form Prediksi
+     * Hitung rata-rata nilai mata pelajaran dari kolom semester
+     */
+    private function calculateAverage($row, $prefix, $startSmt = 1, $endSmt = 5)
+    {
+        $vals = [];
+        for ($i = $startSmt; $i <= $endSmt; $i++) {
+            $col = "{$prefix}_smt{$i}";
+            if (isset($row->$col) && $row->$col !== null && $row->$col !== '') {
+                $num = floatval($row->$col);
+                if ($num > 0) {
+                    $vals[] = $num;
+                }
+            }
+        }
+        return count($vals) > 0 ? round(array_sum($vals) / count($vals), 2) : 0;
+    }
+
+    /**
+     * Form Prediksi (Mode Hybrid: Nilai Rapor Resmi & Simulasi Mandiri)
      */
     public function formPrediksi()
     {
         $universitas = \App\Models\MasterUniversitas::with('prodis')->get();
-        return view('siswa.prediksi.form', compact('universitas'));
+
+        $user = Auth::user();
+        $siswa = \App\Models\Siswa::where('user_id', $user->id)->first();
+        $nisn = $siswa ? $siswa->nisn : $user->username;
+        $nama = $siswa ? $siswa->nama_lengkap : $user->name;
+        $nisnClean = ltrim($nisn, '0');
+
+        // Cari data nilai siswa di dataset_prediksi (berdasarkan NISN atau Nama)
+        $datasetRow = \App\Models\DatasetPrediksi::where(function($q) use ($nisn, $nisnClean, $nama) {
+            if (!empty($nisn)) {
+                $q->where('nisn', $nisn)->orWhere('nisn', $nisnClean);
+            }
+            if (!empty($nama)) {
+                $q->orWhere('nama_siswa', 'LIKE', '%' . trim($nama) . '%');
+            }
+        })->first();
+
+        $nilaiResmi = [
+            'ada' => false,
+            'nisn' => $nisn,
+            'nama' => $nama,
+            'kelas' => $siswa ? $siswa->kelas : null,
+        ];
+
+        if ($datasetRow) {
+            $bind = $this->calculateAverage($datasetRow, 'bind', 1, 5);
+            $bing = $this->calculateAverage($datasetRow, 'bing', 1, 5);
+            $mtkWajib = $this->calculateAverage($datasetRow, 'mtk_wajib', 1, 5);
+            $mtkLanjut = $this->calculateAverage($datasetRow, 'mtk_lanjut', 3, 5);
+            $fisika = $this->calculateAverage($datasetRow, 'fisika', 3, 5);
+            $kimia = $this->calculateAverage($datasetRow, 'kimia', 3, 5);
+            $biologi = $this->calculateAverage($datasetRow, 'biologi', 3, 5);
+
+            // Hitung berapa semester yang ada nilainya
+            $semesterCount = 0;
+            for ($s = 1; $s <= 5; $s++) {
+                if (!empty($datasetRow->{"bind_smt{$s}"})) $semesterCount++;
+            }
+
+            $nilaiResmi = [
+                'ada' => true,
+                'nisn' => $datasetRow->nisn ?: $nisn,
+                'nama' => $datasetRow->nama_siswa ?: $nama,
+                'kelas' => $siswa ? $siswa->kelas : ($datasetRow->rank_paralel ? "Rank {$datasetRow->rank_paralel}" : null),
+                'semester_count' => $semesterCount ?: 5,
+                'bind_avg' => $bind,
+                'bing_avg' => $bing,
+                'mtk_wajib_avg' => $mtkWajib,
+                'mtk_lanjut_avg' => $mtkLanjut,
+                'fisika_avg' => $fisika,
+                'kimia_avg' => $kimia,
+                'biologi_avg' => $biologi,
+                'prestasi_tertinggi' => $datasetRow->prestasi_tertinggi ? ucfirst(strtolower(trim($datasetRow->prestasi_tertinggi))) : 'Tidak Ada',
+                'pilihan_1_univ' => $datasetRow->pilihan_1_univ,
+                'pilihan_1_prodi' => $datasetRow->pilihan_1_prodi,
+                'pilihan_2_univ' => $datasetRow->pilihan_2_univ,
+                'pilihan_2_prodi' => $datasetRow->pilihan_2_prodi,
+            ];
+        }
+
+        return view('siswa.prediksi.form', compact('universitas', 'nilaiResmi'));
     }
 
     /**
@@ -203,6 +281,7 @@ class SiswaController extends Controller
         $riwayat = RiwayatPrediksi::create([
             'user_id' => Auth::id(),
             'nama_siswa' => Auth::user()->name,
+            'mode_prediksi' => $request->input('mode_prediksi', 'resmi'),
             'bind_avg' => $request->bind_avg,
             'bing_avg' => $request->bing_avg,
             'mtk_wajib_avg' => $request->mtk_wajib_avg,

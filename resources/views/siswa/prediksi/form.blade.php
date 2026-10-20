@@ -49,21 +49,118 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
                 {{-- LEFT/MAIN (2 Cols): INPUT FORM --}}
-                <div class="lg:col-span-2 space-y-8">
+                <div class="lg:col-span-2 space-y-6">
+
+                    {{-- HYBRID MODE SELECTOR --}}
+                    <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-blue-50 text-blue-700 border border-blue-200">
+                                        Metode Input Nilai
+                                    </span>
+                                    @if($nilaiResmi['ada'])
+                                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                            <svg class="w-3 h-3 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                            Rapor Terintegrasi
+                                        </span>
+                                    @endif
+                                </div>
+                                <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">Pilih Mode Analisis</h2>
+                                <p class="text-xs text-slate-500">Gunakan nilai rapor resmi sekolah atau lakukan simulasi mandiri.</p>
+                            </div>
+                            <input type="hidden" name="mode_prediksi" id="mode_prediksi" value="{{ $nilaiResmi['ada'] ? 'resmi' : 'simulasi' }}">
+                        </div>
+
+                        {{-- Mode Options (Tab Buttons) --}}
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            
+                            {{-- Button 1: Nilai Rapor Resmi --}}
+                            <button type="button" 
+                                    onclick="setPredictionMode('resmi')" 
+                                    id="btn_mode_resmi"
+                                    class="relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 {{ $nilaiResmi['ada'] ? 'border-blue-600 bg-blue-50/50 shadow-sm' : 'border-slate-200 bg-slate-50/60 opacity-60' }}"
+                                    {{ !$nilaiResmi['ada'] ? 'disabled' : '' }}>
+                                <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 mt-0.5 font-bold shadow-xs">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-black text-slate-900">Nilai Rapor Resmi</span>
+                                        <span id="badge_active_resmi" class="text-[10px] font-bold px-2 py-0.5 rounded-full {{ $nilaiResmi['ada'] ? 'bg-blue-600 text-white' : 'hidden' }}">Aktif</span>
+                                    </div>
+                                    <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                                        @if($nilaiResmi['ada'])
+                                            Otomatis ditarik dari database sekolah (NISN: <b class="font-mono text-slate-700">{{ $nilaiResmi['nisn'] }}</b>).
+                                        @else
+                                            Nilai rapor resmi belum terdata di sistem.
+                                        @endif
+                                    </p>
+                                </div>
+                            </button>
+
+                            {{-- Button 2: Simulasi Mandiri --}}
+                            <button type="button" 
+                                    onclick="setPredictionMode('simulasi')" 
+                                    id="btn_mode_simulasi"
+                                    class="relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 {{ !$nilaiResmi['ada'] ? 'border-amber-500 bg-amber-50/40 shadow-sm' : 'border-slate-200 bg-white hover:border-slate-300' }}">
+                                <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 mt-0.5 font-bold shadow-xs">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-black text-slate-900">Simulasi Target Nilai</span>
+                                        <span id="badge_active_simulasi" class="text-[10px] font-bold px-2 py-0.5 rounded-full {{ !$nilaiResmi['ada'] ? 'bg-amber-600 text-white' : 'hidden' }}">Aktif</span>
+                                    </div>
+                                    <p class="text-[11px] text-slate-500 mt-1 leading-snug">
+                                        Bebas mengetik angka nilai untuk mencoba target nilai di masa depan (simulasi kelas 10/11).
+                                    </p>
+                                </div>
+                            </button>
+
+                        </div>
+
+                        @if($nilaiResmi['ada'])
+                        <!-- Info Bar for Official Data
+                        <div id="banner_resmi_info" class="p-3.5 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-emerald-900 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+                                <div>
+                                    <span>Nilai resmi ditemukan atas nama <b>{{ $nilaiResmi['nama'] }}</b> (NISN: <span class="font-mono font-bold">{{ $nilaiResmi['nisn'] }}</span>{{ $nilaiResmi['kelas'] ? ' &bull; ' . $nilaiResmi['kelas'] : '' }}).</span>
+                                    <span class="text-emerald-700 block text-[11px] mt-0.5">Nilai rapor terkunci demi keaslian data. Anda tinggal memilih program studi tujuan.</span>
+                                </div>
+                            </div>
+                            <button type="button" onclick="setPredictionMode('simulasi')" class="shrink-0 text-xs font-extrabold text-blue-700 hover:text-blue-900 bg-white px-3 py-1.5 rounded-xl border border-blue-200 shadow-xs hover:bg-blue-50 transition-all cursor-pointer">
+                                ✏️ Coba Ubah Nilai
+                            </button>
+                        </div>
+                        -->
+                        @else
+                        <div class="p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200 text-amber-900 text-xs flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Data nilai rapor Anda belum dimasukkan oleh Admin sekolah. Anda dapat menggunakan <b>Mode Simulasi Mandiri</b> untuk mengisi nilai secara bebas.</span>
+                        </div>
+                        @endif
+                    </div>
 
                     {{-- SECTION 1: Nilai Rata-rata Rapot --}}
                     <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
-                        <div class="flex items-center justify-between border-b border-slate-100 pb-5">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-5">
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold shadow-sm">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                                 </div>
                                 <div>
-                                    <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">1. Rata-rata Nilai Rapot (Sem. 1 - 5)</h2>
+                                    <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">1. Rata-rata Nilai Rapot</h2>
                                     <p class="text-xs text-slate-500">Skala 0 - 100. Sistem otomatis mengkategorikan ke C4.5.</p>
                                 </div>
                             </div>
-                            <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">7 Mapel</span>
+                            <div class="flex items-center gap-2">
+                                <span id="status_mode_badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full {{ $nilaiResmi['ada'] ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-amber-50 text-amber-700 border border-amber-200' }}">
+                                    {{ $nilaiResmi['ada'] ? 'Mode: Rapor Resmi' : 'Mode: Simulasi Mandiri' }}
+                                </span>
+                                <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">7 Mapel</span>
+                            </div>
                         </div>
 
                         {{-- Subject Grid --}}
@@ -77,7 +174,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_bind">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="bind_avg" name="bind_avg" value="{{ old('bind_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="bind_avg" name="bind_avg" value="{{ old('bind_avg', $nilaiResmi['ada'] ? ($nilaiResmi['bind_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 88.50" required>
                             </div>
@@ -90,7 +187,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_bing">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="bing_avg" name="bing_avg" value="{{ old('bing_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="bing_avg" name="bing_avg" value="{{ old('bing_avg', $nilaiResmi['ada'] ? ($nilaiResmi['bing_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 85.00" required>
                             </div>
@@ -103,7 +200,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_mtk_wajib">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="mtk_wajib_avg" name="mtk_wajib_avg" value="{{ old('mtk_wajib_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="mtk_wajib_avg" name="mtk_wajib_avg" value="{{ old('mtk_wajib_avg', $nilaiResmi['ada'] ? ($nilaiResmi['mtk_wajib_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 86.00" required>
                             </div>
@@ -116,7 +213,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_mtk_lanjut">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="mtk_lanjut_avg" name="mtk_lanjut_avg" value="{{ old('mtk_lanjut_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="mtk_lanjut_avg" name="mtk_lanjut_avg" value="{{ old('mtk_lanjut_avg', $nilaiResmi['ada'] ? ($nilaiResmi['mtk_lanjut_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 80.00" required>
                             </div>
@@ -129,7 +226,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_fisika">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="fisika_avg" name="fisika_avg" value="{{ old('fisika_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="fisika_avg" name="fisika_avg" value="{{ old('fisika_avg', $nilaiResmi['ada'] ? ($nilaiResmi['fisika_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 84.00" required>
                             </div>
@@ -142,7 +239,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_kimia">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="kimia_avg" name="kimia_avg" value="{{ old('kimia_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="kimia_avg" name="kimia_avg" value="{{ old('kimia_avg', $nilaiResmi['ada'] ? ($nilaiResmi['kimia_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 83.50" required>
                             </div>
@@ -155,7 +252,7 @@
                                     </label>
                                     <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_biologi">-</span>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="biologi_avg" name="biologi_avg" value="{{ old('biologi_avg') }}" 
+                                <input type="number" step="0.01" min="0" max="100" id="biologi_avg" name="biologi_avg" value="{{ old('biologi_avg', $nilaiResmi['ada'] ? ($nilaiResmi['biologi_avg'] ?? 0) : '') }}" 
                                        class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
                                        placeholder="Misal: 87.00" required>
                             </div>
@@ -355,6 +452,8 @@
     @push('scripts')
     <script>
         const masterData = @json($universitas);
+        const officialGrades = @json($nilaiResmi);
+        let currentMode = officialGrades && officialGrades.ada ? 'resmi' : 'simulasi';
         
         // Setup Realtime Calculator & Badges
         function getCategory(val) {
@@ -382,6 +481,11 @@
                     if (badge) {
                         badge.textContent = cat.label;
                         badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full ' + cat.color;
+                    }
+                } else if (!isNaN(val) && val === 0 && input.value !== '') {
+                    if (badge) {
+                        badge.textContent = '0 (Kurang)';
+                        badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 border border-slate-200';
                     }
                 } else if (badge) {
                     badge.textContent = '-';
@@ -490,24 +594,117 @@
             populateProdi();
         }
 
+        // Select Prestasi Programmatically
+        function selectPrestasi(val) {
+            if (!val) val = 'Tidak Ada';
+            document.querySelectorAll('.prestasi-radio').forEach(radio => {
+                const isMatch = radio.value.toLowerCase() === val.toLowerCase();
+                if (isMatch) {
+                    radio.checked = true;
+                    const label = radio.closest('label');
+                    if (label) {
+                        document.querySelectorAll('#prestasiGrid label').forEach(l => {
+                            l.classList.remove('border-blue-600', 'bg-blue-50/40', 'shadow-sm');
+                            l.classList.add('border-slate-200/80', 'bg-white');
+                            const dot = l.querySelector('.check-dot span');
+                            if (dot) dot.classList.add('hidden');
+                        });
+                        label.classList.remove('border-slate-200/80', 'bg-white');
+                        label.classList.add('border-blue-600', 'bg-blue-50/40', 'shadow-sm');
+                        const dot = label.querySelector('.check-dot span');
+                        if (dot) dot.classList.remove('hidden');
+                    }
+                }
+            });
+        }
+
+        // Set Prediction Mode (Hybrid Function)
+        function setPredictionMode(mode) {
+            currentMode = mode;
+            const modeInput = document.getElementById('mode_prediksi');
+            if (modeInput) modeInput.value = mode;
+
+            const btnResmi = document.getElementById('btn_mode_resmi');
+            const btnSimulasi = document.getElementById('btn_mode_simulasi');
+            const badgeResmi = document.getElementById('badge_active_resmi');
+            const badgeSimulasi = document.getElementById('badge_active_simulasi');
+            const bannerResmi = document.getElementById('banner_resmi_info');
+            const statusModeBadge = document.getElementById('status_mode_badge');
+            const inputs = document.querySelectorAll('.score-input');
+
+            if (mode === 'resmi' && officialGrades && officialGrades.ada) {
+                // Style Active Button Resmi
+                if (btnResmi) btnResmi.className = 'relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 border-blue-600 bg-blue-50/50 shadow-sm';
+                if (btnSimulasi) btnSimulasi.className = 'relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 border-slate-200 bg-white hover:border-slate-300';
+                if (badgeResmi) badgeResmi.classList.remove('hidden');
+                if (badgeSimulasi) badgeSimulasi.classList.add('hidden');
+                if (bannerResmi) bannerResmi.classList.remove('hidden');
+
+                if (statusModeBadge) {
+                    statusModeBadge.textContent = 'Mode: Rapor Resmi (Terkunci)';
+                    statusModeBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1';
+                }
+
+                // Helper: nilai 0 tetap dipertahankan sebagai angka 0 (bukan string kosong '')
+                const getOfficialVal = (val) => (val !== undefined && val !== null && val !== '') ? val : 0;
+
+                // Fill Official Values
+                document.getElementById('bind_avg').value = getOfficialVal(officialGrades.bind_avg);
+                document.getElementById('bing_avg').value = getOfficialVal(officialGrades.bing_avg);
+                document.getElementById('mtk_wajib_avg').value = getOfficialVal(officialGrades.mtk_wajib_avg);
+                document.getElementById('mtk_lanjut_avg').value = getOfficialVal(officialGrades.mtk_lanjut_avg);
+                document.getElementById('fisika_avg').value = getOfficialVal(officialGrades.fisika_avg);
+                document.getElementById('kimia_avg').value = getOfficialVal(officialGrades.kimia_avg);
+                document.getElementById('biologi_avg').value = getOfficialVal(officialGrades.biologi_avg);
+
+                // Select Official Prestasi
+                selectPrestasi(officialGrades.prestasi_tertinggi || 'Tidak Ada');
+
+                // Set Readonly on Inputs
+                inputs.forEach(input => {
+                    input.readOnly = true;
+                    input.classList.add('bg-slate-100', 'text-slate-600', 'cursor-not-allowed');
+                    input.classList.remove('bg-white', 'text-slate-800');
+                });
+            } else {
+                // Style Active Button Simulasi
+                if (btnResmi && officialGrades && officialGrades.ada) {
+                    btnResmi.className = 'relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 border-slate-200 bg-white hover:border-slate-300';
+                }
+                if (btnSimulasi) btnSimulasi.className = 'relative text-left p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 border-amber-500 bg-amber-50/40 shadow-sm';
+                if (badgeResmi) badgeResmi.classList.add('hidden');
+                if (badgeSimulasi) badgeSimulasi.classList.remove('hidden');
+                if (bannerResmi) bannerResmi.classList.add('hidden');
+
+                if (statusModeBadge) {
+                    statusModeBadge.textContent = 'Mode: Simulasi Mandiri (Bisa Diedit)';
+                    statusModeBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1';
+                }
+
+                // Unlock Inputs
+                inputs.forEach(input => {
+                    input.readOnly = false;
+                    input.classList.remove('bg-slate-100', 'text-slate-600', 'cursor-not-allowed');
+                    input.classList.add('bg-white', 'text-slate-800');
+                });
+            }
+
+            updateScores();
+        }
+
         // Prestasi Card Click Handling
         document.querySelectorAll('#prestasiGrid label').forEach(label => {
             label.addEventListener('click', function() {
-                document.querySelectorAll('#prestasiGrid label').forEach(l => {
-                    l.classList.remove('border-blue-600', 'bg-blue-50/40', 'shadow-sm');
-                    l.classList.add('border-slate-200/80', 'bg-white');
-                    const dot = l.querySelector('.check-dot span');
-                    if (dot) dot.classList.add('hidden');
-                });
-                this.classList.remove('border-slate-200/80', 'bg-white');
-                this.classList.add('border-blue-600', 'bg-blue-50/40', 'shadow-sm');
-                const dot = this.querySelector('.check-dot span');
-                if (dot) dot.classList.remove('hidden');
+                const radio = this.querySelector('.prestasi-radio');
+                if (radio) {
+                    selectPrestasi(radio.value);
+                }
             });
         });
 
         // Quick Fill Helper for easy demo
         function fillSampleData(avg) {
+            setPredictionMode('simulasi');
             document.getElementById('bind_avg').value = (avg + 1).toFixed(2);
             document.getElementById('bing_avg').value = (avg - 0.5).toFixed(2);
             document.getElementById('mtk_wajib_avg').value = (avg + 2).toFixed(2);
@@ -521,6 +718,18 @@
         document.addEventListener('DOMContentLoaded', function() {
             setupDropdowns('pil1');
             setupDropdowns('pil2');
+            
+            // Inisialisasi Mode Awal
+            const oldMode = "{{ old('mode_prediksi') }}";
+            if (oldMode === 'simulasi' || (!officialGrades || !officialGrades.ada)) {
+                setPredictionMode('simulasi');
+                @if(old('prestasi_tertinggi'))
+                    selectPrestasi("{{ old('prestasi_tertinggi') }}");
+                @endif
+            } else {
+                setPredictionMode('resmi');
+            }
+
             updateScores();
         });
     </script>

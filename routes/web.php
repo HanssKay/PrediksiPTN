@@ -23,13 +23,14 @@ Route::get('/logout', function () {
 // ROUTE SEMENTARA: Update/Seed Master Universitas & Prodi ke Database Hostinger
 Route::get('/seed-universitas', function () {
     try {
+        \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
         \Illuminate\Support\Facades\Artisan::call('db:seed', [
             '--class' => 'MasterDataSeeder',
             '--force' => true,
         ]);
         $totalUniv = \App\Models\MasterUniversitas::count();
         $totalProdi = \App\Models\MasterProdi::count();
-        return "BERHASIL! Database berhasil diperbarui:<br>- Total Universitas: <b>{$totalUniv} PTN</b><br>- Total Program Studi: <b>{$totalProdi} Prodi</b><br><br><a href='/siswa/prediksi'>Klik di sini untuk buka Form Siswa</a>";
+        return "BERHASIL! Database & Migrasi berhasil diperbarui:<br>- Total Universitas: <b>{$totalUniv} PTN</b><br>- Total Program Studi: <b>{$totalProdi} Prodi</b><br><br><a href='/siswa/prediksi'>Klik di sini untuk buka Form Siswa</a>";
     } catch (\Exception $e) {
         return "GAGAL SEEDING: " . $e->getMessage();
     }

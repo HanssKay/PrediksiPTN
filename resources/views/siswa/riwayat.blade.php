@@ -49,10 +49,21 @@
                                 {{ $riwayats->firstItem() + $index }}
                             </td>
 
-                            {{-- Tanggal --}}
+                            {{-- Tanggal & Mode --}}
                             <td class="py-4 px-5 whitespace-nowrap">
                                 <span class="font-semibold text-slate-800 block">{{ $riwayat->created_at->format('d M Y') }}</span>
-                                <span class="text-[11px] text-slate-400 font-mono">{{ $riwayat->created_at->format('H:i') }} WIB</span>
+                                <div class="flex items-center gap-1.5 mt-1">
+                                    <span class="text-[11px] text-slate-400 font-mono">{{ $riwayat->created_at->format('H:i') }} WIB</span>
+                                    @if(($riwayat->mode_prediksi ?? 'resmi') === 'resmi')
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                            Rapor Resmi
+                                        </span>
+                                    @else
+                                        <span class="px-1.5 py-0.5 rounded text-[10px] font-extrabold bg-amber-50 text-amber-700 border border-amber-200">
+                                            Simulasi
+                                        </span>
+                                    @endif
+                                </div>
                             </td>
 
                             {{-- Pilihan 1 --}}

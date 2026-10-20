@@ -10,7 +10,14 @@
                     </svg>
                     Kembali ke Riwayat Prediksi
                 </a>
-                <h1 class="text-2xl font-black text-slate-900 tracking-tight">Rangkuman Hasil Prediksi SNBP</h1>
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <h1 class="text-2xl font-black text-slate-900 tracking-tight">Rangkuman Hasil Prediksi SNBP</h1>
+                    @php $isModeResmi = ($riwayat->mode_prediksi ?? 'resmi') === 'resmi'; @endphp
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black {{ $isModeResmi ? 'bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs' : 'bg-amber-50 text-amber-700 border border-amber-200 shadow-xs' }}">
+                        <span class="w-2 h-2 rounded-full {{ $isModeResmi ? 'bg-emerald-500' : 'bg-amber-500' }}"></span>
+                        {{ $isModeResmi ? 'Rapor Resmi Sekolah' : 'Simulasi Mandiri' }}
+                    </span>
+                </div>
                 <p class="text-xs text-slate-500 mt-0.5">Dianalisis menggunakan Decision Tree C4.5 &bull; {{ $riwayat->created_at ? $riwayat->created_at->format('d M Y, H:i') : 'Baru saja' }}</p>
             </div>
             <div class="flex items-center gap-2">
