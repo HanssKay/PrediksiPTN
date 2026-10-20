@@ -30,7 +30,7 @@
                         <span class="w-2 h-2 rounded-full bg-indigo-500"></span> {{ number_format($totalData) }} Data Training
                     </span>
                     <span>&bull;</span>
-                    <span class="text-slate-500">SMOTE Balancing Active</span>
+                    <span class="text-slate-500">Data Asli (Tanpa Penyeimbang)</span>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                         <svg class="w-4 h-4 mr-1.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
-                        Unduh SMOTE CSV
+                        Unduh Dataset CSV
                     </a>
                 @endif
                 <form action="{{ route('admin.c45.process') }}" method="POST" x-data="{ loading: false }" @submit="loading = true">

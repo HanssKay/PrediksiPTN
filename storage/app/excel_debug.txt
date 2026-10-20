@@ -1,4 +1,4 @@
-=== IMPORT DEBUG 2026-10-12 01:49:03 ===
+=== IMPORT DEBUG 2026-10-20 23:32:54 ===
 
 === RAW HEADERS ===
 Col 0: [rank_paralel]
@@ -83,11 +83,11 @@ Col 37 (status_akhir) → status
 Col 38 (prestasi_tertinggi) → prestasi_tertinggi
 
 === SAMPLE DATA (5 baris pertama) ===
-Row 1: nama=CHRISTINE CASSANOVA, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Universitas Airlangga
-Row 2: nama=NATHANAEL OLIVER SINATHYRA SANTOSO, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Universitas Jenderal Soedirman
-Row 3: nama=DWI ATIKA AYU, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=Institut Pertanian Bogor
-Row 4: nama=ANGGITA BEAUTY SIMANGUNSONG, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=Universitas Indonesia
-Row 5: nama=MISCHA RASYA HARUN, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=Universitas Diponegoro
+Row 1: nama=RAISHA ZETA VALEZKA, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=UNIVERSITAS INDONESIA
+Row 2: nama=Rafael Jonathan Sahat Christian Hutabarat, status_pil1_raw=[], status_pil2_raw=[], status_final=LOLOS, univ=INSTITUT TEKNOLOGI BANDUNG
+Row 3: nama=ALVIA RIZQIA, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=UNIVERSITAS INDONESIA
+Row 4: nama=IRENNE AULIA SARAH, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=UNIVERSITAS INDONESIA
+Row 5: nama=ABRAHAM KEVIN, status_pil1_raw=[], status_pil2_raw=[], status_final=TIDAK LOLOS, univ=UNIVERSITAS INDONESIA
 
 === SUMMARY ===
-Imported: 96, Skipped: 0
+Imported: 211, Skipped: 0

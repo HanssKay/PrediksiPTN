@@ -1,0 +1,87 @@
+Universitas Negeri Jakarta 
+Pendidikan Matematika = tinggi
+Pendidikan Fisika = rendah
+Pendidikan Kimia = rendah
+Pendidikan Biologi = sedang
+Pendidikan Sosiologi = sedang
+Pendidikan Bisnis = tinggi
+Pendidikan Teknik Elektro = tinggi
+Pendidikan Teknik Mesin = rendah
+Pendidikan Teknik Informatika dan Komputer = tinggi
+Pendidikan Ekonomi = sedang
+Ilmu Komputer = tinggi
+Pendidikan Bahasa Jepang = tinggi
+Pendidikan Bahasa Perancis = rendah
+
+UPN Jakarta
+Teknik Industri = tinggi
+Teknik Mesin = sedang
+Informatika = tinggi
+Sistem Informasi = tinggi
+Kedokteran = tinggi
+Keperawatan = tinggi
+Manajemen = tinggi
+Hubungan Internasional = sedang
+Ilmu Komunikasi = tinggi
+Ilmu Politik = sedang
+
+Institut Pertanian Bogor
+Teknologi Pangan = sedang
+Ilmu Gizi = tinggi
+Aktuaria = tinggi 
+Akuntansi = sedang
+Statistika = tinggi
+Arsitektur = sedang
+Teknik Sipil & Lingkungan = tinggi
+Ekonomi Sumberdaya & Lingkungan = sedang
+Teknologi Industri Pertanian = sedang
+Manajemen Industri Jasa Makanan & Gizi = sedang
+
+UIN Jakarta 
+Kesehatan Masyarakat = sedang
+Pendidikan Matematika = rendah
+Teknik Informatika = tinggi 
+Ilmu Perpustakaan = rendah
+Kimia = rendah
+Farmasi = tinggi
+Pendidikan Dokter = tinggi
+Ilmu Hubungan Internasonal = sedang
+Ilmu Hukum = sedang
+Biologi = rendah
+
+Universitas Diponegoro
+Kedokteran = tinggi
+Statistika = sedang
+Kesehatan Masyarakat = tinggi
+Teknik Sipil = tinggi
+Teknik Industri = tinggi
+Farmasi = tinggi
+Ilmu Hubungan Internasional = tinggi
+Ilmu Hukum = sedang
+Ilmu Komunikasi = tinggi
+Informatika = tinggi
+
+Universitas Airlangga 
+Kedokteran = tinggi
+Sistem Informasi = tinggi
+Ilmu Hukum = sedang
+Ilmu Hubungan Internasional = sedang
+Akuntansi = sedang
+Ilmu Komunikasi = tinggi
+Sastra Indonesia = sedang
+Sastra Inggris = sedang
+Sastra Jepang = sedang
+Antropologi = rendah
+Ilmu Informasi & Perpustakaan = rendah
+
+Universitas Brawijaya
+Bioteknologi = sedang
+Manajemen = tinggi
+Pendidikan Dokter Gigi = tinggi
+Teknik Komputer = sedang
+Teknik Sipil = sedang
+Sistem Informasi = sedang
+Ilmu Komunikasi = sedang
+Sastra Perancis = rendah
+Sosiologi = rendah
+Peternakan = rendah

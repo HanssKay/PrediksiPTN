@@ -153,7 +153,7 @@
                             <span class="text-[10px] font-bold text-indigo-700 uppercase">Core</span>
                         </div>
                         <h4 class="text-xs font-black text-indigo-900 group-hover:text-indigo-700 transition-colors">Perhitungan C4.5</h4>
-                        <p class="text-[11px] text-indigo-900/80 mt-1">Oversampling SMOTE & kalkulasi Gain Ratio.</p>
+                        <p class="text-[11px] text-indigo-900/80 mt-1">Kalkulasi Entropi & Gain Ratio C4.5.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-indigo-200/60 text-[10px] font-bold text-indigo-600 flex items-center justify-between">
                         <span>Jalankan Model</span>

@@ -101,25 +101,7 @@ def test(method='random', arg1=80, arg2=None):
     if not train_data or not test_data:
         return {'success': False, 'message': 'Data tidak cukup untuk split. Pastikan tahun yang dipilih memiliki data yang valid.'}
 
-    # Menangani Imbalanced Data HANYA pada Data Training
-    # Agar pohon yang dibentuk seimbang pemahamannya antara LOLOS dan TIDAK LOLOS
-    lolos_data = [d for d in train_data if d['status'] == 'LOLOS']
-    tidak_lolos_data = [d for d in train_data if d['status'] == 'TIDAK LOLOS']
-    
-    if len(lolos_data) > 0 and len(tidak_lolos_data) > 0:
-        if len(lolos_data) < len(tidak_lolos_data):
-            diff = len(tidak_lolos_data) - len(lolos_data)
-            original_lolos = list(lolos_data)
-            for i in range(diff):
-                lolos_data.append(original_lolos[i % len(original_lolos)])
-        elif len(tidak_lolos_data) < len(lolos_data):
-            diff = len(lolos_data) - len(tidak_lolos_data)
-            original_tidak_lolos = list(tidak_lolos_data)
-            for i in range(diff):
-                tidak_lolos_data.append(original_tidak_lolos[i % len(original_tidak_lolos)])
-                
-        train_data = lolos_data + tidak_lolos_data
-        # random.shuffle(train_data) # Dihapus agar urutan tetap sama dan hasil hitungan manual bisa persis sama
+    # Tanpa Oversampling (Data training dan data testing murni data asli)
 
     # Training
     algo = C45Algorithm()

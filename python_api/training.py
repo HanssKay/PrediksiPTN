@@ -33,22 +33,8 @@ def run_training(processed_data):
         row['status'] = item.get('status', 'TIDAK LOLOS')
         training_data.append(row)
 
-    # Menangani Imbalanced Data dengan Oversampling
-    lolos_data = [d for d in training_data if d['status'] == 'LOLOS']
-    tidak_lolos_data = [d for d in training_data if d['status'] == 'TIDAK LOLOS']
-    if len(lolos_data) > 0 and len(tidak_lolos_data) > 0:
-        if len(lolos_data) < len(tidak_lolos_data):
-            diff = len(tidak_lolos_data) - len(lolos_data)
-            original_lolos = list(lolos_data)
-            for i in range(diff):
-                lolos_data.append(original_lolos[i % len(original_lolos)])
-        elif len(tidak_lolos_data) < len(lolos_data):
-            diff = len(lolos_data) - len(tidak_lolos_data)
-            original_tidak_lolos = list(tidak_lolos_data)
-            for i in range(diff):
-                tidak_lolos_data.append(original_tidak_lolos[i % len(original_tidak_lolos)])
-                
-        training_data = lolos_data + tidak_lolos_data
+    # Tanpa Oversampling (Menggunakan data riil asli tanpa penyeimbangan)
+    # training_data tetap murni sesuai data masukan dari preprocessing
 
     # Bangun pohon keputusan
     algo = C45Algorithm()
