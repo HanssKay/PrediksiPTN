@@ -20,6 +20,21 @@ Route::get('/logout', function () {
     return redirect('/login');
 });
 
+// ROUTE SEMENTARA: Update/Seed Master Universitas & Prodi ke Database Hostinger
+Route::get('/seed-universitas', function () {
+    try {
+        \Illuminate\Support\Facades\Artisan::call('db:seed', [
+            '--class' => 'MasterDataSeeder',
+            '--force' => true,
+        ]);
+        $totalUniv = \App\Models\MasterUniversitas::count();
+        $totalProdi = \App\Models\MasterProdi::count();
+        return "BERHASIL! Database berhasil diperbarui:<br>- Total Universitas: <b>{$totalUniv} PTN</b><br>- Total Program Studi: <b>{$totalProdi} Prodi</b><br><br><a href='/siswa/prediksi'>Klik di sini untuk buka Form Siswa</a>";
+    } catch (\Exception $e) {
+        return "GAGAL SEEDING: " . $e->getMessage();
+    }
+});
+
 // ROUTE DARURAT UNTUK MEMPERBAIKI DATABASE
 Route::get('/fix-db', function () {
     try {
