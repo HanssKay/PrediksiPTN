@@ -10,7 +10,7 @@ class RiwayatController extends Controller
 {
     public function index(Request $request)
     {
-        $query = RiwayatPrediksi::query();
+        $query = RiwayatPrediksi::with('user.siswa');
 
         // Fitur Pencarian sederhana berdasarkan nama
         if ($request->filled('search')) {

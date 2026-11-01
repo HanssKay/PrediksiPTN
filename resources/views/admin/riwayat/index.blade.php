@@ -65,8 +65,19 @@
                                 <div class="font-black text-slate-900 group-hover:text-indigo-600 transition-colors">
                                     {{ $riwayat->nama_siswa ?? 'Anonim' }}
                                 </div>
-                                <div class="flex items-center gap-1.5 mt-0.5">
-                                    <span class="text-[10px] text-slate-400">Siswa Terdaftar</span>
+                                <div class="flex items-center gap-1.5 mt-0.5 flex-wrap">
+                                    @php
+                                        $asalSekolah = $riwayat->user?->siswa?->asal_sekolah;
+                                        $isLuar = $asalSekolah && $asalSekolah !== '-' && stripos($asalSekolah, '60') === false;
+                                    @endphp
+                                    @if($isLuar)
+                                        <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-purple-50 text-purple-700 border border-purple-200" title="{{ $asalSekolah }}">
+                                            {{ \Illuminate\Support\Str::limit($asalSekolah, 18) }}
+                                        </span>
+                                    @else
+                                        <span class="text-[10px] text-slate-400">SMAN 60</span>
+                                    @endif
+
                                     @if(($riwayat->mode_prediksi ?? 'resmi') === 'resmi')
                                         <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                             Rapor Resmi

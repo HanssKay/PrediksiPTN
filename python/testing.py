@@ -74,7 +74,8 @@ def test(method='random', arg1=80, arg2=None):
 
     if method == 'random':
         split_ratio = int(arg1)
-        # Acak dan split data
+        # Kunci seed acak agar hasil pengujian konsisten (Reproducibility untuk skripsi)
+        random.seed(42)
         random.shuffle(data)
         split_idx = max(1, int(len(data) * split_ratio / 100))
         # Pastikan test set tidak kosong

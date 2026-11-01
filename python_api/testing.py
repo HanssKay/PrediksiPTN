@@ -8,7 +8,10 @@ Testing Script - Pengujian Akurasi Model C4.5
 
 import json
 import os
+import sys
 import random
+
+sys.path.insert(0, os.path.dirname(__file__))
 
 from preprocessing import SUBJECTS
 from c45_algorithm import C45Algorithm
@@ -48,7 +51,8 @@ def run_testing(processed_data, method='random', arg1=80, arg2=None):
             split_ratio = int(arg1)
         except:
             split_ratio = 80
-        # Acak dan split data
+        # Kunci seed acak agar hasil pengujian konsisten (Reproducibility untuk skripsi)
+        random.seed(42)
         random.shuffle(data)
         split_idx = max(1, int(len(data) * split_ratio / 100))
         # Pastikan test set tidak kosong

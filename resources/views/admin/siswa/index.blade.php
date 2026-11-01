@@ -65,6 +65,7 @@
                             <th class="py-3.5 px-5 w-12 text-center">#</th>
                             <th class="py-3.5 px-5">NISN (Username)</th>
                             <th class="py-3.5 px-5">Nama Lengkap Siswa</th>
+                            <th class="py-3.5 px-5">Asal Sekolah</th>
                             <th class="py-3.5 px-5">Kelas</th>
                             <th class="py-3.5 px-5 text-center">Tahun Angkatan</th>
                             <th class="py-3.5 px-5 text-center">Status Akun Login</th>
@@ -81,6 +82,21 @@
                                 </td>
                                 <td class="py-3.5 px-5 font-black text-slate-900 group-hover:text-indigo-600 transition-colors">
                                     {{ $s->nama_lengkap }}
+                                </td>
+                                <td class="py-3.5 px-5">
+                                    @php
+                                        $asal = $s->asal_sekolah;
+                                        $is60 = empty($asal) || $asal === '-' || stripos($asal, '60') !== false;
+                                    @endphp
+                                    @if($is60)
+                                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-indigo-50 text-indigo-700 border border-indigo-200">
+                                            SMAN 60 Jakarta
+                                        </span>
+                                    @else
+                                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-amber-50 text-amber-800 border border-amber-200">
+                                            {{ $asal }}
+                                        </span>
+                                    @endif
                                 </td>
                                 <td class="py-3.5 px-5 text-slate-600 font-medium">
                                     {{ $s->kelas ?? '-' }}
@@ -102,7 +118,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="6" class="py-16 px-6 text-center">
+                                <td colspan="7" class="py-16 px-6 text-center">
                                     <div class="max-w-sm mx-auto flex flex-col items-center">
                                         <div class="w-16 h-16 rounded-3xl bg-slate-100 flex items-center justify-center text-slate-400 mb-4">
                                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -287,6 +287,19 @@
 
         </div>
 
+        {{-- Disclaimer / Catatan Model C4.5 --}}
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-slate-600 text-xs flex items-start gap-3">
+            <svg class="w-5 h-5 text-indigo-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div class="space-y-0.5">
+                <span class="font-bold text-slate-800">Catatan Simulasi Prediksi:</span>
+                <p class="leading-relaxed text-[11px] text-slate-500">
+                    Model pohon keputusan ini dilatih berdasarkan data historis kelulusan SNBP SMAN 60 Jakarta. Hasil prediksi untuk siswa dari luar sekolah berfungsi sebagai estimasi komparatif terhadap pola kelulusan alumni di PTN dan prodi yang dituju.
+                </p>
+            </div>
+        </div>
+
         {{-- Action Buttons Footer --}}
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
             <a href="{{ route('siswa.prediksi.form') }}" 

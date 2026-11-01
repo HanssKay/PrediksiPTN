@@ -18,7 +18,7 @@
                        class="block w-full text-xs font-semibold text-slate-900 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 p-3 transition" 
                        type="text" 
                        name="username" 
-                       :value="old('username')" 
+                       value="{{ old('username') }}" 
                        required 
                        autofocus 
                        autocomplete="username" 
@@ -60,13 +60,23 @@
                 Masuk ke Dashboard &rarr;
             </button>
         </div>
+
+        <div class="text-center pt-2">
+            <p class="text-xs text-slate-500">
+                Siswa luar sekolah belum punya akun?
+                <a href="{{ route('register') }}" class="font-bold text-indigo-600 hover:text-indigo-800 transition">
+                    Daftar di sini &rarr;
+                </a>
+            </p>
+        </div>
     </form>
 
     {{-- Quick Helper Box --}}
     <div class="mt-6 pt-5 border-t border-slate-100">
         <div class="p-3 rounded-2xl bg-indigo-50/60 border border-indigo-100 text-[11px] text-slate-600 space-y-1">
             <span class="font-bold text-indigo-900 block">💡 Bantuan Akun Masuk:</span>
-            <p>&bull; <strong>Siswa:</strong> Masukkan NISN sebagai username & password.</p>
+            <p>&bull; <strong>Siswa SMAN 60:</strong> Masukkan NISN sebagai username & password.</p>
+            <p>&bull; <strong>Siswa Luar Sekolah:</strong> Belum terdaftar? <a href="{{ route('register') }}" class="font-bold text-indigo-600 hover:underline">Daftar Akun Baru</a>.</p>
             <p>&bull; <strong>Admin:</strong> Masukkan akun pengelola sistem.</p>
         </div>
     </div>

@@ -143,7 +143,7 @@
                         @endif
                     </div>
 
-                    {{-- SECTION 1: Nilai Rata-rata Rapot --}}
+                    {{-- SECTION 1: Nilai Rapor Per Semester --}}
                     <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-5">
                             <div class="flex items-center gap-3">
@@ -151,8 +151,8 @@
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                                 </div>
                                 <div>
-                                    <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">1. Rata-rata Nilai Rapot</h2>
-                                    <p class="text-xs text-slate-500">Skala 0 - 100. Sistem otomatis mengkategorikan ke C4.5.</p>
+                                    <h2 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">1. Nilai Rapor Per Semester</h2>
+                                    <p class="text-xs text-slate-500">Skala 0 - 100 per semester. Rata-rata tiap mapel & kategori C4.5 dihitung otomatis.</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
@@ -163,100 +163,67 @@
                             </div>
                         </div>
 
-                        {{-- Subject Grid --}}
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            
-                            {{-- Bahasa Indonesia --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="bind_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-blue-500"></span> Bahasa Indonesia
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_bind">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="bind_avg" name="bind_avg" value="{{ old('bind_avg', $nilaiResmi['ada'] ? ($nilaiResmi['bind_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 88.50" required>
-                            </div>
+                        @php
+                            $subjectsConfig = [
+                                ['key' => 'bind', 'label' => 'Bahasa Indonesia', 'dot' => 'bg-blue-500', 'tag' => 'Mapel Umum (Smt 1 - 5)'],
+                                ['key' => 'bing', 'label' => 'Bahasa Inggris', 'dot' => 'bg-indigo-500', 'tag' => 'Mapel Umum (Smt 1 - 5)'],
+                                ['key' => 'mtk_wajib', 'label' => 'Matematika Wajib', 'dot' => 'bg-cyan-500', 'tag' => 'Mapel Umum (Smt 1 - 5)'],
+                                ['key' => 'mtk_lanjut', 'label' => 'Matematika Lanjutan', 'dot' => 'bg-teal-500', 'tag' => 'Mapel Pilihan (Smt 3 - 5)'],
+                                ['key' => 'fisika', 'label' => 'Fisika', 'dot' => 'bg-amber-500', 'tag' => 'Mapel Pilihan (Smt 3 - 5)'],
+                                ['key' => 'kimia', 'label' => 'Kimia', 'dot' => 'bg-rose-500', 'tag' => 'Mapel Pilihan (Smt 3 - 5)'],
+                                ['key' => 'biologi', 'label' => 'Biologi', 'dot' => 'bg-emerald-500', 'tag' => 'Mapel Pilihan (Smt 3 - 5)'],
+                            ];
+                        @endphp
 
-                            {{-- Bahasa Inggris --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="bing_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Bahasa Inggris
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_bing">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="bing_avg" name="bing_avg" value="{{ old('bing_avg', $nilaiResmi['ada'] ? ($nilaiResmi['bing_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 85.00" required>
-                            </div>
+                        {{-- Subject Per-Semester List --}}
+                        <div class="space-y-4">
+                            @foreach($subjectsConfig as $subj)
+                                @php
+                                    $sKey = $subj['key'];
+                                    $avgKey = $sKey . '_avg';
+                                @endphp
+                                <div class="p-4 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all space-y-3">
+                                    <div class="flex flex-wrap items-center justify-between gap-2">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2.5 h-2.5 rounded-full {{ $subj['dot'] }}"></span>
+                                            <span class="text-xs sm:text-sm font-bold text-slate-800">{{ $subj['label'] }}</span>
+                                            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-slate-200/70 text-slate-600">{{ $subj['tag'] }}</span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[11px] text-slate-500 font-medium">
+                                                Rata-rata: <b class="font-mono text-slate-800" id="avg_text_{{ $sKey }}">0.00</b>
+                                            </span>
+                                            <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_{{ $sKey }}">-</span>
+                                        </div>
+                                    </div>
 
-                            {{-- Matematika Wajib --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="mtk_wajib_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-cyan-500"></span> Matematika Wajib
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_mtk_wajib">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="mtk_wajib_avg" name="mtk_wajib_avg" value="{{ old('mtk_wajib_avg', $nilaiResmi['ada'] ? ($nilaiResmi['mtk_wajib_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 86.00" required>
-                            </div>
+                                    {{-- Hidden Average Input for Backend & Overall Calculator --}}
+                                    <input type="hidden" id="{{ $avgKey }}" name="{{ $avgKey }}" class="score-input" data-subject="{{ $sKey }}" value="{{ old($avgKey, $nilaiResmi['ada'] ? ($nilaiResmi[$avgKey] ?? 0) : 0) }}">
 
-                            {{-- Matematika Lanjutan --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="mtk_lanjut_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-teal-500"></span> Matematika Lanjutan
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_mtk_lanjut">-</span>
+                                    {{-- Semester Inputs Grid --}}
+                                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+                                        @for($smt = 1; $smt <= 5; $smt++)
+                                            @php
+                                                $colName = "{$sKey}_smt{$smt}";
+                                                $defaultVal = $nilaiResmi['ada'] ? ($nilaiResmi[$colName] ?? 0) : 0;
+                                            @endphp
+                                            <div>
+                                                <label for="{{ $colName }}" class="block text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">
+                                                    Semester {{ $smt }}
+                                                </label>
+                                                <input type="number" step="0.01" min="0" max="100"
+                                                       id="{{ $colName }}"
+                                                       name="{{ $colName }}"
+                                                       data-subject="{{ $sKey }}"
+                                                       data-smt="{{ $smt }}"
+                                                       value="{{ old($colName, $defaultVal) }}"
+                                                       class="semester-input w-full px-3 py-2 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 font-mono focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300"
+                                                       placeholder="0" required>
+                                            </div>
+                                        @endfor
+                                    </div>
                                 </div>
-                                <input type="number" step="0.01" min="0" max="100" id="mtk_lanjut_avg" name="mtk_lanjut_avg" value="{{ old('mtk_lanjut_avg', $nilaiResmi['ada'] ? ($nilaiResmi['mtk_lanjut_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 80.00" required>
-                            </div>
-
-                            {{-- Fisika --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="fisika_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-amber-500"></span> Fisika
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_fisika">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="fisika_avg" name="fisika_avg" value="{{ old('fisika_avg', $nilaiResmi['ada'] ? ($nilaiResmi['fisika_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 84.00" required>
-                            </div>
-
-                            {{-- Kimia --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="kimia_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-rose-500"></span> Kimia
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_kimia">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="kimia_avg" name="kimia_avg" value="{{ old('kimia_avg', $nilaiResmi['ada'] ? ($nilaiResmi['kimia_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 83.50" required>
-                            </div>
-
-                            {{-- Biologi --}}
-                            <div class="p-3.5 rounded-2xl bg-slate-50/70 border border-slate-200/60 hover:bg-white hover:border-blue-300 transition-all sm:col-span-2">
-                                <div class="flex items-center justify-between mb-1.5">
-                                    <label for="biologi_avg" class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Biologi
-                                    </label>
-                                    <span class="text-[10px] font-mono font-bold text-slate-400 grade-badge" id="badge_biologi">-</span>
-                                </div>
-                                <input type="number" step="0.01" min="0" max="100" id="biologi_avg" name="biologi_avg" value="{{ old('biologi_avg', $nilaiResmi['ada'] ? ($nilaiResmi['biologi_avg'] ?? 0) : '') }}" 
-                                       class="score-input w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-slate-300" 
-                                       placeholder="Misal: 87.00" required>
-                            </div>
-
+                            @endforeach
                         </div>
                     </div>
 
@@ -464,25 +431,59 @@
             return { label: 'Kurang', color: 'bg-rose-100 text-rose-700' };
         }
 
+        const subjectDefinitions = [
+            { key: 'bind', start: 1, end: 5 },
+            { key: 'bing', start: 1, end: 5 },
+            { key: 'mtk_wajib', start: 1, end: 5 },
+            { key: 'mtk_lanjut', start: 1, end: 5 },
+            { key: 'fisika', start: 1, end: 5 },
+            { key: 'kimia', start: 1, end: 5 },
+            { key: 'biologi', start: 1, end: 5 },
+        ];
+
         function updateScores() {
-            const inputs = document.querySelectorAll('.score-input');
             let sum = 0;
             let count = 0;
 
-            inputs.forEach(input => {
-                const val = parseFloat(input.value);
-                const badgeId = 'badge_' + input.id.replace('_avg', '');
-                const badge = document.getElementById(badgeId);
+            subjectDefinitions.forEach(subj => {
+                const sKey = subj.key;
+                const smtInputs = document.querySelectorAll(`.semester-input[data-subject="${sKey}"]`);
+                let subjSum = 0;
+                let subjCount = 0;
+                let hasAnyInput = false;
 
-                if (!isNaN(val) && val > 0) {
-                    sum += val;
+                smtInputs.forEach(inp => {
+                    if (inp.value !== '') {
+                        hasAnyInput = true;
+                        const v = parseFloat(inp.value);
+                        if (!isNaN(v) && v > 0) {
+                            subjSum += v;
+                            subjCount++;
+                        }
+                    }
+                });
+
+                const subjAvg = subjCount > 0 ? parseFloat((subjSum / subjCount).toFixed(2)) : 0;
+                const hiddenAvg = document.getElementById(sKey + '_avg');
+                const avgText = document.getElementById('avg_text_' + sKey);
+                const badge = document.getElementById('badge_' + sKey);
+
+                if (hiddenAvg) {
+                    hiddenAvg.value = subjAvg.toFixed(2);
+                }
+                if (avgText) {
+                    avgText.textContent = subjAvg.toFixed(2);
+                }
+
+                if (subjCount > 0 && subjAvg > 0) {
+                    sum += subjAvg;
                     count++;
-                    const cat = getCategory(val);
+                    const cat = getCategory(subjAvg);
                     if (badge) {
                         badge.textContent = cat.label;
                         badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full ' + cat.color;
                     }
-                } else if (!isNaN(val) && val === 0 && input.value !== '') {
+                } else if (hasAnyInput && subjAvg === 0) {
                     if (badge) {
                         badge.textContent = '0 (Kurang)';
                         badge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 border border-slate-200';
@@ -509,8 +510,14 @@
             }
         }
 
-        document.querySelectorAll('.score-input').forEach(input => {
+        document.querySelectorAll('.semester-input').forEach(input => {
             input.addEventListener('input', updateScores);
+            input.addEventListener('blur', function() {
+                if (this.value === '' || isNaN(parseFloat(this.value))) {
+                    this.value = 0;
+                    updateScores();
+                }
+            });
         });
 
         // Setup Dropdowns for University & Prodi
@@ -630,7 +637,7 @@
             const badgeSimulasi = document.getElementById('badge_active_simulasi');
             const bannerResmi = document.getElementById('banner_resmi_info');
             const statusModeBadge = document.getElementById('status_mode_badge');
-            const inputs = document.querySelectorAll('.score-input');
+            const smtInputs = document.querySelectorAll('.semester-input');
 
             if (mode === 'resmi' && officialGrades && officialGrades.ada) {
                 // Style Active Button Resmi
@@ -648,24 +655,20 @@
                 // Helper: nilai 0 tetap dipertahankan sebagai angka 0 (bukan string kosong '')
                 const getOfficialVal = (val) => (val !== undefined && val !== null && val !== '') ? val : 0;
 
-                // Fill Official Values
-                document.getElementById('bind_avg').value = getOfficialVal(officialGrades.bind_avg);
-                document.getElementById('bing_avg').value = getOfficialVal(officialGrades.bing_avg);
-                document.getElementById('mtk_wajib_avg').value = getOfficialVal(officialGrades.mtk_wajib_avg);
-                document.getElementById('mtk_lanjut_avg').value = getOfficialVal(officialGrades.mtk_lanjut_avg);
-                document.getElementById('fisika_avg').value = getOfficialVal(officialGrades.fisika_avg);
-                document.getElementById('kimia_avg').value = getOfficialVal(officialGrades.kimia_avg);
-                document.getElementById('biologi_avg').value = getOfficialVal(officialGrades.biologi_avg);
-
-                // Select Official Prestasi
-                selectPrestasi(officialGrades.prestasi_tertinggi || 'Tidak Ada');
-
-                // Set Readonly on Inputs
-                inputs.forEach(input => {
+                // Fill Official Per-Semester Values from Dataset
+                smtInputs.forEach(input => {
+                    const colName = input.id;
+                    const val = (officialGrades.semesters && officialGrades.semesters[colName] !== undefined)
+                        ? officialGrades.semesters[colName]
+                        : officialGrades[colName];
+                    input.value = getOfficialVal(val);
                     input.readOnly = true;
                     input.classList.add('bg-slate-100', 'text-slate-600', 'cursor-not-allowed');
                     input.classList.remove('bg-white', 'text-slate-800');
                 });
+
+                // Select Official Prestasi
+                selectPrestasi(officialGrades.prestasi_tertinggi || 'Tidak Ada');
             } else {
                 // Style Active Button Simulasi
                 if (btnResmi && officialGrades && officialGrades.ada) {
@@ -681,8 +684,11 @@
                     statusModeBadge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1';
                 }
 
-                // Unlock Inputs
-                inputs.forEach(input => {
+                // Unlock Semester Inputs & Ensure Empty Values Default to 0
+                smtInputs.forEach(input => {
+                    if (input.value === '' || input.value === null || input.value === undefined) {
+                        input.value = 0;
+                    }
                     input.readOnly = false;
                     input.classList.remove('bg-slate-100', 'text-slate-600', 'cursor-not-allowed');
                     input.classList.add('bg-white', 'text-slate-800');
@@ -705,13 +711,10 @@
         // Quick Fill Helper for easy demo
         function fillSampleData(avg) {
             setPredictionMode('simulasi');
-            document.getElementById('bind_avg').value = (avg + 1).toFixed(2);
-            document.getElementById('bing_avg').value = (avg - 0.5).toFixed(2);
-            document.getElementById('mtk_wajib_avg').value = (avg + 2).toFixed(2);
-            document.getElementById('mtk_lanjut_avg').value = (avg - 1).toFixed(2);
-            document.getElementById('fisika_avg').value = (avg).toFixed(2);
-            document.getElementById('kimia_avg').value = (avg - 1.5).toFixed(2);
-            document.getElementById('biologi_avg').value = (avg + 0.5).toFixed(2);
+            document.querySelectorAll('.semester-input').forEach((inp, idx) => {
+                const offset = ((idx % 5) - 2) * 0.5;
+                inp.value = (avg + offset).toFixed(2);
+            });
             updateScores();
         }
 

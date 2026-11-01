@@ -6,6 +6,7 @@ use App\Models\RiwayatPrediksi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class SiswaController extends Controller
 {
     /**
@@ -13,10 +14,14 @@ class SiswaController extends Controller
      */
     private function categorize($value)
     {
-        if ($value === null || $value == 0) return 'Kurang';
-        if ($value >= 90) return 'Sangat Baik';
-        if ($value >= 80) return 'Baik';
-        if ($value >= 70) return 'Cukup';
+        if ($value === null || $value == 0)
+            return 'Kurang';
+        if ($value >= 90)
+            return 'Sangat Baik';
+        if ($value >= 80)
+            return 'Baik';
+        if ($value >= 70)
+            return 'Cukup';
         return 'Kurang';
     }
 
@@ -123,7 +128,7 @@ class SiswaController extends Controller
         $nisnClean = ltrim($nisn, '0');
 
         // Cari data nilai siswa di dataset_prediksi (berdasarkan NISN atau Nama)
-        $datasetRow = \App\Models\DatasetPrediksi::where(function($q) use ($nisn, $nisnClean, $nama) {
+        $datasetRow = \App\Models\DatasetPrediksi::where(function ($q) use ($nisn, $nisnClean, $nama) {
             if (!empty($nisn)) {
                 $q->where('nisn', $nisn)->orWhere('nisn', $nisnClean);
             }
@@ -151,10 +156,22 @@ class SiswaController extends Controller
             // Hitung berapa semester yang ada nilainya
             $semesterCount = 0;
             for ($s = 1; $s <= 5; $s++) {
-                if (!empty($datasetRow->{"bind_smt{$s}"})) $semesterCount++;
+                if (!empty($datasetRow->{"bind_smt{$s}"}))
+                    $semesterCount++;
             }
 
-            $nilaiResmi = [
+            // Ambil nilai per semester dari dataset (nilai kosong/0 tetap dijadikan angka 0)
+            $semesterGrades = [];
+            foreach (['bind', 'bing', 'mtk_wajib', 'mtk_lanjut', 'fisika', 'kimia', 'biologi'] as $m) {
+                for ($s = 1; $s <= 5; $s++) {
+                    $col = "{$m}_smt{$s}";
+                    $semesterGrades[$col] = (isset($datasetRow->$col) && $datasetRow->$col !== null && $datasetRow->$col !== '')
+                        ? floatval($datasetRow->$col)
+                        : 0;
+                }
+            }
+
+            $nilaiResmi = array_merge([
                 'ada' => true,
                 'nisn' => $datasetRow->nisn ?: $nisn,
                 'nama' => $datasetRow->nama_siswa ?: $nama,
@@ -167,12 +184,13 @@ class SiswaController extends Controller
                 'fisika_avg' => $fisika,
                 'kimia_avg' => $kimia,
                 'biologi_avg' => $biologi,
+                'semesters' => $semesterGrades,
                 'prestasi_tertinggi' => $datasetRow->prestasi_tertinggi ? ucfirst(strtolower(trim($datasetRow->prestasi_tertinggi))) : 'Tidak Ada',
                 'pilihan_1_univ' => $datasetRow->pilihan_1_univ,
                 'pilihan_1_prodi' => $datasetRow->pilihan_1_prodi,
                 'pilihan_2_univ' => $datasetRow->pilihan_2_univ,
                 'pilihan_2_prodi' => $datasetRow->pilihan_2_prodi,
-            ];
+            ], $semesterGrades);
         }
 
         return view('siswa.prediksi.form', compact('universitas', 'nilaiResmi'));
@@ -183,6 +201,42 @@ class SiswaController extends Controller
      */
     public function prosesPrediski(Request $request)
     {
+        // Hitung rata-rata otomatis dari input per semester jika tersedia
+        $subjectSemesters = [
+            'bind' => [1, 5],
+            'bing' => [1, 5],
+            'mtk_wajib' => [1, 5],
+            'mtk_lanjut' => [1, 5],
+            'fisika' => [1, 5],
+            'kimia' => [1, 5],
+            'biologi' => [1, 5],
+        ];
+
+        $mergedAverages = [];
+        foreach ($subjectSemesters as $subj => [$startSmt, $endSmt]) {
+            $hasSemesterInput = false;
+            $vals = [];
+            for ($s = $startSmt; $s <= $endSmt; $s++) {
+                $col = "{$subj}_smt{$s}";
+                if ($request->has($col)) {
+                    $hasSemesterInput = true;
+                    $raw = $request->input($col);
+                    if ($raw !== null && $raw !== '' && is_numeric($raw)) {
+                        $num = floatval($raw);
+                        if ($num > 0) {
+                            $vals[] = $num;
+                        }
+                    }
+                }
+            }
+            if ($hasSemesterInput) {
+                $mergedAverages["{$subj}_avg"] = count($vals) > 0 ? round(array_sum($vals) / count($vals), 2) : 0;
+            }
+        }
+        if (!empty($mergedAverages)) {
+            $request->merge($mergedAverages);
+        }
+
         $request->validate([
             'bind_avg' => 'required|numeric|min:0|max:100',
             'bing_avg' => 'required|numeric|min:0|max:100',
@@ -226,7 +280,7 @@ class SiswaController extends Controller
         $kategorisasi1 = $baseKategorisasi;
         $kategorisasi1['pil1_keketatan'] = $request->keketatan_pil1;
         $kategorisasi1['pil2_keketatan'] = !empty($request->keketatan_pil2) ? $request->keketatan_pil2 : 'Tidak Memilih';
-        
+
         $hasil1 = $this->predict($tree, $kategorisasi1);
         $hasilPrediksi = 'TIDAK LOLOS';
 
@@ -240,9 +294,9 @@ class SiswaController extends Controller
                 $kategorisasi2 = $baseKategorisasi;
                 $kategorisasi2['pil1_keketatan'] = $request->keketatan_pil2;
                 $kategorisasi2['pil2_keketatan'] = 'Tidak Memilih';
-                
+
                 $hasil2 = $this->predict($tree, $kategorisasi2);
-                
+
                 if (strtoupper($hasil2) === 'LOLOS') {
                     $hasilPrediksi = 'LOLOS PILIHAN 2';
                 }
@@ -253,11 +307,15 @@ class SiswaController extends Controller
         $rekomendasiList = null;
         if ($hasilPrediksi === 'TIDAK LOLOS') {
             $rataRata = collect([
-                $request->bind_avg, $request->bing_avg, $request->mtk_wajib_avg, 
-                $request->mtk_lanjut_avg, $request->fisika_avg, $request->kimia_avg, 
+                $request->bind_avg,
+                $request->bing_avg,
+                $request->mtk_wajib_avg,
+                $request->mtk_lanjut_avg,
+                $request->fisika_avg,
+                $request->kimia_avg,
                 $request->biologi_avg
             ])->average();
-            
+
             $rekomendasidata = \App\Models\DatasetPrediksi::where('status', 'LOLOS')
                 ->where('rata_keseluruhan', '<=', $rataRata + 1.5)
                 ->where('pilihan_1_univ', 'NOT LIKE', '%Indonesia%')
@@ -270,7 +328,7 @@ class SiswaController extends Controller
                 ->distinct()
                 ->limit(20) // Ambil maksimal 20 data unik
                 ->get();
-                
+
             if ($rekomendasidata->isNotEmpty()) {
                 // Acak koleksi di PHP dan ambil 3 teratas
                 $rekomendasiList = json_encode($rekomendasidata->shuffle()->take(3)->values()->toArray());
